@@ -1,0 +1,93 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+$timing        : 265ms;
+$iconColor     : #00B5F5;
+$accent        : #002A8F;
+$bluefade      : #0043E0;
+$gradient      : #00B5F5;
+
+@mixin transformScale($size: 1) {
+    transform: scale($size);
+    -ms-transform: scale($size);
+    -webkit-transform: scale($size);
+}
+
+// body {
+//     background-color: rgba($iconColor, 0.05);
+// }
+
+.social-container {
+    z-index: 9999;
+    position: fixed;
+    width: 60px;
+    margin: 27% auto;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    border-radius: 0 15px 15px 0;
+}
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 1em 0 0 0 ;
+  
+    li {
+        display: inline-block;
+        margin: 0;
+        position: relative;
+        font-size: 1em;
+    }
+
+    i {
+        color: #fff;
+        position: absolute;
+        top: 25%;
+        left: 13px;
+        transition: all $timing ease-out;
+    }
+
+    a {
+        display: inline-block;
+      
+        &:before {
+            @include transformScale();
+            content: " ";
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            display: block;
+            background: linear-gradient(45deg, $iconColor, $accent);
+            transition: all $timing ease-out;
+        }
+        
+        &:hover:before {
+            transform: scale(0);
+            transition: all $timing ease-in;
+        }
+        
+        &:hover i {
+            @include transformScale(1.2);
+            color: $iconColor;
+            background: -webkit-linear-gradient(45deg, $iconColor, $accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all $timing ease-in;
+        }
+    }
+  
+}
+
+
+@media screen and (max-width:1024px) {
+    .social-container {
+        z-index: 9999;
+        position: fixed;
+        width: 60px;
+        margin: 70% auto;
+        text-align: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: white;
+        border-radius: 0 15px 15px 0;
+    }
+}

@@ -93,6 +93,7 @@ const AddTeamMember = (props) => {
               <option value="HR Executive">Senior HR Manager</option>
               <option value="HR Manager">HR Manager</option>
               <option value="Sales Intern">Sales Intern</option>
+              <option value="Chief Executive Officer">CEO</option>
             </select>
           </label> <br />
           <label htmlFor="Linkedin">Linkedin<br />

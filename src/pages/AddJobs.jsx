@@ -1,121 +1,162 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import '../CSS/AddProject.css';
-import JoditEditor from 'jodit-react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const AddJobs = (props) => {
-  const navigate = useNavigate()
-  const [title, settitle] = useState('')
-  const [description,setdescription] =useState('')
-  const [numberofOpenings,setnumberofOpenings] =useState('')
-  const [qualifications,setqualifications] = useState('')
-  const [experience ,setexperience] =useState('')
-  const [salary,setsalary] = useState('')
-  const [category,setcategory] = useState('')
+  const navigate = useNavigate();
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
+  const [numberOfOpenings, setNumberOfOpenings] = useState('');
+  const [qualifications, setQualifications] = useState('');
+  const [experience, setExperience] = useState('');
+  const [salary, setSalary] = useState('');
+  const [categoriesd, setcategoriesd] = useState('');
+  const [isButtonSubmit, setIsButtonSubmit] = useState(false);
 
-    useEffect(()=>{
-        document.title = props.title
-    })
+  useEffect(() => {
+    document.title = props.title;
+  }, [props.title]);
 
-    const handlesubmit = async(event) =>{
-      event.preventDefault();
-      try {
-        const response = await axios.post('https://www.backend.risinginfra.in/api/v1/careers',{title,description,numberofOpenings,qualifications,experience,salary,category})
-        alert("Job Added Successfully")
-        navigate("/private/admin/panel")
-      } catch (error) {
-      alert("Oops something went wrong")
-      }
-    }  
+  const handleSubmit = async (event) => {
+    setIsButtonSubmit(true);
+    event.preventDefault();
+    try {
+      const response = await axios.post('https://www.backend.risinginfra.in/api/v1/careers', {
+        title,
+        description,
+        numberOfOpenings,
+        qualifications,
+        experience,
+        salary,
+        categoriesd,
+      });
+      alert('Job Added Successfully');
+      setIsButtonSubmit(false);
+      resetForm();
+    } catch (error) {
+      alert('Oops something went wrong');
+      setIsButtonSubmit(false);
+    }
+  };
+
+  const resetForm = () => {
+    setTitle('');
+    setDescription('');
+    setNumberOfOpenings('');
+    setQualifications('');
+    setExperience('');
+    setSalary('');
+    setcategoriesd('');
+  };
 
   return (
     <div className='blogs'>
-     <div className='headingblog'>
-        <h1>We Have Another opening, Found it Right Candidate!</h1>
-     </div>
+      <div className='headingblog'>
+        <h1>We Have Another Opening, Found the Right Candidate!</h1>
+      </div>
       <div className='datasets-field'>
-        <form action="" onSubmit={handlesubmit}>
-        <label htmlFor='category'>Job Category
-                <select value={category} onChange={(e)=>setcategory(e.target.value)} className='labelsblogs-select' id='category'>Select
-                  <option>Select</option>
-                  <option value="Sales">Sales</option>
-                  <option value="Technology">Technology</option>
-                  <option value="Finance">Finance</option>
-                  <option value="Human Resources">Human Resources</option>
-                </select>
-           </label> <br />
-            <label htmlFor='title'>Job Title
-                <select value={title} onChange={(e)=>settitle(e.target.value)} className='labelsblogs-select' id='category'>Select
-                  <option>Select</option>
-                  <option value="Buissness Development Executive">Buissness Development Executive</option>
-                  <option value="Opeartion Manager">Opeartion Manager</option>
-                  <option value="Social Media Manager">Social Media Manager</option>
-                  <option value="Graphic Designer">Graphic Designer</option>
-                  <option value="Video Editor">Video Editor</option>
-                  <option value="Frontend Devloper">Frontend Developer</option>
-                  <option value="Backend Devloper">Backend Developer</option>
-                  <option value="Full Stack Devloper">Full Stack Developer</option>
-                  <option value="Sales Manager">Sales Manager</option>
-                  <option value="Team Lead (Sales)">Team Lead (Sales)</option>
-                  <option value="HR Executive">HR Executive</option>
-                  <option value="HR Manager">HR Manager</option>
-                </select>
-           </label> <br />
-           <label htmlFor="No Of Opening">No Of Opening<br />
-                <input type="text" 
-                placeholder='Enter here' 
-                id='No Of Opening' 
-                className='labelsblogs' 
-                value={numberofOpenings}
-                onChange={(e)=>setnumberofOpenings(e.target.value)}
-                required/>
-           </label> <br />
-           <label htmlFor='Qualification'> Qualification
-                <select value={qualifications} onChange={(e)=>setqualifications(e.target.value)} className='labelsblogs-select' id='category'>Select
-                  <option>Select</option>
-                  <option value="10th">10th</option>
-                  <option value="10+12th">10+12th</option>
-                  <option value="Graduation">Graduation</option>
-                  <option value="Post Graduation">Post Graduation</option>
-                </select>
-           </label> <br />
-           <label htmlFor="Salary">Salary<br />
-                <input type="text" 
-                placeholder='Enter here' 
-                id='Salary' 
-                className='labelsblogs' 
-                value={salary}
-                onChange={(e)=>setsalary(e.target.value)}
-                required/>
-           </label> <br />
-           <label htmlFor="Candidate Experience">Candidate Experience<br />
-                <select value={experience} onChange={(e)=>setexperience(e.target.value)} className='labelsblogs-select' id='category'>Select
-                  <option>Select</option>
-                  <option value="Fresher">Fresher</option>
-                  <option value="1 Year">1 Year</option>
-                  <option value="2-5 Year">2-5 Year</option>
-                  <option value="5-10 Year">5-10 Year</option>
-                  <option value="10-20 Year">10-20 Year</option>
-                </select>
-           </label> <br />
-           <label htmlFor='postcontent'>Job Description<br />
-           <textarea
-             value={description}
-             onChange={(e) => setdescription(e.target.value)}
-             className='labelsblogs' 
-             placeholder='Job Description'
-             required
+        <form onSubmit={handleSubmit}>
+          <label htmlFor='category'>
+            Job Category
+            <select value={categoriesd} onChange={(e) => setcategoriesd(e.target.value)} className='labelsblogs-select' id='category'>
+              <option>Select</option>
+              <option value='Sales'>Sales</option>
+              <option value='Technology'>Technology</option>
+              <option value='Finance'>Finance</option>
+              <option value='Human Resources'>Human Resources</option>
+            </select>
+          </label>
+          <br />
+          <label htmlFor='title'>
+            Job Title
+            <select value={title} onChange={(e) => setTitle(e.target.value)} className='labelsblogs-select' id='title'>
+              <option>Select</option>
+              <option value='Business Development Executive'>Business Development Executive</option>
+              <option value='Operation Manager'>Operation Manager</option>
+              <option value='Social Media Manager'>Social Media Manager</option>
+              <option value='Graphic Designer'>Graphic Designer</option>
+              <option value='Video Editor'>Video Editor</option>
+              <option value='Frontend Developer'>Frontend Developer</option>
+              <option value='Backend Developer'>Backend Developer</option>
+              <option value='Full Stack Developer'>Full Stack Developer</option>
+              <option value='Sales Manager'>Sales Manager</option>
+              <option value='Team Lead (Sales)'>Team Lead (Sales)</option>
+              <option value='HR Executive'>HR Executive</option>
+              <option value='HR Manager'>HR Manager</option>
+            </select>
+          </label>
+          <br />
+          <label htmlFor='numberOfOpenings'>
+            No Of Openings
+            <br />
+            <input
+              type='text'
+              placeholder='Enter here'
+              id='numberOfOpenings'
+              className='labelsblogs'
+              value={numberOfOpenings}
+              onChange={(e) => setNumberOfOpenings(e.target.value)}
+              required
             />
-           </label>
-        <div>
-           <input type="submit" value="Submit" className='submit1' />
-           <input type="reset" value="Reset" className='submit2'/>
-        </div>
+          </label>
+          <br />
+          <label htmlFor='qualifications'>
+            Qualification
+            <select value={qualifications} onChange={(e) => setQualifications(e.target.value)} className='labelsblogs-select' id='qualifications'>
+              <option>Select</option>
+              <option value='10th'>10th</option>
+              <option value='10+12th'>10+12th</option>
+              <option value='Graduation'>Graduation</option>
+              <option value='Post Graduation'>Post Graduation</option>
+            </select>
+          </label>
+          <br />
+          <label htmlFor='salary'>
+            Salary
+            <br />
+            <input
+              type='text'
+              placeholder='Enter here'
+              id='salary'
+              className='labelsblogs'
+              value={salary}
+              onChange={(e) => setSalary(e.target.value)}
+              required
+            />
+          </label>
+          <br />
+          <label htmlFor='experience'>
+            Candidate Experience
+            <select value={experience} onChange={(e) => setExperience(e.target.value)} className='labelsblogs-select' id='experience'>
+              <option>Select</option>
+              <option value='Fresher'>Fresher</option>
+              <option value='1 Year'>1 Year</option>
+              <option value='2-5 Year'>2-5 Year</option>
+              <option value='5-10 Year'>5-10 Year</option>
+              <option value='10-20 Year'>10-20 Year</option>
+            </select>
+          </label>
+          <br />
+          <label htmlFor='description'>
+            Job Description
+            <br />
+            <textarea
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+              className='labelsblogs'
+              placeholder='Job Description'
+              required
+            />
+          </label>
+          <div>
+            <input type='submit' value='Submit' className='submit1' onClick={handleSubmit} disabled={isButtonSubmit} />
+            <input type='reset' value='Reset' className='submit2' onClick={resetForm} />
+          </div>
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AddJobs
+export default AddJobs;

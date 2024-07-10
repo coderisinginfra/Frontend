@@ -10,7 +10,7 @@ const AddProject = (props) => {
     const [category, setcategory] = useState('');
     const [projectType, setprojectType] = useState('');
     const [developer, setdeveloper] = useState('');
-    const [city, setcity] = useState('');
+    const [city, setcity] = useState('Noida');
     const [location, setlocation] = useState('');
     const [size, setsize] = useState('');
     const [price, setprice] = useState('');
@@ -18,6 +18,7 @@ const AddProject = (props) => {
     const [featuredproject, setfeaturedproject] = useState(false);
     const [prelease, setprelease] = useState(false);
     const [sitelocation, setsitelocation] = useState('');
+    const [isbuttonsubmit,setisbuttonsubmit] = useState(false)
 
     const editor = useRef(null);
     const [content, setcontent] = useState('');
@@ -120,7 +121,7 @@ const AddProject = (props) => {
             type: 'select',
             value: projectType,
             options: [
-                {label:'--Select Project Type--',value:'Commercial'},
+                // {label:'--Select Project Type--',value:'Commercial'},
                 {label:'Independent Villa',value:'Independent Villa'},
                 {label: 'Builder Floor', value: 'Builder Floor' },
                 {label: 'Apartment', value: 'Apartment' },
@@ -150,7 +151,7 @@ const AddProject = (props) => {
             type: 'select',
             value: city,
             options: [
-                {label:'--Select City--',value:'Noida'},
+                // {label:'--Select City--',value:'Noida'},
                 { label: 'Noida', value: 'Noida' },
                 { label: 'Gurugram', value: 'Gurugram' },
                 {label:'Goa',value:'Goa'},
@@ -217,6 +218,7 @@ const AddProject = (props) => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+        setisbuttonsubmit(true)
         try {
             const formData = new FormData();
             formData.append('propertyTitle', propertyTitle);
@@ -245,7 +247,7 @@ const AddProject = (props) => {
             const response = await axios.post('https://www.backend.risinginfra.in/api/v1/addproject', formData);
             console.log(formData);
             alert('Project added successfully!');
-            navigate("/private/admin/panel");
+            setisbuttonsubmit(false)
         } catch (error) {
             console.error('There was an error!', error);
             alert('Oops! Sorry, something went wrong.');
@@ -259,7 +261,7 @@ const AddProject = (props) => {
             </div>
             <div className='forms-data'>
                 <form onSubmit={handleSubmit}>
-                    <table>
+                    <table style={{textAlign:"start"}}>
                         <tbody>
                             <tr className="td-data">
                                 <td colSpan="2">Add New Project</td>
@@ -402,7 +404,7 @@ const AddProject = (props) => {
                             </tr>
                         </tbody>
                     </table>
-                    <button type="submit" className='buttons'>Submit</button>
+                    <button type="submit" className='buttons' disabled={isbuttonsubmit}>Submit</button>
                 </form>
             </div>
         </>

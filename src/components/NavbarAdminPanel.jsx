@@ -13,7 +13,8 @@ const NavbarAdminPanel = ({ children }) => {
       '/private/manageblog',
       '/private/jobopening',
       '/private/updateblog/:id',
-      '/private/addteammember'
+      '/private/addteammember',
+      '/private/Jobopening'
     ];
     
     if (adminPaths.includes(location.pathname)) {

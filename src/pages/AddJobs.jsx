@@ -150,7 +150,7 @@ const AddJobs = (props) => {
             />
           </label>
           <div>
-            <input type='submit' value='Submit' className='submit1' onClick={handleSubmit} disabled={isButtonSubmit} />
+            <input type='submit' value='Submit' className='submit1' disabled={isButtonSubmit} />
             <input type='reset' value='Reset' className='submit2' onClick={resetForm} />
           </div>
         </form>

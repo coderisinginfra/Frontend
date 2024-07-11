@@ -30,7 +30,6 @@ const AllTeamMembershow = () => {
             </div>
         </div>
         <h1 className='proven'>We are a team of seasoned professionals with extensive experience and proven track record in our area of expertise.</h1>
-  <div className='container-flex'>
     <div className='teams-flex'>
       {
         data.map((item, index) => (
@@ -51,7 +50,6 @@ const AllTeamMembershow = () => {
           </div>
         ))
       }
-    </div>
   </div>
 </div>
   )

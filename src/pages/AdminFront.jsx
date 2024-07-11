@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import '../CSS/AddProject.css';
+// import '../CSS/AddProject.css';
 
 const AdminFront = (props) => {
     useEffect(()=>{

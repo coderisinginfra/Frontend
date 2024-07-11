@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import DOMPurify from 'dompurify';
-import "../CSS/blogscss.css";
-import '../CSS/Form.css';
+// import "../CSS/blogscss.css";
+// import '../CSS/Form.css';
 import logo from '../assets/adminimage/logo.png';
 import { datasets } from '../App';
 import { Link } from 'react-router-dom';

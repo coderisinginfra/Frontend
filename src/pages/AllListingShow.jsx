@@ -5,7 +5,7 @@ import { Button, Dialog, DialogActions, DialogContent, DialogContentText, Dialog
 import { useParams } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import '../CSS/Listingcssdata.css';
+// import '../CSS/Listingcssdata.css';
 import cafeteria from '../assets/amenities/cafeteria.png';
 import call from '../assets/amenities/call-center.png';
 import park from '../assets/amenities/park.png';

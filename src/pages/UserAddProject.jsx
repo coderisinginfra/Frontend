@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import '../CSS/AddUserProject.css';
+// import '../CSS/AddUserProject.css';
 import JoditEditor from 'jodit-react';
 
 const UserAddProject = (props) => {

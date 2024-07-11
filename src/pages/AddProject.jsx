@@ -248,6 +248,24 @@ const AddProject = (props) => {
             console.log(formData);
             alert('Project added successfully!');
             setisbuttonsubmit(false)
+            setpropertyTitle('')
+            setcategory('')
+            setprojectType('')
+            setdeveloper('')
+            setcity('')
+            setlocation('')
+            setsitelocation('')
+            setsize('')
+            setprice('')
+            setamenties([])
+            setcontent('')
+            setImage(null)
+            setfloorplan1(null)
+            setfloorplan2(null)
+            setfloorplan3(null)
+            setgalleryimage1(null)
+            setgalleryimage2(null)
+            setgalleryimage3(null)
         } catch (error) {
             console.error('There was an error!', error);
             alert('Oops! Sorry, something went wrong.');
@@ -260,7 +278,7 @@ const AddProject = (props) => {
                 <h3>Add Project Listing in<b style={{ color: "red" }}>&nbsp;Risinginfra</b></h3>
             </div>
             <div className='forms-data'>
-                <form onSubmit={handleSubmit}>
+                <form>
                     <table style={{textAlign:"start"}}>
                         <tbody>
                             <tr className="td-data">
@@ -404,7 +422,7 @@ const AddProject = (props) => {
                             </tr>
                         </tbody>
                     </table>
-                    <button type="submit" className='buttons' disabled={isbuttonsubmit}>Submit</button>
+                    <button type="submit" className='buttons' disabled={isbuttonsubmit} onClick={handleSubmit}>Submit</button>
                 </form>
             </div>
         </>

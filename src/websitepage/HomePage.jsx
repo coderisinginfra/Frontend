@@ -5,12 +5,12 @@ import leasecommercial from '../assets/adminimage/leasecommercialsapce.png'
 import { Link } from 'react-router-dom'
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField, TextareaAutosize } from '@mui/material'
 import axios from 'axios'
-import '../CSS/HomePageData.css'
+// import '../CSS/HomePageData.css'
 import { datasets } from '../App'
 import DOMPurify from 'dompurify';
 import Notesimage from '../assets/notes.png'
 import building from '../assets/building.png'
-import '../CSS/HomePageNew.css';
+// import '../CSS/HomePageNew.css';
 import Carousel from '../components/Carousel'
 import noida from '../assets/location/Noida.jpg'
 import gurugram from '../assets/location/gurugram.jpg'

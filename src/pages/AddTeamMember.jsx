@@ -89,9 +89,6 @@ const AddTeamMember = (props) => {
               <option value="Leasing Head">Leasing Head</option>
               <option value="Graphic Designer">Graphic Designer</option>
               <option value="Video Editor">Video Editor</option>
-              <option value="Frontend Developer">Frontend Developer</option>
-              <option value="Backend Developer">Backend Developer</option>
-              <option value="Full Stack Developer">Full Stack Developer</option>
               <option value="Sales Manager">Sales Manager</option>
               <option value="Team Lead (Sales)">Team Lead (Sales)</option>
               <option value="SR. HR Manager">SR. HR Manager</option>

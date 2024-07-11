@@ -2,8 +2,7 @@
     "rewrites": [
       {
         "source": "/(.*)",
-        "destination": "https://risinginfra.in/$1",
-        "permanent": true
+        "destination": "/index.html"
       }
     ]
   }

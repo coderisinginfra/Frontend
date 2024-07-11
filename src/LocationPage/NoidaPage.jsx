@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useContext, useEffect, useState } from 'react'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import '../CSS/PropertyListings.css';
+// import '../CSS/PropertyListings.css';
 import { datasets } from '../App';
 import { Link } from 'react-router-dom';
 import DOMPurify from 'dompurify';

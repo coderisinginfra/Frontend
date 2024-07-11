@@ -6,7 +6,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import PlaceIcon from '@mui/icons-material/Place';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import '../CSS/Contactus.css';
+// import '../CSS/Contactus.css';
 
 const ContactUs = (props) => {
     const [name, setName] = useState('');

@@ -229,7 +229,7 @@ const AllListingShow = () => {
                   </table>
                 </div>
                 <div className='description-data'>
-                  <div className='paragraph-blogs description-listing' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(truncateHTML(item.content)) }}></div>
+                  <div className='paragraph-blogs description-listing' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.content)}}></div>
                 </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-// import '../CSS/AddProject.css';
+import '../CSS/AddProject.css';
 import JoditEditor from 'jodit-react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';

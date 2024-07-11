@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.conatiner-privacy-policy{
+    padding: 3em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.paragraph-privacy{
+    line-height: 2em;
+}
+
+.heading-privacypolicy{
+    font-size: 24px;
+    color: #253858;
+    margin: 1em 0;
+}
+
+.subheading-privacypolicy{
+    margin: 1em 0;
+    font-size: 18px;
+}
+
+.updated-time{
+    margin: 1em 0;
+}
+
+.listing-privacy-policy{
+    margin: 0 1em;
+}

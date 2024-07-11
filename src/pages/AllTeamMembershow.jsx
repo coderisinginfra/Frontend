@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-// import '../CSS/OurTeam.css'
+import '../CSS/OurTeam.css'
 import { Link } from 'react-router-dom'
 import Linkedin from '../assets/imges/Linkedin.png'
 import images from '../assets/teamphoto.png'

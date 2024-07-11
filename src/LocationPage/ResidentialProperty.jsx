@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import axios from 'axios';
-// import '../CSS/PropertyListings.css';
+import '../CSS/PropertyListings.css';
 import BlogsSection from '../components/BlogsSection';
 import { Link } from 'react-router-dom';
 

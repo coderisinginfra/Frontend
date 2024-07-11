@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import banner from '../assets/adminimage/Genpact-banner.png';
-// import '../CSS/Careers.css';
+import '../CSS/Careers.css';
 import axios from 'axios';
 import { Button } from '@mui/material';
 import { ToastContainer, toast } from 'react-toastify';

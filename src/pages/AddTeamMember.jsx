@@ -78,6 +78,10 @@ const AddTeamMember = (props) => {
           <label htmlFor='category'> Designation
             <select value={designation} onChange={(e) => setDesignation(e.target.value)} className='labelsblogs-select' id='category'>
               <option>Select</option>
+              <option value="Director Of Marketing">Director Of Marketing</option>
+              <option value="President Sales">President Sales</option>
+              <option value="Chief Executive Officer">CEO</option>
+              <option value="Vice President Sales">Vice President Sales</option>
               <option value="Business Development Executive">Business Development Executive</option>
               <option value="Operation Manager">Operation Manager</option>
               <option value="Social Media Manager">Social Media Manager</option>
@@ -90,10 +94,9 @@ const AddTeamMember = (props) => {
               <option value="Full Stack Developer">Full Stack Developer</option>
               <option value="Sales Manager">Sales Manager</option>
               <option value="Team Lead (Sales)">Team Lead (Sales)</option>
-              <option value="HR Executive">Senior HR Manager</option>
+              <option value="SR. HR Manager">SR. HR Manager</option>
               <option value="HR Manager">HR Manager</option>
               <option value="Sales Intern">Sales Intern</option>
-              <option value="Chief Executive Officer">CEO</option>
             </select>
           </label> <br />
           <label htmlFor="Linkedin">Linkedin<br />

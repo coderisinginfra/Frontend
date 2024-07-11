@@ -8,7 +8,6 @@ import AddProject from './pages/AddProject';
 import BlogProject from './pages/BlogProject';
 import AdminFront from './pages/AdminFront';
 import Admin from './pages/Admin';
-import UserAddProject from './pages/UserAddProject';
 import Managebyadminblog from './pages/Managebyadminblog';
 import UpdateBlog from './pages/UpdateBlog';
 import Aboutus from './websitepage/Aboutus';
@@ -94,7 +93,6 @@ function App() {
           <Route path="/login" element={<Login title="Login Risinginfra" />} />
           <Route path="/register" element={<Signup title="Register Risinginfra" />} />
           <Route path="/ourteam" element={<AllTeamMembershow />}/>
-          <Route path="/postproperty" element={<UserAddProject title="Post Your Property Free" />} />
           <Route path="/blogs" element={<AllBlogs />} />
           <Route path="/blogs/:postTitle" element={<ShowBlogs />} />
           <Route path="/projects/:propertyTitle" element={<AllListingShow />} />

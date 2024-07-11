@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-// import '../CSS/Aboutus.css'
+import '../CSS/Aboutus.css'
 import gifabout from '../assets/adminimage/civil-construction.jpg'
 import teammember from '../assets/adminimage/teammember.avif'
 import vision from '../assets/adminimage/vision and mission.gif'

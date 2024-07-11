@@ -154,9 +154,9 @@ const Careers = (props) => {
                                             <p className='para-careers'>{item.salary}</p>
                                         </div>
                                         <div className='data-sets-careers'>
-                                            <h3 className='career-heading'>Job Description</h3>
+                                            <p className='para-careers'>Job Description</p>
                                         </div>
-                                        <p className='description-careers'><b>{item.description}</b></p>
+                                        <p className='comapny-reputation'><b>{item.description}</b></p>
                                         <Button
                                             variant='contained'
                                             color='primary'

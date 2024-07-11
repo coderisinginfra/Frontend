@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container-abouts{
+    display: flex;
+    padding: 3em 0 2em 8em;
+    background-color: #F4F5F7;
+}
+
+.about-tags{
+    margin: 0 -7em 0 0 ;
+}
+
+.aboutus-heading{
+    line-height: 60px;
+    font-weight: 700;
+    color: #091E42;
+    display: block;
+    font-size: 50px;
+}
+
+.container-image-abouts{
+    width: 35em;
+    height: 35em;
+    margin: 0 5em 0 3em;
+    object-fit:cover;
+    border-radius: 10px;
+}
+
+.clear-data-found{
+    border-top: 5px solid rgb(34, 245, 34);
+    width: 17em;
+    height: 7em;
+    margin: 0 2em 0 9em;
+    padding: 1em 0 0 0;
+}
+
+.cont{
+    margin: -1em 0;
+}
+
+.clear-data-found:nth-child(1){
+    margin: 0em 0 ;
+}
+.clear-data-found:nth-child(3){
+    margin: 1em 0;
+}
+.clear-data-found:nth-child(4){
+    margin: 1em 2em 0 9em;
+}
+
+.container-abouts-data{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.writingcontent-about{
+    display: grid;
+    place-items: center;
+    padding: 1em 8em;
+}
+
+.test{
+    margin: 2em 0;
+    line-height: 2em;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+ul{
+    margin: 2em 0;
+}
+li{
+    line-height: 2.5em;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.manage{
+    padding: 3em 8em 0 8em ;
+}
+
+.images-about-avif{
+    margin: 3em 8em;
+    width: 70em;
+    height: 25em
+}
+
+.iamges-con{
+    margin-left: -3em;
+}
+
+.vision{
+    margin-top: -7em;
+}
+
+.mission{
+    width: 25em;
+    height: 23em;
+    margin: 3em 0 3em 4em;
+}
+
+.content-abouts-data{
+    display: flex;
+}
+
+.images-data-management{
+    width: 30em;
+    height: 25em;
+    object-fit: cover;
+    object-position: top;
+}
+
+.flex-teams{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+}
+
+.teams-data{
+    width: 30em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    margin: 1em 4em;
+}
+
+.contents-teams{
+    padding: 1em;
+}
+
+.he{
+    color: black;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+
+.pa{
+    color: #757575;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    display: block;
+    padding: 0 1em 2em 0;
+    text-align: justify;
+    word-spacing: 1px;
+}
+
+.headingmanagement{
+    padding: 3em 0 1em 13em;
+}
+
+@media screen and (max-width:1024px) {
+    .writingcontent-about{
+        display: grid;
+        place-items: center;
+        padding: 1em;
+    }
+    .images-about-avif{
+        margin: 2em 0 5em 0;
+        width: 100%;
+        height: 10em;
+        object-fit: contain;
+    }
+    .content-abouts-data{
+        display: block;
+        padding: 0 1em;
+    }
+
+    .mission{
+        width: 100%;
+        height: 23em;
+        margin: 3em 0;
+    }
+    .iamges-con{
+        margin-left: 0;
+    }
+
+    .container-abouts{
+        display: block;
+        padding: 3em 1em;
+        background-color: #F4F5F7;
+    }
+
+    .about-tags{
+        margin: 0 0em 0 0 ;
+    }
+
+    .container-image-abouts{
+        width: 100%;
+        height: 25em;
+        margin: 2em 0;
+        object-fit:cover;
+        border-radius: 10px;
+    }
+    .clear-data-found{
+        border-top: 5px solid rgb(34, 245, 34);
+        width: 100%;
+        height: 7em;
+        margin: 0;
+        padding: 1em 0 0 0;
+    }
+    .clear-data-found:nth-child(4){
+        margin: 0;
+    }
+}

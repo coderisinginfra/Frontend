@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import '../CSS/AddProject.css';
+import '../CSS/AddProject.css';
 import JoditEditor from 'jodit-react';
 import axios from 'axios';
 

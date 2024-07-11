@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+::selection{
+  background-color: #2b4b24;
+  color: white;
+  padding: 1em;
+}
+
+#videos {
+    width: 100%;
+    position: relative; /* Make the container position relative */
+    background-color: black;
+}
+
+#video {
+    width: 100%;
+    height: 38em; 
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+
+.searching {
+    position: absolute;
+    top: 10em;
+    color: white; /* Ensure the text is visible */
+    text-align: center; /* Center the text */
+    top: 35%; /* 50% from the top of the container */
+    left: 35%; /* 30% from the left of the container */
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.datasets-paragraph-home{
+    color: #8993A4;
+    margin: -10px;
+}
+
+.searching-front{
+    position: absolute;
+    top: 8em;
+    left: 13%;
+}
+
+.l{
+    font-size: 2em; 
+    font-weight: 800; 
+    color: white;
+}
+
+.icons-building{
+   font-size: 1.5em;
+   margin-bottom: 1em;
+}
+
+.searching-text{
+    color: white;
+    background-color: #2b4b24;
+    padding: 2em 21em;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    margin: 1em 0;
+}
+
+#word, .text-font{
+    color: white;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.chaning-paragraph{
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.changing-con{
+    display: flex;
+    margin-left: 20em;
+}
+
+.buttons-searching{
+    top: 55%; 
+    left: 50%;
+}
+
+#searching2{
+    width: 50em;
+    height: 2em;
+    padding: 1.5em;
+}
+
+.data-heading{
+    padding: 5px 0;
+}
+
+.input-searching{
+    top: 45%;
+    left: 50%
+}
+
+.inputs-post{
+    width:15em;
+    height: 3.5em;
+    padding: 0 1em;
+    outline: none;
+}
+
+.text-post{
+    width: 30em;
+}
+
+.inputfields-form{
+    margin: 2em 0;
+    padding: 1em  1em;
+    background-color: rgb(0,0,0,0.5);
+}
+
+.search{
+    height: 3.5em;
+    background-color: #2b4b24;
+    color: white;
+    margin-top: -3px;
+    border-radius: 0;
+    padding: 0 20px;
+}
+
+#section-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section{
+    border: 2px solid gray;
+    margin: 0 1em;
+    border-radius: 10px;
+    padding: 2em;
+    height: 25em;
+    animation: loading 5s ease ;
+    width: 25%;
+}
+
+.discover-section{
+    padding: 0 0 3em 0;
+    margin-top: -1em;
+}
+
+.headings-discover{
+    margin: 1em;
+}
+
+.headings-discover{
+    text-align: center;
+}
+
+.content{
+    background-image: url('../assets/imges/logocaroseal.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    color: white;
+    height: 25em;    
+    cursor: pointer;
+    transition: 0.5s ease;
+    width: 100%;
+    border: none;
+    transition: 0.3s all ease;
+    transform:  scale(1);
+}
+
+.content:hover{
+    transition: 0.3s all ease;
+    transform:  scale(1.125);
+}
+
+.img-list{
+    width: 5em;
+    height: 5em;
+    object-fit: contain;
+    margin: 5em 0 0 9em;
+    background-color: rgb(224, 224, 224);
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.container-section-home{
+    margin: 2em 0;
+}
+
+.int-section-data{
+    font-size: 25px;
+    text-align: center;
+}
+
+.paragraph-data-container{
+    padding: 1em;
+    text-align: justify;
+    line-height: 1.5em;
+
+}
+

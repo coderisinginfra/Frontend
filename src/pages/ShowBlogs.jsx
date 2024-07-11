@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react';
 import axios from 'axios';
 import DOMPurify from 'dompurify';
-// import "../CSS/Manageblogscss.css";
+import "../CSS/Manageblogscss.css";
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import Person2Icon from '@mui/icons-material/Person2';
 import { Link, useParams } from 'react-router-dom';

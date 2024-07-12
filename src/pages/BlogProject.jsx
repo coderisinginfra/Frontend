@@ -55,7 +55,7 @@ const BlogProject = (props) => {
         <h1>What is Going in Your Mind?</h1>
       </div>
       <div className='datasets-field'>
-        <form onSubmit={handlesubmit}>
+        <form>
           <label htmlFor="posttitle">Post Title <br />
             <input type="text"
               placeholder='Enter here'
@@ -117,7 +117,7 @@ const BlogProject = (props) => {
             />
           </label>
           <div>
-            <input type="submit" value="Submit" className='submit1' disabled={isbuttonsubmit}/>
+            <input type="submit" value="Submit" className='submit1' disabled={isbuttonsubmit} onClick={handlesubmit}/>
           </div>
         </form>
       </div>

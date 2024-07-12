@@ -13,6 +13,8 @@ const BlogProject = (props) => {
   const [image, setimage] = useState(null);
   const [Category, setCategory] = useState('');
 
+  const [isbuttonsubmit,setisbuttonsubmit] = useState(false)
+
   useEffect(() => {
     document.title = props.title;
   });
@@ -24,6 +26,7 @@ const BlogProject = (props) => {
   };
 
   const handlesubmit = async (event) => {
+    setisbuttonsubmit(true)
     event.preventDefault();
     const formData = new FormData();
     formData.append('postTitle', postTitle);
@@ -40,7 +43,7 @@ const BlogProject = (props) => {
         }
       });
       alert('Blog Added Successfully');
-      navigate('/admin/panel');
+      setisbuttonsubmit(false)
     } catch (error) {
       alert('Oops something went wrong');
     }
@@ -114,8 +117,7 @@ const BlogProject = (props) => {
             />
           </label>
           <div>
-            <input type="submit" value="Submit" className='submit1' />
-            <input type="reset" value="Reset" className='submit2' />
+            <input type="submit" value="Submit" className='submit1' disabled={isbuttonsubmit}/>
           </div>
         </form>
       </div>

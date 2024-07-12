@@ -14,6 +14,7 @@ const AddTeamMember = (props) => {
   const [degree, setDegree] = useState('');
   const [workExperienceTime, setWorkExperienceTime] = useState('');
   const [image, setImage] = useState(null);
+  const [isbuttonsubmit,setisbuttonsubmit] = useState(false)
 
   useEffect(() => {
     document.title = props.title;
@@ -24,6 +25,7 @@ const AddTeamMember = (props) => {
   };
 
   const handleSubmit = async (event) => {
+    setisbuttonsubmit(true)
     event.preventDefault();
     const formData = new FormData();
     formData.append('name', name);
@@ -37,13 +39,13 @@ const AddTeamMember = (props) => {
     formData.append('image', image);
 
     try {
-      console.log([...formData]); // Log the form data to verify
       const response = await axios.post('https://www.backend.risinginfra.in/api/v1/addteammember', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
       });
       alert('Team Member Added Successfully');
+      setisbuttonsubmit(false)
       navigate('/private/admin/panel');
     } catch (error) {
       alert('Oops something went wrong');
@@ -153,7 +155,7 @@ const AddTeamMember = (props) => {
             />
           </label> <br />
           <div>
-            <input type="submit" value="Submit" className='submit1' />
+            <input type="submit" value="Submit" className='submit1' disabled={isbuttonsubmit}/>
             <input type="reset" value="Reset" className='submit2' />
           </div>
         </form>

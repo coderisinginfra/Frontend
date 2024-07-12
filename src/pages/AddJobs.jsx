@@ -7,7 +7,7 @@ const AddJobs = (props) => {
   const navigate = useNavigate();
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [numberOfOpenings, setNumberOfOpenings] = useState('');
+  const [numberofOpenings, setNumberOfOpenings] = useState('');
   const [qualifications, setQualifications] = useState('');
   const [experience, setExperience] = useState('');
   const [salary, setSalary] = useState('');
@@ -20,24 +20,19 @@ const AddJobs = (props) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    if (!title || !description || !numberOfOpenings || !qualifications || !experience || !salary || !categoriesd) {
-      alert('Please fill out all fields');
-      return;
-    }
     setIsButtonSubmit(true);
     try {
       const response = await axios.post('https://www.backend.risinginfra.in/api/v1/careers', {
         title,
         description,
-        numberOfOpenings,
+        numberofOpenings,
         qualifications,
         experience,
         salary,
         categoriesd,
       });
       alert('Job Added Successfully');
-      resetForm();
-      navigate('/jobs'); // Navigate to another page if required
+      resetForm(); // Navigate to another page if required
     } catch (error) {
       alert('Oops something went wrong');
     } finally {

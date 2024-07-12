@@ -81,6 +81,7 @@ const AddJobs = (props) => {
               <option value='Backend Developer'>Backend Developer</option>
               <option value='Full Stack Developer'>Full Stack Developer</option>
               <option value='Sales Manager'>Sales Manager</option>
+              <option value='Sales Trainer'>Sales Trainer</option>
               <option value='Team Lead (Sales)'>Team Lead (Sales)</option>
               <option value='HR Executive'>HR Executive</option>
               <option value='HR Manager'>HR Manager</option>

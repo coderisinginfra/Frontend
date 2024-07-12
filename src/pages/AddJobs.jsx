@@ -11,7 +11,7 @@ const AddJobs = (props) => {
   const [qualifications, setQualifications] = useState('');
   const [experience, setExperience] = useState('');
   const [salary, setSalary] = useState('');
-  const [categoriesd, setcategoriesd] = useState('');
+  const [categoriesd, setCategoriesd] = useState('');
   const [isButtonSubmit, setIsButtonSubmit] = useState(false);
 
   useEffect(() => {
@@ -19,8 +19,12 @@ const AddJobs = (props) => {
   }, [props.title]);
 
   const handleSubmit = async (event) => {
-    setIsButtonSubmit(true);
     event.preventDefault();
+    if (!title || !description || !numberOfOpenings || !qualifications || !experience || !salary || !categoriesd) {
+      alert('Please fill out all fields');
+      return;
+    }
+    setIsButtonSubmit(true);
     try {
       const response = await axios.post('https://www.backend.risinginfra.in/api/v1/careers', {
         title,
@@ -32,10 +36,11 @@ const AddJobs = (props) => {
         categoriesd,
       });
       alert('Job Added Successfully');
-      setIsButtonSubmit(false);
       resetForm();
+      navigate('/jobs'); // Navigate to another page if required
     } catch (error) {
       alert('Oops something went wrong');
+    } finally {
       setIsButtonSubmit(false);
     }
   };
@@ -47,7 +52,7 @@ const AddJobs = (props) => {
     setQualifications('');
     setExperience('');
     setSalary('');
-    setcategoriesd('');
+    setCategoriesd('');
   };
 
   return (
@@ -59,8 +64,8 @@ const AddJobs = (props) => {
         <form onSubmit={handleSubmit}>
           <label htmlFor='category'>
             Job Category
-            <select value={categoriesd} onChange={(e) => setcategoriesd(e.target.value)} className='labelsblogs-select' id='category'>
-              <option>Select</option>
+            <select value={categoriesd} onChange={(e) => setCategoriesd(e.target.value)} className='labelsblogs-select' id='category' required>
+              <option value=''>Select</option>
               <option value='Sales'>Sales</option>
               <option value='Technology'>Technology</option>
               <option value='Finance'>Finance</option>
@@ -70,8 +75,8 @@ const AddJobs = (props) => {
           <br />
           <label htmlFor='title'>
             Job Title
-            <select value={title} onChange={(e) => setTitle(e.target.value)} className='labelsblogs-select' id='title'>
-              <option>Select</option>
+            <select value={title} onChange={(e) => setTitle(e.target.value)} className='labelsblogs-select' id='title' required>
+              <option value=''>Select</option>
               <option value='Business Development Executive'>Business Development Executive</option>
               <option value='Operation Manager'>Operation Manager</option>
               <option value='Social Media Manager'>Social Media Manager</option>
@@ -104,8 +109,8 @@ const AddJobs = (props) => {
           <br />
           <label htmlFor='qualifications'>
             Qualification
-            <select value={qualifications} onChange={(e) => setQualifications(e.target.value)} className='labelsblogs-select' id='qualifications'>
-              <option>Select</option>
+            <select value={qualifications} onChange={(e) => setQualifications(e.target.value)} className='labelsblogs-select' id='qualifications' required>
+              <option value=''>Select</option>
               <option value='10th'>10th</option>
               <option value='10+12th'>10+12th</option>
               <option value='Graduation'>Graduation</option>
@@ -129,8 +134,8 @@ const AddJobs = (props) => {
           <br />
           <label htmlFor='experience'>
             Candidate Experience
-            <select value={experience} onChange={(e) => setExperience(e.target.value)} className='labelsblogs-select' id='experience'>
-              <option>Select</option>
+            <select value={experience} onChange={(e) => setExperience(e.target.value)} className='labelsblogs-select' id='experience' required>
+              <option value=''>Select</option>
               <option value='Fresher'>Fresher</option>
               <option value='1 Year'>1 Year</option>
               <option value='2-5 Year'>2-5 Year</option>

@@ -153,6 +153,7 @@ const AddProject = (props) => {
             options: [
                 // {label:'--Select City--',value:'Noida'},
                 { label: 'Noida', value: 'Noida' },
+                {label:'Ghaziabad', value:'Ghaziabad'},
                 { label: 'Gurugram', value: 'Gurugram' },
                 {label:'Goa',value:'Goa'},
                 {label:'Ayodhya',value:'Ayodhya'}

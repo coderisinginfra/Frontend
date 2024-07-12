@@ -42,8 +42,7 @@ const HomePage = () => {
     e.preventDefault();
     setIsButtonDisabled(true)
     try {
-        const response = await axios.post("https://www.backend.risinginfra.in/api/v1/popupform", { name, email, contact });
-        
+        const response = await axios.post("https://www.backend.risinginfra.in/api/v1/popupform", { name, email, contact });    
         setOpen(false);
         toast("Thank Your For your reponse our team will contact to you soon");
     } catch (error) {
@@ -57,7 +56,7 @@ const HomePage = () => {
               setBlogs(response.data.reverse());
               const categoryData = await axios.get("https://www.backend.risinginfra.in/api/v1/categoryfind");
               setCategory(categoryData.data);
-              toast("Sanjiv Gupta Just Bought 4BHK In Gaurs Associates!");
+              toast("Anupam Sharma Just Bought 4BHK In Gaur NH24!");
           } catch (error) {
               console.log(error);
           }

@@ -96,7 +96,7 @@ const AddJobs = (props) => {
               placeholder='Enter here'
               id='numberOfOpenings'
               className='labelsblogs'
-              value={numberOfOpenings}
+              value={numberofOpenings}
               onChange={(e) => setNumberOfOpenings(e.target.value)}
               required
             />

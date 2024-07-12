@@ -50,15 +50,6 @@ const HomePage = () => {
     }
 }
 
-  useEffect(()=>{
-    setTimeout(()=>{
-      toast("Anupam Sharma Just Bought Food Court In ACE!");
-    },7000)
-    setTimeout(()=>{
-      toast("Annu Gupta Just Bought Office Space In Migsun!");
-    },15000)
-  },[])
-
   useEffect(() => {
       const fetch = async () => {
           try {

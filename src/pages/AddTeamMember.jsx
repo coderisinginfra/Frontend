@@ -46,7 +46,6 @@ const AddTeamMember = (props) => {
       });
       alert('Team Member Added Successfully');
       setisbuttonsubmit(false)
-      navigate('/private/admin/panel');
     } catch (error) {
       alert('Oops something went wrong');
     }
@@ -58,7 +57,7 @@ const AddTeamMember = (props) => {
         <h1>Add Team Member In Rising Infra</h1>
       </div>
       <div className='datasets-field'>
-        <form onSubmit={handleSubmit}>
+        <form>
           <label htmlFor="posttitle">Name <br />
             <input type="text"
               placeholder='Name'
@@ -155,8 +154,7 @@ const AddTeamMember = (props) => {
             />
           </label> <br />
           <div>
-            <input type="submit" value="Submit" className='submit1' disabled={isbuttonsubmit}/>
-            <input type="reset" value="Reset" className='submit2' />
+            <input type="submit" value="Submit" className='submit1' disabled={isbuttonsubmit} onClick={handleSubmit}/>
           </div>
         </form>
       </div>

@@ -225,6 +225,7 @@ useEffect(()=>{
                   onChange={(e)=>setnewcity(e.target.value)}
                   className='selection'>
                       <option value="all" disabled>Select</option>
+                      <option value="Ghaziabad">Ghaziabad</option>
                       <option value="Noida">Noida</option>
                       <option value="Gurugram">Gurgaon</option>
                       <option value="Goa">Goa</option>

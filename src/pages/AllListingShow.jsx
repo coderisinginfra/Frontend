@@ -220,7 +220,7 @@ const AllListingShow = () => {
                     </tr>
                     <tr>
                       <td>{item.location}</td>
-                      <td>{item.category}</td>
+                      <td style={{textTransform:"capitalize"}}>{item.category}</td>
                       <td>{item.size}</td>
                       <td>{item.price}</td>
                       <td>{item.developer}</td>

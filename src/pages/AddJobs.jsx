@@ -56,7 +56,7 @@ const AddJobs = (props) => {
         <h1>We Have Another Opening, Found the Right Candidate!</h1>
       </div>
       <div className='datasets-field'>
-        <form onSubmit={handleSubmit}>
+        <form>
           <label htmlFor='category'>
             Job Category
             <select value={categoriesd} onChange={(e) => setcategoriesd(e.target.value)} className='labelsblogs-select' id='category'>
@@ -150,8 +150,7 @@ const AddJobs = (props) => {
             />
           </label>
           <div>
-            <input type='submit' value='Submit' className='submit1' disabled={isButtonSubmit} />
-            <input type='reset' value='Reset' className='submit2' onClick={resetForm} />
+            <input type='submit' value='Submit' className='submit1' disabled={isButtonSubmit} onClick={handleSubmit}/>
           </div>
         </form>
       </div>

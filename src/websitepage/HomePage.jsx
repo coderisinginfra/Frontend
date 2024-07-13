@@ -53,7 +53,7 @@ const HomePage = () => {
       const fetch = async () => {
           try {
               const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchblogs");
-              setBlogs(response.data);
+              setBlogs(response.data.reverse());
               const categoryData = await axios.get("https://www.backend.risinginfra.in/api/v1/categoryfind");
               setCategory(categoryData.data);
               toast("Anupam Sharma Just Bought 4BHK In Gaur NH24!");
@@ -71,7 +71,7 @@ const HomePage = () => {
     const fetch = async () => {
       try {
         const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchlistings");
-        setistings(response.data.reverse());
+        setistings(response.data);
         setVisibleListings(response.data.slice(0, 9));
       } catch (error) {
         console.log(error);

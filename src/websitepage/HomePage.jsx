@@ -19,6 +19,7 @@ import Ayodhya from '../assets/location/Ayodhya.jpg'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import testimonialclient from '../assets/imges/testimonialclient.jpg'
 import HomePhoto from '../assets/home.jpg'
+import ghaziabad from '../assets/imges/ghaziabad.jpg'
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -386,9 +387,9 @@ useEffect(()=>{
           </div>
           <div className='data-image-flex-home'>
            <Link to="/goaproperty" className='link-container'>
-            <img src={goa} alt="Noida" className='image-location'/>
+            <img src={ghaziabad} alt="Noida" className='image-location'/>
               <div className='name-images-flex-home'>
-              Goa
+              Ghaziabad
               </div>
            </Link>
           </div>

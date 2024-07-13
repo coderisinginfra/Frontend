@@ -51,6 +51,7 @@ import FetchResume from './pages/FetchResume';
 import Signup from './websitepage/Signup';
 import ProtectedRoutes from './components/ProtectedRoutes';
 import SocialIconsfixed from './components/SocialIconsfixed';
+import Ghaziabad from './LocationPage/Ghaziabad';
 
 export const datasets = createContext();
 
@@ -106,6 +107,7 @@ function App() {
           <Route path='/goaproperty' element={<GoaPage title="Properties in Goa"/>}/>
           <Route path='/ayodhyaproperty' element={<AyodhyaPage title="Properties in Ayodhya"/>} />
           <Route path='/noidaproperty' element={<NoidaPage title="Properties in Noida"/>} />
+          <Route path="/ghaziabadproperties" element={<Ghaziabad title="Properties in Ghaziabad" />}/>
           <Route path='/residentialproperty' element={<ResidentialProperty title="Residential Property"/>} />
           <Route path='/commericalproperty' element={<CommercialProperty title="Commercial Property"/>} />
           <Route path='/plotsproperty' element={<PlotsProperty title="Plots In India"/>} />

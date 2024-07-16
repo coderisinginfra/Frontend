@@ -12,7 +12,12 @@ const FooterBottom = () => {
     },{
         name:'Property in Gurgaon',
         link:"gurgaonproperty"
-    },{
+    },
+    {
+        name:'Property in Ghaziabad',
+        link:"ghaziabadproperties"
+    },
+    {
         name:'Property in Goa',
         link:"goaproperty"
     },{

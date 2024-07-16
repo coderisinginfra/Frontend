@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import axios from 'axios';
 import '../CSS/PropertyListings.css';
+import { Link } from 'react-router-dom';
 import BlogsSection from '../components/BlogsSection';
 
 const GoaPage = (props) => {

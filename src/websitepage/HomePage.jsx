@@ -386,7 +386,7 @@ useEffect(()=>{
             </Link>
           </div>
           <div className='data-image-flex-home'>
-           <Link to="/goaproperty" className='link-container'>
+           <Link to="/ghaziabadproperties" className='link-container'>
             <img src={ghaziabad} alt="Noida" className='image-location'/>
               <div className='name-images-flex-home'>
               Ghaziabad

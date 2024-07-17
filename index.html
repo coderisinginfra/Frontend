@@ -23,5 +23,15 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+     <script>
+    document.addEventListener('click', function(e) {
+      if (e.target.closest('[value="ENQUIRE NOW"]')) {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-11254400715/YwrRCPDTtsMZEMuNwvYp'
+        });
+      }
+    }, true);
+
+  </script>
   </body>
 </html>

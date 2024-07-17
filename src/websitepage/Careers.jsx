@@ -291,7 +291,7 @@ const Careers = (props) => {
                                     >
                                         <option className='input-form' value="sales">Sales</option>
                                         {category.map((cat) => (
-                                            <option className='input-form' key={cat.id} value={cat.jobCategory}>{cat.jobCategory}</option>
+                                            <option className='input-form' key={cat.id} value={cat.categoriesd}>{cat.categoriesd}</option>
                                         ))}
                                     </select> <br />
                                     <input

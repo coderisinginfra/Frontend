@@ -290,9 +290,6 @@ const Careers = (props) => {
                                         onChange={handleChange}
                                     >
                                         <option className='input-form' value="sales">Sales</option>
-                                        {category.map((cat) => (
-                                            <option className='input-form' key={cat.id}>{cat.title}</option>
-                                        ))}
                                     </select> <br />
                                     <input
                                         type="file"

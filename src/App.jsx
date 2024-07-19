@@ -94,11 +94,11 @@ function App() {
           <Route path="/login" element={<Login title="Login Risinginfra" />} />
           <Route path="/register" element={<Signup title="Register Risinginfra" />} />
           <Route path="/ourteam" element={<AllTeamMembershow title="Our Teams - RisingInfra"/>}/>
-          <Route path="/blogs" element={<AllBlogs />} />
+          <Route path="/blogs" element={<AllBlogs title="Blogs - Risinginfra"/>} />
           <Route path="/blogs/:postTitle" element={<ShowBlogs />} />
           <Route path="/projects/:propertyTitle" element={<AllListingShow />} />
           <Route path="/aboutus" element={<Aboutus title="About Us - RisingInfra" />} />
-          <Route path='/privacy-policy' element={<PrivacyPolicy title="Privacy Policy || Rising infra" />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicy title="Privacy Policy - Rising infra" />} />
           <Route path="/contact" element={<ContactUs title="Contact Us - RisingInfra" />} />
           <Route path='/managementteams' element={<ManagementTeam title="Our Leadership Team" />} />
           <Route path='/career' element={<Careers title="Careers - RisingInfra" />} />

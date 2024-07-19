@@ -97,11 +97,11 @@ function App() {
           <Route path="/blogs" element={<AllBlogs />} />
           <Route path="/blogs/:postTitle" element={<ShowBlogs />} />
           <Route path="/projects/:propertyTitle" element={<AllListingShow />} />
-          <Route path="/aboutus" element={<Aboutus title="About Risinginfra" />} />
+          <Route path="/aboutus" element={<Aboutus title="About Us - RisingInfra" />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy title="Privacy Policy || Rising infra" />} />
-          <Route path="/contact" element={<ContactUs title="Contact Us" />} />
+          <Route path="/contact" element={<ContactUs title="Contact Us - RisingInfra" />} />
           <Route path='/managementteams' element={<ManagementTeam title="Our Leadership Team" />} />
-          <Route path='/career' element={<Careers title="Careers" />} />
+          <Route path='/career' element={<Careers title="Careers - RisingInfra" />} />
           <Route path='/sellyourproperty' element={<SellyourProperty  title="Sell Ypur Property"/>} />
           <Route path='/gurgaonproperty' element={<GurugramPage title="Properties in Gurugram"/>}/>
           <Route path='/goaproperty' element={<GoaPage title="Properties in Goa"/>}/>

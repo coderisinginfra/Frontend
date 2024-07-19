@@ -7,6 +7,7 @@ import PlaceIcon from '@mui/icons-material/Place';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import '../CSS/Contactus.css';
+import { Helmet } from 'react-helmet';
 
 const ContactUs = (props) => {
     const [name, setName] = useState('');
@@ -15,10 +16,6 @@ const ContactUs = (props) => {
     const [message, setMessage] = useState('');
     const [isSubmitted, setIsSubmitted] = useState(true);
     const [isButtonDisabled,setIsButtonDisabled] = useState(false)
-
-    useEffect(()=>{
-        document.title = props.title
-      })
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -33,6 +30,13 @@ const ContactUs = (props) => {
 
     return (
         <>
+        <Helmet>
+            <title>{props.title}</title>
+            <link rel="canonical" href="https://risinginfra.in" />
+            <meta name="description" content="Get in touch with RisingInfra for all your real estate needs. Contact us via phone, email, or visit our office" />
+            <meta name="keywords" content="RisingInfra contact, real estate contact, phone, email, office location, work with us" />
+            <meta name="author" content="Rising Infra" />
+        </Helmet>
             <div className='display-container'>
                 <div className='display-conatiner1'>
                     <h1 className='heading-container'>Contact Us</h1>

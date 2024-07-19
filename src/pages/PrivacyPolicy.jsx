@@ -1,9 +1,16 @@
 import React from 'react'
 import '../CSS/privacypolicy.css'
+import { Helmet } from 'react-helmet'
 
 const PrivacyPolicy = () => {
   return (
    <>
+    <Helmet>
+     <title>{props.title}</title>
+     <link rel="canonical" href="https://www.risinginfra.in/privacy-policy" />
+     <meta name="description" content="Read our Privacy Policy to understand how Risinginfra collects, uses, and protects your personal information when you visit our website. Learn about your rights and our commitment to safeguarding your data." />
+     <meta name="keywords" content="Privacy Policy, data protection, personal information, data collection, data usage, privacy practices, user privacy, information security, privacy rights, data security, online privacy, website privacy policy, data handling, GDPR compliance, CCPA compliance, privacy protection, user data, privacy terms, data privacy, site privacy, privacy regulations, data consent, privacy notice, user consent, information rights, privacy statement, data access rights, privacy policy updates, privacy policy page" />
+   </Helmet>
    <div className='conatiner-privacy-policy'>
     <h1 className='heading-container'>Privacy Policy</h1>
     <h4 className='updated-time'>Last updated: June 23, 2024</h4>

@@ -4,8 +4,9 @@ import '../CSS/OurTeam.css'
 import { Link } from 'react-router-dom'
 import Linkedin from '../assets/imges/Linkedin.png'
 import images from '../assets/teamphoto.png'
+import { Helmet } from 'react-helmet'
 
-const AllTeamMembershow = () => {
+const AllTeamMembershow = (props) => {
     const [data,setdata] = useState([])
     useEffect(()=>{
         const fetch = async()=>{
@@ -20,6 +21,12 @@ const AllTeamMembershow = () => {
       };
   return (
     <div>
+     <Helmet>
+       <title>{props.title}</title>
+       <link rel="canonical" href="https://www.risinginfra.in/ourteam" />
+       <meta name="description" content="Meet the dedicated and experienced teams behind RisingInfra. Learn about our professionals who drive our success in property management, real estate, marketing, and more." />
+        <meta name="keywords" content="Our teams, RisingInfra team, property management team, real estate experts, RisingInfra professionals, team members, real estate team, property management professionals, marketing team, sales team, HR team, RisingInfra staff, company team, real estate industry experts, property management specialists, team of professionals, RisingInfra employees, property sales team, HR professionals, marketing experts, business team, RisingInfra leadership, real estate consultants, team overview, RisingInfra workforce, company professionals" />
+     </Helmet>
         <div className='meet-our-team'>
             <div>
                 <h1 className='meet'>Meet Our Team</h1>

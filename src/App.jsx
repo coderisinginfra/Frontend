@@ -93,7 +93,7 @@ function App() {
 
           <Route path="/login" element={<Login title="Login Risinginfra" />} />
           <Route path="/register" element={<Signup title="Register Risinginfra" />} />
-          <Route path="/ourteam" element={<AllTeamMembershow />}/>
+          <Route path="/ourteam" element={<AllTeamMembershow title="Our Teams - RisingInfra"/>}/>
           <Route path="/blogs" element={<AllBlogs />} />
           <Route path="/blogs/:postTitle" element={<ShowBlogs />} />
           <Route path="/projects/:propertyTitle" element={<AllListingShow />} />
@@ -104,8 +104,8 @@ function App() {
           <Route path='/career' element={<Careers title="Careers - RisingInfra" />} />
           <Route path='/sellyourproperty' element={<SellyourProperty  title="Sell Ypur Property"/>} />
           <Route path='/gurgaonproperty' element={<GurugramPage title="Gurgaon Properties - RisingInfra"/>}/>
-          <Route path='/goaproperty' element={<GoaPage title="Properties in Goa"/>}/>
-          <Route path='/ayodhyaproperty' element={<AyodhyaPage title="Properties in Ayodhya"/>} />
+          <Route path='/goaproperty' element={<GoaPage title="Goa Properties - RisingInfra"/>}/>
+          <Route path='/ayodhyaproperty' element={<AyodhyaPage title="Ayodhya Properties - RisingInfra"/>} />
           <Route path='/noidaproperty' element={<NoidaPage title="Noida Properties - RisingInfra"/>} />
           <Route path="/ghaziabadproperties" element={<Ghaziabad title="Ghaziabad Properties - RisingInfra" />}/>
           <Route path='/residentialproperty' element={<ResidentialProperty title="Residential Properties - RisingInfra"/>} />
@@ -123,7 +123,7 @@ function App() {
           <Route path="/dlfgroup" element={<DlfPage title="DLF Group" />} />
           <Route path="/gygygroup" element={<GyGyPage title="GyGY Group" />} />
           <Route path="/migsun" element={<MigsunPage title="Migsun Group"/>} />
-          <Route path="*" element={<HomePage />} />
+          <Route path="*" element={<HomePage  />} />
         </Routes>
        <FooterBottom />
           <Footer />

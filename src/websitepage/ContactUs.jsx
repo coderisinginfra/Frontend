@@ -32,10 +32,9 @@ const ContactUs = (props) => {
         <>
         <Helmet>
             <title>{props.title}</title>
-            <link rel="canonical" href="https://risinginfra.in" />
+            <link rel="canonical" href="https://www.risinginfra.in/contact" />
             <meta name="description" content="Get in touch with RisingInfra for all your real estate needs. Contact us via phone, email, or visit our office" />
             <meta name="keywords" content="RisingInfra contact, real estate contact, phone, email, office location, work with us" />
-            <meta name="author" content="Rising Infra" />
         </Helmet>
             <div className='display-container'>
                 <div className='display-conatiner1'>

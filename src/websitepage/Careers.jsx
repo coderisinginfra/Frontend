@@ -118,10 +118,9 @@ const Careers = (props) => {
         <div>
             <Helmet>
                 <title>{props.title}</title>
-                <link rel="canonical" href="https://risinginfra.in" />
+                <link rel="canonical" href="https://www.risinginfra.in/career" />
                 <meta name="description" content="Join the RisingInfra team and build your career in the real estate industry. Explore current job openings and career opportunities with us." />
                 <meta name="keywords" content="RisingInfra careers, real estate jobs, job openings, career opportunities, work with us" />
-                <meta name="author" content="Rising Infra" />
             </Helmet>
             <div className='imagedata-career'>
                 <img src={banner} alt="Banner image" className='imagedata-career' />

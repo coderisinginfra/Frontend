@@ -4,13 +4,10 @@ import axios from 'axios';
 import '../CSS/PropertyListings.css';
 import BlogsSection from '../components/BlogsSection';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const ResidentialProperty = (props) => {
     const [data, setData] = useState([])
-
-    useEffect(() => {
-        document.title = props.title      
-    }, [props.title]) 
 
     useEffect(() => {
         const fetchData = async () => {
@@ -25,6 +22,12 @@ const ResidentialProperty = (props) => {
     }, []) 
   return (
     <>
+    <Helmet>
+      <title>{props.title}</title>
+      <link rel="canonical" href="https://www.risinginfra.in/residentialproperty" />
+      <meta name="description" content="Explore a wide range of residential properties with RisingInfra. Find your dream home among our extensive listings of apartments, houses, and villas for sale or rent." />
+      <meta name="keywords" content="residential properties, homes for sale, apartments for sale, houses for rent, residential real estate, RisingInfra residential, property listings, family homes, luxury apartments, affordable housing, villas for sale, rental apartments, property for rent, residential property management, home buying, residential real estate market, new homes, residential property investment, single-family homes, multi-family properties, residential flats, real estate listings, home for sale, property investment, residential communities, real estate services, rental homes, residential land, residential developments, housing market" />
+    </Helmet>
     <div className='projectcity'>
           <h1 className='headingwhoweare hedas'>Our Exclusive Residential Projects</h1>
           <h1 className='heading-image props-name'>Discover Residential Property With Rising Infra </h1>

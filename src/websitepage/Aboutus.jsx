@@ -5,6 +5,7 @@ import teammember from '../assets/adminimage/teammember.avif'
 import vision from '../assets/adminimage/vision and mission.gif'
 import { SocialIcon } from 'react-social-icons'
 import mission from '../assets/adminimage/mission.png'
+import {Helmet} from 'react-helmet'
 
 const Aboutus = (props) => {
 
@@ -30,10 +31,9 @@ const Aboutus = (props) => {
     <>
     <Helmet>
       <title>{props.title}</title>
-      <link rel="canonical" href="https://risinginfra.in" />
+      <link rel="canonical" href="https://www.risinginfra.in/aboutus" />
       <meta name="description" content="Learn more about RisingInfra, our mission, vision, and the team behind our success in the real estate industry." />
       <meta name="keywords" content="RisingInfra, about us, real estate, team, mission, vision" />
-      <meta name="author" content="Rising Infra" />
     </Helmet>
    <div className='container-abouts'>
    <div className='about-tags'>

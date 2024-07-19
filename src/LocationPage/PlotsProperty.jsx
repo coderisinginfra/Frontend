@@ -4,6 +4,7 @@ import axios from 'axios';
 import '../CSS/PropertyListings.css';
 import BlogsSection from '../components/BlogsSection';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const PlotsProperty = (props) => {
     const [data, setData] = useState([])
@@ -25,6 +26,12 @@ const PlotsProperty = (props) => {
     }, []) 
   return (
     <>
+      <Helmet>
+          <title>{props.title}</title>
+          <link rel="canonical" href="https://www.risinginfra.in/plotsproperty" />
+          <meta name="description" content="Discover a wide selection of plots for sale with RisingInfra. Explore prime land options for residential, commercial, and investment purposes in various locations." />
+          <meta name="keywords" content="plots for sale, land for sale, real estate plots, residential plots, commercial plots, RisingInfra plots, property investment, land investment, buy plots, plot listings, prime land, real estate land, vacant land, plots for development, investment land, property development, land purchase, plot deals, land opportunities, real estate plots for sale, property for sale, plots for investment, land acquisition, plots for commercial use, plots for residential use, real estate market, land for residential development, land for commercial development, plot buying guide, plot management" />
+     </Helmet>
     <div className='projectcity'>
           <h1 className='headingwhoweare hedas'>Our Exclusive Plots Projects</h1>
           <h1 className='heading-image props-name'>Discover Plots Property With Rising Infra </h1>

@@ -4,13 +4,10 @@ import axios from 'axios';
 import '../CSS/PropertyListings.css';
 import { Link } from 'react-router-dom';
 import BlogsSection from '../components/BlogsSection';
+import { Helmet } from 'react-helmet';
 
 const GoaPage = (props) => {
     const [data, setData] = useState([])
-
-    useEffect(() => {
-        document.title = props.title      
-    }, [props.title]) 
 
     useEffect(() => {
         const fetchData = async () => {
@@ -28,6 +25,12 @@ const GoaPage = (props) => {
 
   return (
     <>
+      <Helmet>
+          <title>{props.title}</title>
+          <link rel="canonical" href="https://www.risinginfra.in/goaproperty" />
+          <meta name="description" content="Explore a range of properties in Goa with RisingInfra. Find stunning beachfront homes, luxury villas, and investment opportunities in one of India's most sought-after destinations." />
+          <meta name="keywords" content="Goa properties, real estate in Goa, Goa apartments, beachfront homes in Goa, luxury villas Goa, RisingInfra Goa, property listings Goa, Goa real estate market, homes for sale in Goa, rental properties Goa, investment properties Goa, Goa property deals, land for sale in Goa, Goa flats, Goa bungalows, Goa property management, real estate investment Goa, property for rent Goa, Goa real estate agents, property for sale Goa, Goa housing market, commercial properties Goa, residential properties Goa, Goa real estate opportunities, property trends Goa, Goa real estate services, Goa property market analysis" />
+        </Helmet>
       <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>Our Exclusive Projects</h1>
             <h1 className='heading-image props-name'>Discover Property With Rising Infra in Goa</h1>

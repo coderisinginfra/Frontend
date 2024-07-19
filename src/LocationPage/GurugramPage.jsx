@@ -6,13 +6,10 @@ import { datasets } from '../App';
 import { Link } from 'react-router-dom';
 import DOMPurify from 'dompurify';
 import BlogsSection from '../components/BlogsSection';
+import { Helmet } from 'react-helmet';
 
 const GurugramPage = (props) => {
     const [data, setData] = useState([])
-
-    useEffect(() => {
-        document.title = props.title      
-    }, [props.title]) 
 
     useEffect(() => {
         const fetchData = async () => {
@@ -29,6 +26,12 @@ const GurugramPage = (props) => {
 
   return (
     <>
+     <Helmet>
+          <title>{props.title}</title>
+          <link rel="canonical" href="https://www.risinginfra.in/gurgaonproperty" />
+          <meta name="description" content="Explore a diverse range of properties in Gurgaon with RisingInfra. Whether you're looking for luxury apartments, commercial spaces, or investment opportunities, find the best real estate options in Gurgaon." />
+          <meta name="keywords" content="Gurgaon properties, real estate in Gurgaon, Gurgaon apartments, commercial spaces in Gurgaon, RisingInfra Gurgaon, Gurgaon real estate, Gurgaon property listings, Gurgaon residential properties, Gurgaon office spaces, Gurgaon rental properties, Gurgaon investment properties, Gurgaon property market, Gurgaon real estate agents, Gurgaon property deals, Gurgaon real estate investments, Gurgaon luxury apartments, Gurgaon property for sale, Gurgaon property for rent, Gurgaon commercial real estate, Gurgaon housing market, Gurgaon property development, Gurgaon land for sale, Gurgaon flats, Gurgaon villas, Gurgaon real estate opportunities, Gurgaon property management, Gurgaon residential flats, Gurgaon property services, Gurgaon real estate company, Gurgaon property trends, Gurgaon real estate market analysis" />
+        </Helmet>
       <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>Our Exclusive Projects</h1>
             <h1 className='heading-image props-name'>Discover Property With Rising Infra in Gurgaon</h1>

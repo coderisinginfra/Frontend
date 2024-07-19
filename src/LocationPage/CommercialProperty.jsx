@@ -4,13 +4,10 @@ import axios from 'axios';
 import '../CSS/PropertyListings.css';
 import BlogsSection from '../components/BlogsSection';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const CommercialProperty = (props) => {
     const [data, setData] = useState([])
-
-    useEffect(() => {
-        document.title = props.title      
-    }, [props.title]) 
 
     useEffect(() => {
         const fetchData = async () => {
@@ -25,6 +22,12 @@ const CommercialProperty = (props) => {
     }, []) 
   return (
     <>
+      <Helmet>
+          <title>{props.title}</title>
+          <link rel="canonical" href="https://www.risinginfra.in/commericalproperty" />
+          <meta name="description" content="Explore a range of commercial properties with RisingInfra. Find prime office spaces, retail locations, and industrial properties suited for your business needs and investments." />
+          <meta name="keywords" content="commercial properties, office spaces for lease, retail properties, industrial properties, RisingInfra commercial, commercial real estate, business properties, commercial real estate investment, office space rental, commercial property listings, retail space for rent, commercial land for sale, investment properties, commercial real estate market, commercial property management, business space rental, commercial property deals, commercial property investment, commercial space for lease, commercial property for sale, commercial building for lease, office building for sale, commercial property opportunities, business real estate, industrial space for rent, commercial property services, commercial property development, commercial real estate trends" />
+        </Helmet>
     <div className='projectcity'>
           <h1 className='headingwhoweare hedas'>Our Exclusive Commercial Projects</h1>
           <h1 className='heading-image props-name'>Discover Commercial Property With Rising Infra </h1>

@@ -42,7 +42,7 @@ const Footer = () => {
         link:"/privacy-policy"
     },{
         title:"Careers",
-        link:"/career"
+        link:"/careers"
     }]
   return (
     <div className='footer-concept'>

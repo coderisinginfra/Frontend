@@ -24,7 +24,7 @@ const navItems = [
   { name: 'Our Team', link: '/ourteam' },
   { name: 'Blogs', link: '/blogs' },
   { name: 'Contact us', link: '/contact' },
-  { name: 'Careers', link: '/career' },
+  { name: 'Careers', link: '/careers' },
 ];
 
 function Navbarfront(props) {

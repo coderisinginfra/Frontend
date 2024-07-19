@@ -101,7 +101,7 @@ function App() {
           <Route path='/privacy-policy' element={<PrivacyPolicy title="Privacy Policy - Rising infra" />} />
           <Route path="/contact" element={<ContactUs title="Contact Us - RisingInfra" />} />
           <Route path='/managementteams' element={<ManagementTeam title="Our Leadership Team" />} />
-          <Route path='/career' element={<Careers title="Careers - RisingInfra" />} />
+          <Route path='/careers' element={<Careers title="Careers - RisingInfra" />} />
           <Route path='/sellyourproperty' element={<SellyourProperty  title="Sell Ypur Property"/>} />
           <Route path='/gurgaonproperty' element={<GurugramPage title="Gurgaon Properties - RisingInfra"/>}/>
           <Route path='/goaproperty' element={<GoaPage title="Goa Properties - RisingInfra"/>}/>

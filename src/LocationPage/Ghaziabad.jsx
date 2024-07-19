@@ -3,14 +3,11 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import axios from 'axios';
 import '../CSS/PropertyListings.css';
 import { Link } from 'react-router-dom';
-import BlogsSection from '../components/BlogsSection';
+import BlogsSection from '../components/BlogsSection';4
+import { Helmet } from 'react-helmet';
 
 const Ghaziabad = (props) => {
     const [data, setData] = useState([])
-
-    useEffect(() => {
-        document.title = props.title      
-    }, [props.title]) 
 
     useEffect(() => {
         const fetchData = async () => {
@@ -27,6 +24,12 @@ const Ghaziabad = (props) => {
 
   return (
     <>
+      <Helmet>
+          <title>{props.title}</title>
+          <link rel="canonical" href="https://www.risinginfra.in/ghaziabadproperties" />
+          <meta name="description" content="Discover a variety of properties in Ghaziabad with RisingInfra. Explore residential, commercial, and investment opportunities in this thriving city." />
+          <meta name="keywords" content="Ghaziabad properties, real estate in Ghaziabad, Ghaziabad apartments, commercial properties in Ghaziabad, residential plots in Ghaziabad, RisingInfra Ghaziabad, property listings Ghaziabad, Ghaziabad real estate market, homes for sale in Ghaziabad, rental properties Ghaziabad, investment properties Ghaziabad, Ghaziabad property deals, land for sale in Ghaziabad, Ghaziabad flats, Ghaziabad villas, Ghaziabad property management, real estate investment Ghaziabad, property for rent Ghaziabad, Ghaziabad real estate agents, property for sale Ghaziabad, Ghaziabad housing market, commercial spaces Ghaziabad, residential properties Ghaziabad, real estate opportunities Ghaziabad, property trends Ghaziabad" />
+      </Helmet>
       <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>Our Exclusive Projects</h1>
             <h1 className='heading-image props-name'>Discover Property With Rising Infra in Ghaziabad</h1>

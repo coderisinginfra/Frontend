@@ -23,6 +23,7 @@ import ghaziabad from '../assets/imges/ghaziabad.jpg'
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from 'react-helmet'
 
 const HomePage = () => {
 
@@ -135,6 +136,12 @@ useEffect(()=>{
 
   return (
    <>
+   <Helmet>
+      <title>Rising Infra - Improve Your Real Estate Investment In India With Our Guidance</title>
+      <link rel="canonical" href="https://risinginfra.in" />
+      <meta name="description" content="Real estate investment in Noida is easy with Rising Infra. Contact us for Property Consultant." />
+      <meta name="keywords" content="Rising Infra, Rising Infra Noida, Rising Infra Private Limited, Property In Noida, Property On Noida Expressway, Commercial Property On Noida Expressway, Noida Commercial Projects, Noida Expressway Commercial Projects, Residential Property On Noida Expressway, Noida Expressway Property, Residential Projects On Noida Expressway, Noida Expressway Residential Projects, Noida Property Prices, Noida Properties, Commercial Property In Noida, Property In Noida For Sale, Best Property In Noida, Buy Property In Noida, Property In Noida Ready To Move,Residential Property In Noida, Luxury Property In Noida, Commercial Property In Noida For Sale" />
+  </Helmet>
      <ToastContainer style={{marginTop:"7em"}}/>
    <div className='container-home'>
    <Dialog

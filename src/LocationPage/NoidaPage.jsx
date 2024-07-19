@@ -6,13 +6,10 @@ import { datasets } from '../App';
 import { Link } from 'react-router-dom';
 import DOMPurify from 'dompurify';
 import BlogsSection from '../components/BlogsSection';
+import { Helmet } from 'react-helmet';
 
 const NoidaPage = (props) => {
     const [data, setData] = useState([])
-
-    useEffect(() => {
-        document.title = props.title      
-    }, [props.title]) 
 
     useEffect(() => {
         const fetchData = async () => {
@@ -30,6 +27,12 @@ const NoidaPage = (props) => {
 
     return (
         <>
+        <Helmet>
+          <title>{props.title}</title>
+          <link rel="canonical" href="https://www.risinginfra.in/noidaproperty" />
+          <meta name="description" content="Discover a wide range of properties in Noida with RisingInfra. From luxurious apartments to commercial spaces, explore the best real estate opportunities in Noida." />
+          <meta name="keywords" content="Noida properties, real estate in Noida, Noida apartments, commercial spaces in Noida, RisingInfra Noida, Noida real estate, Noida property listings, Noida residential properties, Noida office spaces, Noida rental properties, Noida investment properties, Noida property market, Noida real estate agents, Noida property deals, Noida real estate investments, Noida luxury apartments, Noida property for sale, Noida property for rent, Noida commercial real estate, Noida housing market, Noida property development, Noida land for sale, Noida flats, Noida villas, Noida real estate opportunities, Noida property management, Noida residential flats, Noida property services, Noida real estate company" />
+        </Helmet>
         <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>Our Exclusive OnGoing Projects</h1>
             <h1 className='heading-image props-name'>Discover Property With Rising Infra in Noida</h1>

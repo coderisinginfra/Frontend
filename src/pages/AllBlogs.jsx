@@ -12,7 +12,7 @@ import blogimages from '../assets/adminimage/blog photo.jpg'
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { Helmet } from 'react-helmet';
 
-const AllBlogs = () => {
+const AllBlogs = (props) => {
     const { setBlogData } = useContext(datasets);
     const [blogs, setBlogs] = useState([]);
     const [currentPage, setCurrentPage] = useState(0);

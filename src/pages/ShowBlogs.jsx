@@ -11,6 +11,7 @@ import MessageIcon from '@mui/icons-material/Message';
 import { SocialIcon } from 'react-social-icons'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from 'react-helmet';
 
 const ShowBlogs = () => {
     const { postTitle } = useParams();
@@ -118,6 +119,12 @@ const ShowBlogs = () => {
 
     return (
         <>
+        <Helmet>
+          <title>{postTitle}</title>
+          <link rel="canonical" href={`https://www.risinginfra.in/blogs/${postTitle}`} />
+          <meta name="description" content={DOMPurify.sanitize(blogingData.postcontent)} />
+          <meta name="keywords" content={blogingData.keywords} />
+        </Helmet>
         <div className='flex-content'>
             <ToastContainer />
             <Dialog

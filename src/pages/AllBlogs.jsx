@@ -10,6 +10,7 @@ import { Button } from '@mui/material';
 import ReactPaginate from 'react-paginate';
 import blogimages from '../assets/adminimage/blog photo.jpg'
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+import { Helmet } from 'react-helmet';
 
 const AllBlogs = () => {
     const { setBlogData } = useContext(datasets);
@@ -71,6 +72,12 @@ const AllBlogs = () => {
 
     return (
         <>
+        <Helmet>
+          <title>{props.title}</title>
+          <link rel="canonical" href="https://www.risinginfra.in/blogs" />
+          <meta name="description" content="Read the latest articles and insights on real estate, property management, market trends, and more on the Risinginfra blog. Stay informed with our expert commentary and tips." />
+          <meta name="keywords" content="Blogs, real estate blog, property management blog, real estate insights, market trends, real estate tips, property news, real estate articles, home buying tips, property investment, real estate market, industry news, real estate updates, real estate advice, property trends, real estate research, real estate commentary, property management tips, real estate strategies, home selling advice, real estate professionals, property news blog, real estate industry blog, investment tips, real estate developments, real estate market analysis, property insights, real estate guides, real estate reviews, property articles, real estate information, property management news, real estate experts, real estate knowledge, property investment blog, real estate advice blog, real estate trends blog, real estate blog posts, real estate updates blog, property news updates, real estate market trends, property buying advice, real estate investment tips, home ownership blog, property management strategies, real estate analysis blog, real estate industry news, property value insights, real estate tips and tricks, real estate blog articles, property market updates, real estate sector news, property management advice, real estate buying guide, real estate sales tips, property investment advice, real estate market insights, property trends blog, real estate articles blog, property management insights" />
+        </Helmet>
         <div className='container-blog'>
             <div>
                 <h1 className='data-blog'>Rising Infra Blog</h1>

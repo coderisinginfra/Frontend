@@ -5,11 +5,9 @@ import axios from 'axios';
 import { Button } from '@mui/material';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {Helmet} from 'react-helmet'
 
 const Careers = (props) => {
-    useEffect(() => {
-        document.title = props.title;
-    });
 
     const [data, setData] = useState([]);
     const [category, setCategory] = useState([]);
@@ -118,6 +116,13 @@ const Careers = (props) => {
 
     return (
         <div>
+            <Helmet>
+                <title>{props.title}</title>
+                <link rel="canonical" href="https://risinginfra.in" />
+                <meta name="description" content="Join the RisingInfra team and build your career in the real estate industry. Explore current job openings and career opportunities with us." />
+                <meta name="keywords" content="RisingInfra careers, real estate jobs, job openings, career opportunities, work with us" />
+                <meta name="author" content="Rising Infra" />
+            </Helmet>
             <div className='imagedata-career'>
                 <img src={banner} alt="Banner image" className='imagedata-career' />
             </div>

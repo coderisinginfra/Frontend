@@ -8,10 +8,6 @@ import mission from '../assets/adminimage/mission.png'
 
 const Aboutus = (props) => {
 
-  useEffect(()=>{
-    document.title = props.title
-  })
-
   const aboutdata = [
     {
     title:"10+ Years",
@@ -32,6 +28,13 @@ const Aboutus = (props) => {
 
   return (
     <>
+    <Helmet>
+      <title>{props.title}</title>
+      <link rel="canonical" href="https://risinginfra.in" />
+      <meta name="description" content="Learn more about RisingInfra, our mission, vision, and the team behind our success in the real estate industry." />
+      <meta name="keywords" content="RisingInfra, about us, real estate, team, mission, vision" />
+      <meta name="author" content="Rising Infra" />
+    </Helmet>
    <div className='container-abouts'>
    <div className='about-tags'>
        <h1 className='heading-image'>About Us</h1>

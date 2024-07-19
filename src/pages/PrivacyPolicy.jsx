@@ -2,7 +2,7 @@ import React from 'react'
 import '../CSS/privacypolicy.css'
 import { Helmet } from 'react-helmet'
 
-const PrivacyPolicy = () => {
+const PrivacyPolicy = (props) => {
   return (
    <>
     <Helmet>

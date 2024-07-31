@@ -132,6 +132,16 @@ useEffect(()=>{
     setOpen(false);
   };
 
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.id = 'pixel-script-poptin';
+    script.src = 'https://cdn.popt.in/pixel.js?id=c466aa9a21a37';
+    script.async = true;
+    document.body.appendChild(script);
+
+    // No cleanup needed for adding the script
+  }, []);
+
 
 
   return (

@@ -208,8 +208,8 @@ useEffect(()=>{
           <Button type="submit" variant='contained' color='primary' onClick={handleSubmit} disabled={isButtonDisabled}>Submit</Button>
           <Button onClick={handleClose}>Cancel</Button>
         </DialogActions>
-      </Dialog>
-      <div> */}
+      </Dialog> */}
+      <div> 
         <h1 className='headiing-home-fron-container'>Find Your Property <br />With Rising Infra</h1>
         <p className='heading-image paragraph-home-front-data'>Discover your dream property nestled in the heart of serene surroundings, offering unparalleled luxury and comfort.</p>
       <div>

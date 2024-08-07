@@ -88,14 +88,6 @@ Link{
     color: rgb(255, 0, 0);
 }
 
-.contents-icons{
-    margin: 10px 1em;
-}
-.content-icon{
-    margin: 0 2px;
-   height: 10px;
-}
-
 .contents-blogs{
     margin: 0em 0 2em 0em;
     font-family: "Montserrat", sans-serif;
@@ -143,6 +135,13 @@ Link{
     .label-data-name{
         display: block;
     }
+
+    .contents-blogs{
+    margin: 0em 0 2em 0;
+    font-family: "Montserrat", sans-serif;
+    line-height: 2em;
+        text-align:justify;
+}
 
     .form-data2{
         margin: 2em 0;

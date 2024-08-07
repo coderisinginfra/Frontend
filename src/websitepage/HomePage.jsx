@@ -470,7 +470,7 @@ useEffect(()=>{
                                 <div className='data-blogs'>
                                     <h3 className='heading-blogs-content'><b>{item.postTitle}</b></h3>
                                     <div>
-                                        <div className='paragraph-blogs' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(truncateHTML(item.description, 13)) }}></div>
+                                        <div className='paragraph-blogs' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(truncateHTML(item.description, 25)) }}></div>
                                     </div>
                                 </div>
                             </div>

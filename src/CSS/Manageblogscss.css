@@ -92,8 +92,6 @@ Link{
 .input-form {
     font-family: Poppins, sans-serif;
     width: 100%;
-    padding: 2em 1em;
-    margin: 1em 0;
     transition: .2s;
 }
 

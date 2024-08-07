@@ -240,7 +240,7 @@ const ShowBlogs = () => {
                                     onChange={(e) => setContactNumber(e.target.value)}
                                     className="input-form"
                                     required
-                                />
+                                /> <br />
                                 <TextField
                                     id="outlined-basic"
                                     label="Name"
@@ -248,8 +248,8 @@ const ShowBlogs = () => {
                                     value={blogSubmitterName}
                                      className="input-form"
                                     onChange={(e) => setBlogSubmitterName(e.target.value)}
-                                    required
-                                />
+                                    required       
+                                /> <br />
                                 <TextField
                                     id="outlined-basic"
                                     label="Your Message"
@@ -257,7 +257,7 @@ const ShowBlogs = () => {
                                     value={blogMessage}
                                     onChange={(e) => setBlogMessage(e.target.value)}
                                     required
-                                />
+                                /> <br />
                                 <Button type="submit" variant="contained" color="primary" disabled={isButtonDisabled}>Submit</Button>
                             </form>
                         ) : (

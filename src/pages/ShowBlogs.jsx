@@ -24,22 +24,23 @@ const ShowBlogs = () => {
     const [contact, setContact] = useState('');
     const [message, setMessage] = useState('');
     const [isSubmitted, setIsSubmitted] = useState(false);
+
     const [isButtonDisabled,setIsButtonDisabled] = useState(false)
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setIsButtonDisabled(true)
+        setIsButtonDisabled(true);
         try {
             await axios.post("https://www.backend.risinginfra.in/api/v1/contactus", { name, email, contact, message });
             setIsSubmitted(true);
-            setIsButtonDisabled(false)
-            setName('')
-            setEmail('')
-            setContact('')
-            setMessage('')
+            setIsButtonDisabled(false);
+            setName('');
+            setEmail('');
+            setContact('');
+            setMessage('');
             toast("Thanks for your message!");
         } catch (error) {
-            // alert("Ooops! Something Went Wrong");
+            // Handle error
         }
     };
 
@@ -58,7 +59,7 @@ const ShowBlogs = () => {
     useEffect(() => {
         const fetchBlogById = async () => {
             try {
-                const result = await axios.get(`https://www.backend.risinginfra.in/api/v1//FetchBlogById/${postTitle}`);
+                const result = await axios.get(`https://www.backend.risinginfra.in/api/v1/FetchBlogById/${postTitle}`);
                 setBlogingData(result.data[0]);
                 document.title = result.data[0].postTitle;
             } catch (error) {
@@ -80,38 +81,40 @@ const ShowBlogs = () => {
 
     const handleBlogSubmit = async (e) => {
         e.preventDefault();
-        setIsButtonDisabled(true)
+        setIsButtonDisabled(true);
         try {
            const response =  await axios.post('https://www.backend.risinginfra.in/api/v1/postblogreview', { contactnumber, blogsubmittername, blogmessage });
             toast("Thanks for Reading Our Blog and Submit Review!");
             setBlogSubmitter(false);
-            setIsButtonDisabled(false)
+            setIsButtonDisabled(false);
         } catch (error) {
         }
     };
 
     const [open, setOpen] = useState(false);
 
-    useEffect(()=>{
-    setTimeout(()=>{
-        setOpen(true)
-    },5000)
-    },[])
+    useEffect(() => {
+        setTimeout(() => {
+            setOpen(true);
+        }, 5000);
+    }, []);
+
     const handleClose = () => {
         setOpen(false);
-        };
+    };
 
-        const handleSubmitquery = async (e) => {
-            e.preventDefault();
-            setIsButtonDisabled(true)
-            try {
-                const response = await axios.post("https://www.backend.risinginfra.in/api/v1/popupform", { name, email, contact });
-                setOpen(false);
-                setIsButtonDisabled(false)
-                toast("Thank Your For your reponse our team will contact to you soon");
-            } catch (error) {
-            }
+    const handleSubmitquery = async (e) => {
+        e.preventDefault();
+        setIsButtonDisabled(true);
+        try {
+            await axios.post("https://www.backend.risinginfra.in/api/v1/popupform", { name, email, contact });
+            setOpen(false);
+            setIsButtonDisabled(false);
+            toast("Thank you for your response. Our team will contact you soon.");
+        } catch (error) {
+            // Handle error
         }
+    };
 
     return (
         <>
@@ -208,11 +211,11 @@ const ShowBlogs = () => {
                                     <h5 style={{ marginLeft: "10px", color: "#909ca4", fontSize: "1em" }}><b>{formatDate(blogingData.date)}</b></h5>
                                 </div>
                             </div>
-                            {/* <div className='contents-icons'>
+                            <div className='contents-icons'>
                                 <SocialIcon className='content-icon' url="https://www.instagram.com/rising_infra/" />
                                 <SocialIcon className='content-icon' url="https://www.facebook.com/risinginfranoida" />
                                 <SocialIcon className='content-icon' url="https://www.linkedin.com/company/risinginfra/" />
-                            </div> */}
+                            </div>
                         </div>
                         <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(blogingData.postcontent) }} className='contents-blogs' />
                         <h3>Tags: <Link to={`https://www.google.com/search?q=${blogingData.keywords}`} className='linkes-data'>{blogingData.keywords}</Link></h3>
@@ -310,8 +313,8 @@ const ShowBlogs = () => {
                                         name="Name" 
                                         className='input-message-blog' 
                                         placeholder='Your Name' 
-                                        value={blogsubmittername}
-                                        onChange={e => setblogsubmittername(e.target.value)}
+                                        value={blogSubmitterName}
+                                        onChange={e => setBlogSubmitterName(e.target.value)}
                                         required
                                     />
                                 </label>
@@ -319,11 +322,10 @@ const ShowBlogs = () => {
                                     <input type="tel" 
                                         id="tel"
                                         name="tel" 
-                                        maxLength={10}
                                         className='input-message-blog'
                                         placeholder='Your Contact Number' 
-                                        value={contactnumber}
-                                        onChange={(e) => setcontactnumber(e.target.value)}
+                                        value={contactNumber}
+                                        onChange={(e) => setContactNumber(e.target.value)}
                                         required
                                     />
                                 </label>
@@ -333,23 +335,34 @@ const ShowBlogs = () => {
                                     name="Comment" 
                                     placeholder='Your Message' 
                                     className='comments-data' 
-                                    value={blogmessage}
-                                    onChange={(e) => setblogmessage(e.target.value)}
+                                    value={blogMessage}
+                                    onChange={(e) => setBlogMessage(e.target.value)}
                                     required
                                 />
-                            </label> <br />
-                            <Button variant='contained' color='primary' className='submit-reply' style={{margin:"1em"}} onClick={handleBlogSubmit} disabled={isButtonDisabled}>Submit</Button>
-                        </form>
-                    </>
-                ) : (
-                    <div className='datasets'>
-                        <p>Thanks for Reading Our Blog and Submit Review!</p>
+                                <Button type="submit" variant="contained" color="primary" disabled={isButtonDisabled}>Submit</Button>
+                            </form>
+                        ) : (
+                            <h2>Thank you for your submission!</h2>
+                        )}
                     </div>
-                )}
+                    <div className='blogs-lists'>
+                        <h2 style={{ marginBottom: "1.5em" }}>Related Blogs</h2>
+                        {blogs.slice(0, 10).map((post) => (
+                            <Link to={`/blogs/${post._id}`} key={post._id} style={{ color: 'black', textDecoration: 'none' }}>
+                                <div className="blogs-related-list" style={{ display: 'flex', marginBottom: '1.5em' }}>
+                                    <img src={post.coverimage} alt={post.coverimage} style={{ height: '100px', width: '150px', marginRight: '1.5em' }} />
+                                    <div>
+                                        <h4>{post.postTitle}</h4>
+                                        <p style={{ fontSize: '0.8em', color: '#909ca4' }}>{formatDate(post.date)}</p>
+                                    </div>
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
             </div>
-        </div>
         </>
     );
-}
+};
 
 export default ShowBlogs;

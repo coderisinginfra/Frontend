@@ -48,7 +48,7 @@ import AllListingShow from './pages/AllListingShow';
 import AddTeamMember from './pages/AddTeamMember';
 import AllTeamMembershow from './pages/AllTeamMembershow';
 import FetchResume from './pages/FetchResume';
-import Signup from './websitepage/Signup';
+// import Signup from './websitepage/Signup';
 import ProtectedRoutes from './components/ProtectedRoutes';
 import SocialIconsfixed from './components/SocialIconsfixed';
 import Ghaziabad from './LocationPage/Ghaziabad';
@@ -92,7 +92,7 @@ function App() {
           {/* Admin Panel Routes pages  */}
 
           <Route path="/login" element={<Login title="Login Risinginfra" />} />
-          <Route path="/register" element={<Signup title="Register Risinginfra" />} />
+{/*           <Route path="/register" element={<Signup title="Register Risinginfra" />} /> */}
           <Route path="/ourteam" element={<AllTeamMembershow title="Our Teams - RisingInfra"/>}/>
           <Route path="/blogs" element={<AllBlogs title="Blogs - Risinginfra"/>} />
           <Route path="/blogs/:postTitle" element={<ShowBlogs />} />

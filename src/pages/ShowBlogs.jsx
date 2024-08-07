@@ -8,7 +8,7 @@ import { Link, useParams } from 'react-router-dom';
 import { datasets } from '../App';
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField } from '@mui/material';
 import MessageIcon from '@mui/icons-material/Message';
-import { SocialIcon } from 'react-social-icons';
+import { SocialIcon } from 'react-social-icons'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from 'react-helmet';
@@ -40,7 +40,7 @@ const ShowBlogs = () => {
             setMessage('');
             toast("Thanks for your message!");
         } catch (error) {
-            console.error("Error submitting form", error);
+            // Handle error
         }
     };
 
@@ -48,7 +48,7 @@ const ShowBlogs = () => {
         const fetchBlogs = async () => {
             try {
                 const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchblogs");
-                setBlogs(response.data.reverse());
+                setBlogs(response.data.reverse());  
             } catch (error) {
                 console.log(error);
             }
@@ -104,16 +104,16 @@ const ShowBlogs = () => {
         setOpen(false);
     };
 
-    const handleSubmitQuery = async (e) => {
+    const handleSubmitquery = async (e) => {
         e.preventDefault();
         setIsButtonDisabled(true);
         try {
             await axios.post("https://www.backend.risinginfra.in/api/v1/popupform", { name, email, contact });
             setOpen(false);
             setIsButtonDisabled(false);
-            toast("Thank You For your response. Our team will contact you soon.");
+            toast("Thank you for your response. Our team will contact you soon.");
         } catch (error) {
-            console.error("Error submitting query", error);
+            // Handle error
         }
     };
 
@@ -121,9 +121,9 @@ const ShowBlogs = () => {
         <>
             <Helmet>
                 <title>{postTitle}</title>
-                <link rel="canonical" href={`https://www.risinginfra.in/blogs/${postTitle}`} />
                 {blogingData && (
                     <>
+                        <link rel="canonical" href={`https://www.risinginfra.in/blogs/${postTitle}`} />
                         <meta name="description" content={DOMPurify.sanitize(blogingData.postcontent)} />
                         <meta name="keywords" content={blogingData.keywords} />
                     </>
@@ -136,7 +136,10 @@ const ShowBlogs = () => {
                     onClose={handleClose}
                     PaperProps={{
                         component: 'form',
-                        onSubmit: handleSubmitQuery,
+                        onSubmit: (event) => {
+                            event.preventDefault();
+                            handleSubmitquery(event);
+                        },
                     }}
                 >
                     <DialogTitle>Get In Touch With Us</DialogTitle>
@@ -174,8 +177,8 @@ const ShowBlogs = () => {
                         <TextField
                             required
                             margin="dense"
-                            id="contact"
-                            name="contact"
+                            id="contactnumber"
+                            name="contact number"
                             label="Contact Number"
                             type="tel"
                             fullWidth
@@ -193,7 +196,7 @@ const ShowBlogs = () => {
                 </Dialog>
                 <div className='flex-content1'>
                     {blogingData ? (
-                        <div>
+                        <div>      
                             <div className='image-blogs-content'>
                                 <img src={blogingData.coverimage} alt={blogingData.coverimage} className='image-contents-blogs' />
                             </div>
@@ -222,103 +225,56 @@ const ShowBlogs = () => {
                         <p>Loading...</p>
                     )}
                 </div>
-                <div className='data-flex-blogs'>
-                    {!isSubmitted ? (
-                        <div className='form-data2'>
-                            <h4 className='heading-container-data2'>Contact Us</h4>
-                            <form className='containers-data2' onSubmit={handleSubmit}>
-                                <div className='input-container-data2'>
-                                    <label htmlFor="name" className='headings-data2'>Name</label>
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        className="inputs-data2"
-                                        value={name}
-                                        onChange={(e) => setName(e.target.value)}
-                                        required
-                                    />
-                                </div>
-                                <div className='input-container-data2'>
-                                    <label htmlFor="email" className='headings-data2'>Email</label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        className="inputs-data2"
-                                        value={email}
-                                        onChange={(e) => setEmail(e.target.value)}
-                                        required
-                                    />
-                                </div>
-                                <div className='input-container-data2'>
-                                    <label htmlFor="contact" className='headings-data2'>Contact</label>
-                                    <input
-                                        type="tel"
-                                        id="contact"
-                                        className="inputs-data2"
-                                        value={contact}
-                                        onChange={(e) => setContact(e.target.value)}
-                                        required
-                                    />
-                                </div>
-                                <div className='input-container-data2'>
-                                    <label htmlFor="message" className='headings-data2'>Message</label>
-                                    <textarea
-                                        id="message"
-                                        className="textarea-data2"
-                                        value={message}
-                                        onChange={(e) => setMessage(e.target.value)}
-                                        required
-                                    ></textarea>
-                                </div>
-                                <button type="submit" className="buttons-data2" disabled={isButtonDisabled}>Submit</button>
-                            </form>
-                        </div>
-                    ) : (
-                        <div className='thanks-message'>
-                            <h4>Thanks for your message!</h4>
-                        </div>
-                    )}
-                </div>
-                <div className='form-data-blogs'>
-                    {blogSubmitter ? (
-                        <form onSubmit={handleBlogSubmit}>
-                            <h4>Blog Review Form</h4>
-                            <div>
-                                <label htmlFor="blogSubmitterName">Your Name</label>
-                                <input
-                                    type="text"
-                                    id="blogSubmitterName"
-                                    value={blogSubmitterName}
-                                    onChange={(e) => setBlogSubmitterName(e.target.value)}
-                                    required
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="contactNumber">Contact Number</label>
-                                <input
-                                    type="tel"
-                                    id="contactNumber"
+                <div className='data-flex-content'>
+                    <div className='form-flex'>
+                        {blogSubmitter ? (
+                            <form onSubmit={handleBlogSubmit} className='form-flex-blogs'>
+                                <h1>Submit Your Query</h1>
+                                <TextField
+                                    id="outlined-basic"
+                                    label="Contact Number"
+                                    variant="outlined"
+                                    type='number'
                                     value={contactNumber}
                                     onChange={(e) => setContactNumber(e.target.value)}
                                     required
                                 />
-                            </div>
-                            <div>
-                                <label htmlFor="blogMessage">Message</label>
-                                <textarea
-                                    id="blogMessage"
+                                <TextField
+                                    id="outlined-basic"
+                                    label="Name"
+                                    variant="outlined"
+                                    value={blogSubmitterName}
+                                    onChange={(e) => setBlogSubmitterName(e.target.value)}
+                                    required
+                                />
+                                <TextField
+                                    id="outlined-basic"
+                                    label="Your Message"
+                                    variant="outlined"
                                     value={blogMessage}
                                     onChange={(e) => setBlogMessage(e.target.value)}
                                     required
-                                ></textarea>
-                            </div>
-                            <button type="submit" className="buttons-data2" disabled={isButtonDisabled}>Submit</button>
-                        </form>
-                    ) : (
-                        <div className='thanks-message'>
-                            <h4>Thanks for Reading Our Blog and Submit Review!</h4>
-                        </div>
-                    )}
+                                />
+                                <Button type="submit" variant="contained" color="primary" disabled={isButtonDisabled}>Submit</Button>
+                            </form>
+                        ) : (
+                            <h2>Thank you for your submission!</h2>
+                        )}
+                    </div>
+                    <div className='blogs-lists'>
+                        <h2 style={{ marginBottom: "1.5em" }}>Related Blogs</h2>
+                        {blogs.slice(0, 10).map((post) => (
+                            <Link to={`/blogs/${post._id}`} key={post._id} style={{ color: 'black', textDecoration: 'none' }}>
+                                <div className="blogs-related-list" style={{ display: 'flex', marginBottom: '1.5em' }}>
+                                    <img src={post.coverimage} alt={post.coverimage} style={{ height: '100px', width: '150px', marginRight: '1.5em' }} />
+                                    <div>
+                                        <h4>{post.postTitle}</h4>
+                                        <p style={{ fontSize: '0.8em', color: '#909ca4' }}>{formatDate(post.date)}</p>
+                                    </div>
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
                 </div>
             </div>
         </>

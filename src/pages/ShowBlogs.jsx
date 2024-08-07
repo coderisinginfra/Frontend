@@ -234,7 +234,8 @@ const ShowBlogs = () => {
                                     id="outlined-basic"
                                     label="Contact Number"
                                     variant="outlined"
-                                    type='number'
+                                    type='tel'
+                                    maxLength={10}
                                     value={contactNumber}
                                     onChange={(e) => setContactNumber(e.target.value)}
                                     required

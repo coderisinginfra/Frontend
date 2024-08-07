@@ -1,11 +1,14 @@
 import React, { useEffect, useState, useContext } from 'react';
 import axios from 'axios';
 import DOMPurify from 'dompurify';
+import "../CSS/Manageblogscss.css";
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import Person2Icon from '@mui/icons-material/Person2';
 import { Link, useParams } from 'react-router-dom';
 import { datasets } from '../App';
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField } from '@mui/material';
+import MessageIcon from '@mui/icons-material/Message';
+import { SocialIcon } from 'react-social-icons'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from 'react-helmet';
@@ -37,8 +40,7 @@ const ShowBlogs = () => {
             setMessage('');
             toast("Thanks for your message!");
         } catch (error) {
-            console.log(error);
-            setIsButtonDisabled(false);
+            // Handle error
         }
     };
 
@@ -46,7 +48,7 @@ const ShowBlogs = () => {
         const fetchBlogs = async () => {
             try {
                 const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchblogs");
-                setBlogs(response.data.reverse());
+                setBlogs(response.data.reverse());  
             } catch (error) {
                 console.log(error);
             }
@@ -69,7 +71,7 @@ const ShowBlogs = () => {
 
     const formatDate = (dateString) => {
         const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
-        return new Date(dateString).toLocaleDateString('en-CA', options);
+        return new Date(dateString).toLocaleDateString('en-CA', options); // Format as YYYY-MM-DD
     };
 
     const [contactNumber, setContactNumber] = useState('');
@@ -87,7 +89,6 @@ const ShowBlogs = () => {
             setIsButtonDisabled(false);
         } catch (error) {
             console.log(error);
-            setIsButtonDisabled(false);
         }
     };
 
@@ -112,8 +113,7 @@ const ShowBlogs = () => {
             setIsButtonDisabled(false);
             toast("Thank you for your response. Our team will contact you soon.");
         } catch (error) {
-            console.log(error);
-            setIsButtonDisabled(false);
+            // Handle error
         }
     };
 
@@ -129,175 +129,153 @@ const ShowBlogs = () => {
                     </>
                 )}
             </Helmet>
-            <div>
+            <div className='flex-content'>
                 <ToastContainer />
-                <Dialog open={open} onClose={handleClose}>
-                    <DialogTitle>Contact Us</DialogTitle>
-                    <form onSubmit={handleSubmitquery}>
-                        <DialogContent>
-                            <DialogContentText>
-                                Please fill out the form below to get in touch with us.
-                            </DialogContentText>
-                            <TextField
-                                autoFocus
-                                margin="dense"
-                                label="Name"
-                                fullWidth
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
-                                required
-                            />
-                            <TextField
-                                margin="dense"
-                                label="Email"
-                                type="email"
-                                fullWidth
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                required
-                            />
-                            <TextField
-                                margin="dense"
-                                label="Contact Number"
-                                type="number"
-                                fullWidth
-                                value={contact}
-                                onChange={(e) => setContact(e.target.value)}
-                                required
-                            />
-                        </DialogContent>
-                        <DialogActions>
-                            <Button onClick={handleClose} color="primary">
-                                Cancel
-                            </Button>
-                            <Button type="submit" color="primary" disabled={isButtonDisabled}>
-                                Submit
-                            </Button>
-                        </DialogActions>
-                    </form>
+                <Dialog
+                    open={open}
+                    onClose={handleClose}
+                    PaperProps={{
+                        component: 'form',
+                        onSubmit: (event) => {
+                            event.preventDefault();
+                            handleSubmitquery(event);
+                        },
+                    }}
+                >
+                    <DialogTitle>Get In Touch With Us</DialogTitle>
+                    <DialogContent>
+                        <DialogContentText sx={{ marginBottom: "2em" }}>
+                            Submit this form, please enter your details and our team will contact you soon.
+                        </DialogContentText>
+                        <TextField
+                            autoFocus
+                            required
+                            margin="dense"
+                            id="name"
+                            name="name"
+                            label="Your Name"
+                            type="text"
+                            fullWidth
+                            variant="outlined"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            sx={{ marginBottom: "1em" }}
+                        />
+                        <TextField
+                            required
+                            margin="dense"
+                            id="email"
+                            name="email"
+                            label="Email Address"
+                            type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            fullWidth
+                            variant="outlined"
+                            sx={{ marginBottom: "1em" }}
+                        />
+                        <TextField
+                            required
+                            margin="dense"
+                            id="contactnumber"
+                            name="contact number"
+                            label="Contact Number"
+                            type="tel"
+                            fullWidth
+                            variant="outlined"
+                            value={contact}
+                            inputProps={{ maxLength: 10, pattern: '[0-9]*' }}
+                            onChange={(e) => setContact(e.target.value)}
+                            sx={{ marginBottom: '1em' }}
+                        />
+                    </DialogContent>
+                    <DialogActions>
+                        <Button type="submit" variant='contained' color='primary' disabled={isButtonDisabled}>Submit</Button>
+                        <Button onClick={handleClose}>Cancel</Button>
+                    </DialogActions>
                 </Dialog>
-                <div>
+                <div className='flex-content1'>
                     {blogingData ? (
-                        <div>
-                            <img src={blogingData.coverimage} alt="Blog Cover" style={{ width: '100%', height: 'auto' }} />
-                            <h1>{blogingData.postTitle}</h1>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5em' }}>
-                                <Person2Icon />
-                                <span>{blogingData.postedBy}</span>
-                                <AccessTimeIcon />
-                                <span>{formatDate(blogingData.date)}</span>
+                        <div>      
+                            <div className='image-blogs-content'>
+                                <img src={blogingData.coverimage} alt={blogingData.coverimage} className='image-contents-blogs' />
                             </div>
-                            <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(blogingData.postcontent) }} />
+                            <h1 style={{ marginTop: "1em" }}>{blogingData.postTitle}</h1>
+                            <div className='date-flex'>
+                                <div className='custom-data'>
+                                    <div className='date-flex system-data'>
+                                        <Person2Icon style={{ color: "red" }} />
+                                        <h5 style={{ marginLeft: "10px", marginRight: "10px", color: "#909ca4", fontSize: "1em" }}><b>Admin</b></h5>
+                                    </div>
+                                    <div className='date-flex system-data'>
+                                        <AccessTimeIcon style={{ color: "red" }} />
+                                        <h5 style={{ marginLeft: "10px", color: "#909ca4", fontSize: "1em" }}><b>{formatDate(blogingData.date)}</b></h5>
+                                    </div>
+                                </div>
+                                <div className='contents-icons'>
+                                    <SocialIcon className='content-icon' url="https://www.instagram.com/rising_infra/" />
+                                    <SocialIcon className='content-icon' url="https://www.facebook.com/risinginfranoida" />
+                                    <SocialIcon className='content-icon' url="https://www.linkedin.com/company/risinginfra/" />
+                                </div>
+                            </div>
+                            <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(blogingData.postcontent) }} className='contents-blogs' />
+                            <h3>Tags: <Link to={`https://www.google.com/search?q=${blogingData.keywords}`} className='linkes-data'>{blogingData.keywords}</Link></h3>
                         </div>
                     ) : (
-                        <div>Loading...</div>
+                        <p>Loading...</p>
                     )}
                 </div>
-                <div>
-                    <div>
-                        {isSubmitted ? (
-                            <h2>Thank you for your message!</h2>
-                        ) : (
-                            <form onSubmit={handleSubmit}>
-                                <h3>Contact Us</h3>
-                                <TextField
-                                    label="Name"
-                                    value={name}
-                                    onChange={(e) => setName(e.target.value)}
-                                    fullWidth
-                                    required
-                                />
-                                <TextField
-                                    label="Email"
-                                    type="email"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    fullWidth
-                                    required
-                                />
-                                <TextField
-                                    label="Contact Number"
-                                    type="number"
-                                    value={contact}
-                                    onChange={(e) => setContact(e.target.value)}
-                                    fullWidth
-                                    required
-                                />
-                                <TextField
-                                    label="Message"
-                                    value={message}
-                                    onChange={(e) => setMessage(e.target.value)}
-                                    fullWidth
-                                    multiline
-                                    required
-                                />
-                                <Button type="submit" variant="contained" color="primary" disabled={isButtonDisabled}>
-                                    Submit
-                                </Button>
-                            </form>
-                        )}
-                    </div>
-                    <div>
-                        <h3>Submit Your Query</h3>
+                <div className='data-flex-content'>
+                    <div className='form-flex'>
                         {blogSubmitter ? (
-                            <form onSubmit={handleBlogSubmit}>
+                            <form onSubmit={handleBlogSubmit} className='form-flex-blogs'>
+                                <h1>Submit Your Query</h1>
                                 <TextField
+                                    id="outlined-basic"
                                     label="Contact Number"
-                                    type="number"
+                                    variant="outlined"
+                                    type='number'
                                     value={contactNumber}
                                     onChange={(e) => setContactNumber(e.target.value)}
-                                    fullWidth
                                     required
                                 />
                                 <TextField
+                                    id="outlined-basic"
                                     label="Name"
+                                    variant="outlined"
                                     value={blogSubmitterName}
                                     onChange={(e) => setBlogSubmitterName(e.target.value)}
-                                    fullWidth
                                     required
                                 />
                                 <TextField
+                                    id="outlined-basic"
                                     label="Your Message"
+                                    variant="outlined"
                                     value={blogMessage}
                                     onChange={(e) => setBlogMessage(e.target.value)}
-                                    fullWidth
-                                    multiline
                                     required
                                 />
-                                <Button type="submit" variant="contained" color="primary" disabled={isButtonDisabled}>
-                                    Submit
-                                </Button>
+                                <Button type="submit" variant="contained" color="primary" disabled={isButtonDisabled}>Submit</Button>
                             </form>
                         ) : (
                             <h2>Thank you for your submission!</h2>
                         )}
                     </div>
-                    <div>
-                        <h2>Related Blogs</h2>
+                    <div className='blogs-lists'>
+                        <h2 style={{ marginBottom: "1.5em" }}>Related Blogs</h2>
                         {blogs.slice(0, 10).map((post) => (
-                            <Link to={`/blogs/${post._id}`} key={
-            {/* More related blog listings or other content can go here */}
-            <div style={{ padding: '2em', textAlign: 'center' }}>
-                <h2>Subscribe to Our Newsletter</h2>
-                <form onSubmit={handleNewsletterSubscribe} style={{ maxWidth: '600px', margin: 'auto' }}>
-                    <TextField
-                        label="Email"
-                        type="email"
-                        value={newsletterEmail}
-                        onChange={(e) => setNewsletterEmail(e.target.value)}
-                        fullWidth
-                        required
-                        style={{ marginBottom: '1em' }}
-                    />
-                    <Button
-                        type="submit"
-                        variant="contained"
-                        color="primary"
-                        disabled={isButtonDisabled}
-                    >
-                        Subscribe
-                    </Button>
-                </form>
+                            <Link to={`/blogs/${post._id}`} key={post._id} style={{ color: 'black', textDecoration: 'none' }}>
+                                <div className="blogs-related-list" style={{ display: 'flex', marginBottom: '1.5em' }}>
+                                    <img src={post.coverimage} alt={post.coverimage} style={{ height: '100px', width: '150px', marginRight: '1.5em' }} />
+                                    <div>
+                                        <h4>{post.postTitle}</h4>
+                                        <p style={{ fontSize: '0.8em', color: '#909ca4' }}>{formatDate(post.date)}</p>
+                                    </div>
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
             </div>
         </>
     );

@@ -17,14 +17,13 @@ const ShowBlogs = () => {
     const { postTitle } = useParams();
     const { blogData, setBlogData } = useContext(datasets);
     const [blogs, setBlogs] = useState([]);
-    const [blogingData, setBlogingData] = useState(null);
+    const [blogingData, setBlogingData] = useState('');
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [contact, setContact] = useState('');
     const [message, setMessage] = useState('');
     const [isSubmitted, setIsSubmitted] = useState(false);
-
     const [isButtonDisabled,setIsButtonDisabled] = useState(false)
 
     const handleSubmit = async (e) => {
@@ -74,25 +73,22 @@ const ShowBlogs = () => {
         return new Date(dateString).toLocaleDateString('en-CA', options); // Format as YYYY-MM-DD
     };
 
-    const [contactNumber, setContactNumber] = useState('');
-    const [blogSubmitterName, setBlogSubmitterName] = useState('');
-    const [blogMessage, setBlogMessage] = useState('');
+    const [contactnumber, setcontactnumber] = useState('');
+    const [blogsubmittername, setblogsubmittername] = useState('');
+    const [blogmessage, setblogmessage] = useState('');
     const [blogSubmitter, setBlogSubmitter] = useState(true);
 
-    const handleBlogSubmit = async () => {
+    const handleBlogSubmit = async (e) => {
         e.preventDefault();
         setIsButtonDisabled(true)
         try {
-            await axios.post('https://www.backend.risinginfra.in/api/v1/postblogreview', { contactNumber, blogSubmitterName, blogMessage });
+           const response =  await axios.post('https://www.backend.risinginfra.in/api/v1/postblogreview', { contactnumber, blogsubmittername, blogmessage });
             toast("Thanks for Reading Our Blog and Submit Review!");
             setBlogSubmitter(false);
             setIsButtonDisabled(false)
         } catch (error) {
-            console.log(error);
         }
     };
-
-
 
     const [open, setOpen] = useState(false);
 
@@ -212,11 +208,11 @@ const ShowBlogs = () => {
                                     <h5 style={{ marginLeft: "10px", color: "#909ca4", fontSize: "1em" }}><b>{formatDate(blogingData.date)}</b></h5>
                                 </div>
                             </div>
-                            <div className='contents-icons'>
+                            {/* <div className='contents-icons'>
                                 <SocialIcon className='content-icon' url="https://www.instagram.com/rising_infra/" />
                                 <SocialIcon className='content-icon' url="https://www.facebook.com/risinginfranoida" />
                                 <SocialIcon className='content-icon' url="https://www.linkedin.com/company/risinginfra/" />
-                            </div>
+                            </div> */}
                         </div>
                         <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(blogingData.postcontent) }} className='contents-blogs' />
                         <h3>Tags: <Link to={`https://www.google.com/search?q=${blogingData.keywords}`} className='linkes-data'>{blogingData.keywords}</Link></h3>
@@ -314,8 +310,8 @@ const ShowBlogs = () => {
                                         name="Name" 
                                         className='input-message-blog' 
                                         placeholder='Your Name' 
-                                        value={blogSubmitterName}
-                                        onChange={e => setBlogSubmitterName(e.target.value)}
+                                        value={blogsubmittername}
+                                        onChange={e => setblogsubmittername(e.target.value)}
                                         required
                                     />
                                 </label>
@@ -323,10 +319,11 @@ const ShowBlogs = () => {
                                     <input type="tel" 
                                         id="tel"
                                         name="tel" 
+                                        maxLength={10}
                                         className='input-message-blog'
                                         placeholder='Your Contact Number' 
-                                        value={contactNumber}
-                                        onChange={(e) => setContactNumber(e.target.value)}
+                                        value={contactnumber}
+                                        onChange={(e) => setcontactnumber(e.target.value)}
                                         required
                                     />
                                 </label>
@@ -336,8 +333,8 @@ const ShowBlogs = () => {
                                     name="Comment" 
                                     placeholder='Your Message' 
                                     className='comments-data' 
-                                    value={blogMessage}
-                                    onChange={(e) => setBlogMessage(e.target.value)}
+                                    value={blogmessage}
+                                    onChange={(e) => setblogmessage(e.target.value)}
                                     required
                                 />
                             </label> <br />

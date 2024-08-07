@@ -6,7 +6,6 @@ import Person2Icon from '@mui/icons-material/Person2';
 import { Link, useParams } from 'react-router-dom';
 import { datasets } from '../App';
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField } from '@mui/material';
-import { SocialIcon } from 'react-social-icons';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from 'react-helmet';
@@ -38,7 +37,8 @@ const ShowBlogs = () => {
             setMessage('');
             toast("Thanks for your message!");
         } catch (error) {
-            // Handle error
+            console.log(error);
+            setIsButtonDisabled(false);
         }
     };
 
@@ -87,6 +87,7 @@ const ShowBlogs = () => {
             setIsButtonDisabled(false);
         } catch (error) {
             console.log(error);
+            setIsButtonDisabled(false);
         }
     };
 
@@ -111,7 +112,8 @@ const ShowBlogs = () => {
             setIsButtonDisabled(false);
             toast("Thank you for your response. Our team will contact you soon.");
         } catch (error) {
-            // Handle error
+            console.log(error);
+            setIsButtonDisabled(false);
         }
     };
 
@@ -123,7 +125,6 @@ const ShowBlogs = () => {
                     <>
                         <link rel="canonical" href={`https://www.risinginfra.in/blogs/${postTitle}`} />
                         <meta name="description" content={DOMPurify.sanitize(blogingData.postcontent)} />
-                        <meta name="keywords" content={blog
                         <meta name="keywords" content={blogingData.keywords} />
                     </>
                 )}
@@ -180,7 +181,7 @@ const ShowBlogs = () => {
                         <div>
                             <img src={blogingData.coverimage} alt="Blog Cover" style={{ width: '100%', height: 'auto' }} />
                             <h1>{blogingData.postTitle}</h1>
-                            <div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5em' }}>
                                 <Person2Icon />
                                 <span>{blogingData.postedBy}</span>
                                 <AccessTimeIcon />
@@ -274,18 +275,29 @@ const ShowBlogs = () => {
                     <div>
                         <h2>Related Blogs</h2>
                         {blogs.slice(0, 10).map((post) => (
-                            <Link to={`/blogs/${post._id}`} key={post._id}>
-                                <div style={{ display: 'flex', marginBottom: '1.5em' }}>
-                                    <img src={post.coverimage} alt="Blog Cover" style={{ height: '100px', width: '150px', marginRight: '1.5em' }} />
-                                    <div>
-                                        <h4>{post.postTitle}</h4>
-                                        <p style={{ fontSize: '0.8em', color: '#909ca4' }}>{formatDate(post.date)}</p>
-                                    </div>
-                                </div>
-                            </Link>
-                        ))}
-                    </div>
-                </div>
+                            <Link to={`/blogs/${post._id}`} key={
+            {/* More related blog listings or other content can go here */}
+            <div style={{ padding: '2em', textAlign: 'center' }}>
+                <h2>Subscribe to Our Newsletter</h2>
+                <form onSubmit={handleNewsletterSubscribe} style={{ maxWidth: '600px', margin: 'auto' }}>
+                    <TextField
+                        label="Email"
+                        type="email"
+                        value={newsletterEmail}
+                        onChange={(e) => setNewsletterEmail(e.target.value)}
+                        fullWidth
+                        required
+                        style={{ marginBottom: '1em' }}
+                    />
+                    <Button
+                        type="submit"
+                        variant="contained"
+                        color="primary"
+                        disabled={isButtonDisabled}
+                    >
+                        Subscribe
+                    </Button>
+                </form>
             </div>
         </>
     );

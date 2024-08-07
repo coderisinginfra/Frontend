@@ -130,6 +130,13 @@ Link{
         display: block;
     }
 
+    .contents-blogs{
+    margin: 0em 0 2em 0;
+    font-family: "Montserrat", sans-serif;
+    line-height: 2em;
+        text-align:justify;
+}
+
     .form-data2{
         margin: 2em 0;
         padding: 1.5em;

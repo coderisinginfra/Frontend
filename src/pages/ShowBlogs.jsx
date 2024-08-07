@@ -238,6 +238,7 @@ const ShowBlogs = () => {
                                     maxLength={10}
                                     value={contactNumber}
                                     onChange={(e) => setContactNumber(e.target.value)}
+                                    className="input-form"
                                     required
                                 />
                                 <TextField
@@ -245,6 +246,7 @@ const ShowBlogs = () => {
                                     label="Name"
                                     variant="outlined"
                                     value={blogSubmitterName}
+                                     className="input-form"
                                     onChange={(e) => setBlogSubmitterName(e.target.value)}
                                     required
                                 />

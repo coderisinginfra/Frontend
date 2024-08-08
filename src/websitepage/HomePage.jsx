@@ -20,7 +20,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import testimonialclient from '../assets/imges/testimonialclient.jpg'
 import HomePhoto from '../assets/home.jpg'
 import ghaziabad from '../assets/imges/ghaziabad.jpg'
-
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from 'react-helmet'
@@ -468,10 +468,17 @@ useEffect(()=>{
                                     />
                                 </div>
                                 <div className='data-blogs'>
+                                <div className='blogs-button-data'>
+                                    <Button variant='contained'>{item.Category}</Button>
+                                    </div>
                                     <h3 className='heading-blogs-content'><b>{item.postTitle}</b></h3>
                                     <div>
                                         <div className='paragraph-blogs' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(truncateHTML(item.description, 25)) }}></div>
                                     </div>
+                                    <div className='flexdataarrow'>
+                                            <h3 className='data-headi'>READ MORE</h3>
+                                            <ArrowCircleRightIcon />
+                                        </div>
                                 </div>
                             </div>
                         </Link>

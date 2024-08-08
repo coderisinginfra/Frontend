@@ -45,7 +45,7 @@
 .blogs-data{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 7% ;
+    margin: 0 3% ;
 }
 
 .flex-pagination-blogs{

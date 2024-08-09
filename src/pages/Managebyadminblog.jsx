@@ -23,7 +23,7 @@ const Managebyadminblog = (props) => {
                 const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchblogs");
                 setBlogs(response.data.reverse());
             } catch (error) {
-                console.log(error);
+                // console.log(error);
             }
         }
         fetchBlogs();

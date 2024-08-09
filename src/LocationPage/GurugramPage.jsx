@@ -15,10 +15,10 @@ const GurugramPage = (props) => {
         const fetchData = async () => {
             try {
                 const res = await axios.get("https://www.backend.risinginfra.in/api/v1/gurugramproperty")
-                console.log(res.data)
+                // console.log(res.data)
                 setData(res.data)
             } catch (error) {
-                console.log(error)
+                // console.log(error)
             }
         }
         fetchData()

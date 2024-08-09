@@ -33,7 +33,7 @@ const AllBlogs = (props) => {
                 const categoryData = await axios.get("https://www.backend.risinginfra.in/api/v1/categoryfind");
                 setCategory(categoryData.data);
             } catch (error) {
-                console.log(error);
+                // console.log(error);
             }
         };
         fetch();

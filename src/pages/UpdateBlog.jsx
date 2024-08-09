@@ -27,7 +27,7 @@ const UpdateBlog = (props) => {
         setcoverimage(blog.coverimage);
         setpostcontent(blog.postcontent);
       } catch (error) {
-        console.log('Error fetching blog data:', error);
+        // console.log('Error fetching blog data:', error);
       }
     };
 

@@ -244,7 +244,7 @@ const SellyourProperty = (props) => {
             alert('Project added successfully!');
             navigate("/admin/panel");
         } catch (error) {
-            console.error('There was an error!', error);
+            // console.error('There was an error!', error);
             alert('Oops! Sorry, something went wrong.');
         }
     };

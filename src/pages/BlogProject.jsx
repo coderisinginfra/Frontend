@@ -82,7 +82,7 @@ const BlogProject = (props) => {
               <option value="Property In Gurugram">Property In Gurugram</option>
               <option value="Commercial Property">Commercial Property</option>
               <option value="Lease Commercial Property">Lease Commercial Property</option>
-              <option value="buy Residential Property">Residential Property</option>
+              <option value="Residential Property">Residential Property</option>
               <option value="Renting Residential Property">Renting Residential Property</option>
               <option value="Buy Plots">Buy Plots</option>
               <option value="Sell Your Property">Sell Your Property</option>

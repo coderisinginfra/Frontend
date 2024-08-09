@@ -75,7 +75,7 @@
 }
 
 .blogs-home{
-    margin-bottom: 3em;
+    margin: 0 0 3em 3em;
 }
 
 .container-images{
@@ -491,6 +491,9 @@ background-image: linear-gradient(rgba(253, 240, 240, 0.9),rgba(107, 107, 107, 0
     .projectcity-title{
         padding: 12em 0 0 0 ;
         text-align: center;
+    }
+    .blogs-home{
+        margin: 0 0 0 0;
     }
     
 }

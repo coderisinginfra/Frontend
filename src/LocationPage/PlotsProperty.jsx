@@ -19,7 +19,7 @@ const PlotsProperty = (props) => {
                 const res = await axios.get("https://www.backend.risinginfra.in/api/v1/buyplots")
                 setData(res.data)
             } catch (error) {
-                console.log(error)
+                // console.log(error)
             }
         }
         fetchData()

@@ -41,7 +41,7 @@ const Careers = (props) => {
                 setData(response.data.reverse());
                 setCategory(categories.data);
             } catch (error) {
-                console.error("Error fetching data:", error);
+                // console.error("Error fetching data:", error);
             }
         };
         fetch();

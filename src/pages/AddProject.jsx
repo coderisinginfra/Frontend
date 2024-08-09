@@ -246,7 +246,6 @@ const AddProject = (props) => {
             formData.append('floorplan3',floorplan3)
 
             const response = await axios.post('https://www.backend.risinginfra.in/api/v1/addproject', formData);
-            console.log(formData);
             alert('Project added successfully!');
             setisbuttonsubmit(false)
             setpropertyTitle('')
@@ -268,7 +267,7 @@ const AddProject = (props) => {
             setgalleryimage2(null)
             setgalleryimage3(null)
         } catch (error) {
-            console.error('There was an error!', error);
+            // console.error('There was an error!', error);
             alert('Oops! Sorry, something went wrong.');
         }
     };

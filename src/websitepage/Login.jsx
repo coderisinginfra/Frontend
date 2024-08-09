@@ -28,7 +28,7 @@ const Login = (props) => {
         navigate('/private/admin/panel'); 
       }
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       toast("Invalid Credentials");
     }
   };

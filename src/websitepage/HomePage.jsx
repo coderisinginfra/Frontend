@@ -60,7 +60,7 @@ const HomePage = () => {
               setCategory(categoryData.data);
               toast("Anupam Sharma Just Bought 4BHK In Gaur NH24!");
           } catch (error) {
-              console.log(error);
+              // console.log(error);
           }
       };
       fetch();
@@ -76,7 +76,7 @@ const HomePage = () => {
         setistings(response.data);
         setVisibleListings(response.data.slice(0, 9));
       } catch (error) {
-        console.log(error);
+        // console.log(error);
       }
     };
     fetch();
@@ -113,7 +113,7 @@ const HomePage = () => {
         });
       setresponsefilter(response.data.reverse())
     } catch (error) {
-        console.error(error);
+        // console.error(error);
     }
 };
 

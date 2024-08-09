@@ -129,8 +129,8 @@
 
 .flex-blogsimage-show{
     padding: 1em;
-    height: 35em;
-    width: 23em;
+    height: auto;
+    width: 30%;
     margin: 1em;
     border-radius: 10px;
     display: flex;
@@ -145,6 +145,7 @@
 .container-div-blogs{
     background-color: white;
     padding: 1.5em 0;
+    margin: -3em 0 0 0 ;
 }
 
 /* About us section  */
@@ -298,9 +299,9 @@
     }
     .flex-blogsimage-show{
         padding: 1em;
-        height: 35em;
+        height: auto;
         width: 100%;
-        margin: 1em;
+        margin: 1em 0;
         border-radius: 10px;
         display: flex;
         overflow: hidden;

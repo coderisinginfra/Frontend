@@ -30,7 +30,7 @@
 }
 
 .flex-blogs-content{
-   width: 23em;
+   width: 100%;
 }
 
 .data-blogs{
@@ -45,11 +45,10 @@
 .blogs-data{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 3% ;
 }
 
 .flex-pagination-blogs{
-    margin: -8em 0 2em 90%;
+    margin: -8em 0 2em 40%;
 }
 
 .image-contents-allblogs{
@@ -69,7 +68,7 @@
 }
 
 .image-blogs{
-    width: 23em;
+    width: 100%;
     height:15em;
     margin: 0 2em 0 0;
     overflow: hidden;
@@ -89,6 +88,8 @@
 
 .blogs-section{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-data{

@@ -91,9 +91,9 @@ const AllBlogs = (props) => {
                 <div className='border-bottom-blog'> </div>
             </div>
         <div className='blogs-section'>
-            <div className='blogs-data'>
+            <div className='tags-data-home-filter'>
                 {displayBlogs.map((item, index) => (
-                    <div key={index} className='allblogs'>
+                    <div key={index} className='data-front-home-blog'>
                         <Link
                             to={`/blogs/${item.postTitle}`}
                             onClick={() => {
@@ -134,7 +134,9 @@ const AllBlogs = (props) => {
                         </Link>
                     </div>
                 ))}
-                <div className='flex-pagination-blogs'>
+            </div>
+        </div>
+        <div className='flex-pagination-blogs'>
                 <ReactPaginate
                     previousLabel={'Previous'}
                     nextLabel={'Next'}
@@ -147,8 +149,6 @@ const AllBlogs = (props) => {
                     containerClassName={'pagination'}
                     activeClassName={'active'}
                 />
-                </div>
-            </div>
         </div>
         </>
     );

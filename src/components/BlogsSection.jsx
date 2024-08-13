@@ -3,6 +3,7 @@ import { datasets } from '../App';
 import DOMPurify from 'dompurify';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
 const BlogsSection = () => {
     const { setBlogData } = useContext(datasets);
@@ -68,8 +69,12 @@ const displayBlogs = blogs.slice(currentPage * blogsPerPage, (currentPage + 1) *
                                 <div className='data-blogs'>
                                     <h3 className='heading-blogs-content'><b>{item.postTitle}</b></h3>
                                     <div>
-                                        <div className='paragraph-blogs' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(truncateHTML(item.description, 13)) }}></div>
+                                        <div className='paragraph-blogs' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(truncateHTML(item.description, 25)) }}></div>
                                     </div>
+                                    <div className='flexdataarrow'>
+                                            <h3 className='data-headi'>READ MORE</h3>
+                                            <ArrowCircleRightIcon />
+                                        </div>
                                 </div>
                             </div>
                         </Link>

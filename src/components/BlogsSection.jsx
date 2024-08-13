@@ -12,7 +12,6 @@ const BlogsSection = () => {
     const blogsPerPage = 3;
     const [category, setCategory] = useState([]);
   
-  
     useEffect(() => {
         const fetch = async () => {
             try {
@@ -30,7 +29,7 @@ const BlogsSection = () => {
     
   const formatDate = (dateString) => {
     const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
-    return new Date(dateString).toLocaleDateString('en-CA', options); // Format as YYYY-MM-DD
+    return new Date(dateString).toLocaleDateString('en-CA', options); 
 };
 
 // Function to truncate HTML content to 35 words

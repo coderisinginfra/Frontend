@@ -52,6 +52,8 @@ import FetchResume from './pages/FetchResume';
 import ProtectedRoutes from './components/ProtectedRoutes';
 import SocialIconsfixed from './components/SocialIconsfixed';
 import Ghaziabad from './LocationPage/Ghaziabad';
+import AddEvents from './pages/AddEvents';
+import AllEvents from './pages/AllEvents';
 
 export const datasets = createContext();
 
@@ -88,11 +90,13 @@ function App() {
               <Route path="manageblog" element={<Managebyadminblog title="All Blogs" />} />
               <Route path="allresume" element={<FetchResume title="All Resume" />} />
               <Route path='addteammember' element={<AddTeamMember title="Add Team Member"/>}/>
+              <Route path='addevent' element={<AddEvents title="Add Events" />} />
           </Route>
           {/* Admin Panel Routes pages  */}
 
           <Route path="/login" element={<Login title="Login Risinginfra" />} />
-{/*           <Route path="/register" element={<Signup title="Register Risinginfra" />} /> */}
+          {/* <Route path="/register" element={<Signup title="Register Risinginfra" />} /> */}
+          <Route path="/events" element={<AllEvents title="Events" />}/>
           <Route path="/ourteam" element={<AllTeamMembershow title="Our Teams - RisingInfra"/>}/>
           <Route path="/blogs" element={<AllBlogs title="Blogs - Risinginfra"/>} />
           <Route path="/blogs/:postTitle" element={<ShowBlogs />} />

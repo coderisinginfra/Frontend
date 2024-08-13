@@ -32,6 +32,10 @@ const pages = [
         name: 'Add Team Member',
         link: '/private/addteammember'
     },
+    {
+        name: 'Add Event',
+        link:'/private/addevent'
+    }
 ];
 
 // Define the logout function

@@ -9,7 +9,10 @@ const Attraction = (props) => {
 
   return (
     <div>
-        <h1>Our Trusted Partner's</h1>
+        <div className='heading-blogs home-front-blogs'>
+                  <h1>Our Trusted Partner</h1>
+                  <div className='border-bottom-blog'> </div>
+        </div>
         <div className='tags-data-home'>
           <div className='data-front-home'>
           <a 

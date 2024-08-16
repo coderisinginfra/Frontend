@@ -9,7 +9,10 @@ const Attraction = (props) => {
 
   return (
     <div>
-      <a 
+        <h1>Our Trusted Partner's</h1>
+        <div className='tags-data-home'>
+          <div className='data-front-home'>
+          <a 
         href="https://www.nextbizthing.com/noida/real-estate/risinginfra?from=badge"  
         title="Find me on NextBizThing" 
         target="_blank" 
@@ -20,7 +23,9 @@ const Attraction = (props) => {
           alt="NextBizThing Badge" 
           style={{ border: 'none' }}
         />
-      </a>                      
+      </a> 
+          </div>
+    </div>                     
     </div>
   );
 };

@@ -54,6 +54,7 @@ import SocialIconsfixed from './components/SocialIconsfixed';
 import Ghaziabad from './LocationPage/Ghaziabad';
 import AddEvents from './pages/AddEvents';
 import AllEvents from './pages/AllEvents';
+import Attraction from './websitepage/Attraction';
 
 export const datasets = createContext();
 
@@ -128,6 +129,7 @@ function App() {
           <Route path="/gygygroup" element={<GyGyPage title="GyGY Group" />} />
           <Route path="/migsun" element={<MigsunPage title="Migsun Group"/>} />
           <Route path="*" element={<HomePage  />} />
+          <Route path="/nextbizthing" element={<Attraction title="NextBizThing" />} />
         </Routes>
        <FooterBottom />
           <Footer />

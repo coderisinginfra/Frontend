@@ -378,6 +378,13 @@ background-image: linear-gradient(rgba(253, 240, 240, 0.9),rgba(107, 107, 107, 0
     margin: 1em;
 }
 
+.data-front-home-certification{
+    width: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2em;
+    margin: 1em;
+}
+
 .title-home{
     font-size: 20px;
     padding: 10px 0;
@@ -495,6 +502,12 @@ background-image: linear-gradient(rgba(253, 240, 240, 0.9),rgba(107, 107, 107, 0
     .blogs-home{
         margin: 0 0 0 0;
     }
+    .data-front-home-certification{
+        width: auto;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 1em;
+        margin: 1em;
+    }
     
 }
 
@@ -510,6 +523,13 @@ background-image: linear-gradient(rgba(253, 240, 240, 0.9),rgba(107, 107, 107, 0
     }
     .data-front-home{
         width: 45%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 1em;
+        margin: 1em;
+    }
+
+    .data-front-home-certification{
+        width: 100%;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         padding: 1em;
         margin: 1em;

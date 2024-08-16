@@ -14,7 +14,7 @@ const Attraction = (props) => {
                   <div className='border-bottom-blog'> </div>
         </div>
         <div className='tags-data-home'>
-          <div className='data-front-home'>
+          <div className='data-front-home-certification'>
           <a 
         href="https://www.nextbizthing.com/noida/real-estate/risinginfra?from=badge"  
         title="Find me on NextBizThing" 

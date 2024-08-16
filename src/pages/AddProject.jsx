@@ -19,6 +19,7 @@ const AddProject = (props) => {
     const [prelease, setprelease] = useState(false);
     const [sitelocation, setsitelocation] = useState('');
     const [isbuttonsubmit,setisbuttonsubmit] = useState(false)
+    const [keywords,setkeywords] = useState('')
 
     const editor = useRef(null);
     const [content, setcontent] = useState('');
@@ -180,6 +181,13 @@ const AddProject = (props) => {
             type: 'text',
             value: price,
             onchange: (e) => setprice(e.target.value),
+        }, 
+        {
+            label: 'Keywords*',
+            placeholder: 'Keywords',
+            type: 'text',
+            value: keywords,
+            onchange: (e) => setkeywords(e.target.value),
         },
         {
             type: "text",

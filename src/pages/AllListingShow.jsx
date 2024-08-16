@@ -103,8 +103,7 @@ const AllListingShow = () => {
         <title>{propertyTitle}</title>
         <link rel="canonical" href={`https://www.risinginfra.in/projects/${propertyTitle}`} />
         <meta name="description" content={DOMPurify.sanitize(propertyData.content)} />
-        <meta name="keywords" content="Real estate, Property for sale, Real estate listings, Homes for sale, Residential real estate, Commercial real estate, Real estate investment, Property management, Real estate market, Buy real estate, Sell real estate, Property for rent, Real estate agents, Real estate brokers, Luxury real estate, Real estate development, Investment properties, Real estate services, Property valuation, Real estate agency, Real estate consulting, Real estate trends, Real estate investment trusts (REITs), Property search, Real estate opportunities, Real estate deals, Real estate market analysis, Real estate listings near me, Affordable housing, Real estate for investors, New construction homes, Real estate appraisal, Real estate marketing, Property investment, Residential properties, Commercial properties, Real estate transactions, Real estate financing, Real estate agents near me, Real estate industry, Property buying guide, Property selling tips, Home buying process, Home selling process, Real estate properties for sale, Real estate property management, Real estate brokers near me, Luxury homes for sale, Real estate investment opportunities, Property rental services, Real estate market trends, Property management companies, Real estate portfolio management, Real estate investment strategies, Commercial real estate investment, Residential real estate investment, Real estate consultancy services, Real estate listings online, Property investment advice, Real estate professionals
-" />
+        <meta name="keywords" content={propertyData.keywords} />
       </Helmet>
       <ToastContainer />
       <Dialog

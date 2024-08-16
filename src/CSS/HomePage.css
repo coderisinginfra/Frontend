@@ -507,6 +507,9 @@ background-image: linear-gradient(rgba(253, 240, 240, 0.9),rgba(107, 107, 107, 0
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         padding: 1em;
         margin: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
 }
@@ -533,5 +536,8 @@ background-image: linear-gradient(rgba(253, 240, 240, 0.9),rgba(107, 107, 107, 0
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         padding: 1em;
         margin: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

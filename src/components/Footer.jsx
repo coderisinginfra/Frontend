@@ -29,6 +29,9 @@ const Footer = () => {
     },{
         title:"Contact us",
         link:"/contact"
+    },{
+        title:"Careers",
+        link:"/careers"
     }]
 
     const support = [{
@@ -41,8 +44,8 @@ const Footer = () => {
         title:"Privacy Policy",
         link:"/privacy-policy"
     },{
-        title:"Careers",
-        link:"/careers"
+        title:"Certification",
+        link:"/certification"
     }]
   return (
     <div className='footer-concept'>

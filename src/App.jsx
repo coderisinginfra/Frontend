@@ -129,7 +129,7 @@ function App() {
           <Route path="/gygygroup" element={<GyGyPage title="GyGY Group" />} />
           <Route path="/migsun" element={<MigsunPage title="Migsun Group"/>} />
           <Route path="*" element={<HomePage  />} />
-          <Route path="/nextbizthing" element={<Attraction title="NextBizThing" />} />
+          <Route path="/certification" element={<Attraction title="Certification || Rising Infra" />} />
         </Routes>
        <FooterBottom />
           <Footer />

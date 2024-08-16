@@ -77,6 +77,7 @@ const BlogProject = (props) => {
           <label htmlFor='category'> Category
             <select value={Category} onChange={(e) => setCategory(e.target.value)} className='labelsblogs-select' id='category'>Select
               <option>Select</option>
+              <option value="Industry">Industry</option>
               <option value="Home Decor">Home Decor</option>
               <option value="Property In Noida">Property In Noida</option>
               <option value="Property In Gurugram">Property In Gurugram</option>

@@ -410,7 +410,7 @@ background-image: linear-gradient(rgba(253, 240, 240, 0.9),rgba(107, 107, 107, 0
 
 .left {
     /* background-color: red; */
-   background-color: #7C7CFD;
+   background-color: #0b3063;   ;
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
 }
 

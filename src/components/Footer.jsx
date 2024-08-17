@@ -47,7 +47,7 @@ const Footer = () => {
         title:"Certification",
         link:"/certification"
     },{
-        title:"FAQs",
+        title:"Flip Board",
         link:"https://flipboard.com/@risinginfra/rising-infra-blogs-ag29n0j2z?from=share&utm_source=flipboard&utm_medium=curator_share"
     }]
   return (

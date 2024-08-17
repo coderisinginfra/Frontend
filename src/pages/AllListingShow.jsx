@@ -20,7 +20,7 @@ import { Helmet } from 'react-helmet';
 
 const AllListingShow = () => {
   const { propertyTitle } = useParams();
-  const [propertyData, setPropertyData] = useState(null);
+  const [propertyData, setPropertyData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 

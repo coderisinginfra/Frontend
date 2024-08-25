@@ -118,7 +118,7 @@ const ShowBlogs = () => {
         <Helmet>
           <title>{postTitle}</title>
           <link rel="canonical" href={`https://www.risinginfra.in/blogs/${postTitle}`} />
-          <meta name="description" content={DOMPurify.sanitize(blogingData.postcontent)} />
+          <meta name="description" content={DOMPurify.sanitize(blogingData.description)} />
           <meta name="keywords" content={blogingData.keywords} />
         </Helmet>
         <div className='flex-content'>

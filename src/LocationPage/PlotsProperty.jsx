@@ -59,7 +59,7 @@ const PlotsProperty = (props) => {
       }
 </div>
           <div className='investment-topics'>
-              <h1 className='whoweare'>Why Plots Property is Top Investment For Real Esate</h1>
+              <h1 className='whoweare'>Why Plots Property is Top Investment For Real Estate</h1>
               <p className='para-topics'>Investing in plots offers a multitude of advantages, making it an ideal choice for savvy investors. Firstly, plots generally appreciate in value over time, providing substantial returns on investment. Unlike residential properties, plots require minimal maintenance and upkeep, reducing ongoing costs. Additionally, plots offer flexibility; investors can build their dream home, commercial property, or simply hold onto the land as its value increases. The demand for land in prime locations is consistently high, ensuring liquidity and ease of resale. Furthermore, plots are less susceptible to market fluctuations compared to built-up properties. They also come with fewer complications related to tenancy and property management. The potential for customization and development makes plots an attractive option for those looking to create bespoke properties. Overall, investing in plots is a sound strategy that combines low maintenance, high appreciation potential, and versatile usage options, making it a top choice for long-term financial growth.</p>
               <ul className='list-ul'>
                   <li className='list-li'>Excellent Connectivity and Infrastructure</li>

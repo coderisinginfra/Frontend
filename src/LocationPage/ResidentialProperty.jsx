@@ -55,7 +55,7 @@ const ResidentialProperty = (props) => {
       }
 </div>
           <div className='investment-topics'>
-              <h1 className='whoweare'>Why Residential Property is Top Investment For Real Esate</h1>
+              <h1 className='whoweare'>Why Residential Property is Top Investment For Real Estate</h1>
               <p className='para-topics'>Investing in residential property is a compelling choice for many investors due to its numerous benefits. Residential properties often provide a steady and reliable source of rental income, ensuring a consistent cash flow. The demand for housing is ever-present, making it easier to find tenants and maintain occupancy. Residential properties also tend to appreciate over time, offering capital gains potential alongside rental income. They provide a sense of security and stability, as people always need places to live, regardless of market conditions. Additionally, owning residential property allows for various tax benefits, including deductions on mortgage interest, property taxes, and depreciation. The ability to leverage financing options makes it accessible for many investors to enter the market. Furthermore, residential properties can be less volatile compared to other investment types, offering a balanced risk-reward profile. Overall, residential property investment combines income generation, appreciation, and stability, making it an attractive option for long-term wealth creation.</p>
               <ul className='list-ul'>
                   <li className='list-li'>Excellent Connectivity and Infrastructure</li>

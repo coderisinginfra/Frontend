@@ -55,7 +55,7 @@ const CommercialProperty = (props) => {
       }
 </div>
           <div className='investment-topics'>
-              <h1 className='whoweare'>Why Commercial Property is Top Investment For Real Esate</h1>
+              <h1 className='whoweare'>Why Commercial Property is Top Investment For Real Estate</h1>
               <p className='para-topics'>Investing in commercial property presents a highly lucrative opportunity for investors seeking substantial returns. Commercial properties, including office buildings, retail spaces, and industrial warehouses, typically offer higher rental yields compared to residential properties. These investments often come with longer lease agreements, ensuring stable and predictable income streams. The demand for commercial spaces in thriving business districts remains robust, enhancing the potential for capital appreciation.Additionally, commercial property investments provide diverse income opportunities through multi-tenant leases, minimizing the risk of total vacancy. Investors can also benefit from favorable tax treatments, such as deductions on mortgage interest and property depreciation. The professional nature of commercial tenants often results in better-maintained properties, reducing management hassles. Furthermore, commercial real estate can be a hedge against inflation, as lease agreements often include clauses for rent increases.</p>
               <ul className='list-ul'>
                   <li className='list-li'>Excellent Connectivity and Infrastructure</li>

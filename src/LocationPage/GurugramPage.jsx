@@ -59,7 +59,7 @@ const GurugramPage = (props) => {
       }
 </div>
         <div className='investment-topics'>
-                <h1 className='whoweare'>Why Gurugram is Top Investment For Real Esate</h1>
+                <h1 className='whoweare'>Why Gurugram is Top Investment For Real Estate</h1>
                 <p className='para-topics'>Gurgaon is India's second largest information technology hub and third largest financial and banking hub.Gurgaon is also home to one of India's largest medical tourism industries.Despite being India's 56th largest city in terms of population, Gurgaon is the 8th largest city in the country in terms of total wealth. It serves as the headquarters of many of India's largest companies, is home to thousands of startup companies and has local offices for more than 250 Fortune 500 companies. It accounts for almost 70% of the total annual economic investments in Haryana state, which has helped it become a leading hub for high-tech industry in northern India. Gurgaon is categorised as very high on the Human Development Index, with an HDI of 0.889 (2017).</p>
                 <ul className='list-ul'>
                     <li className='list-li'>Excellent Connectivity and Infrastructure</li>

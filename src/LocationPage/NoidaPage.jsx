@@ -31,7 +31,7 @@ const NoidaPage = (props) => {
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/noidaproperty" />
           <meta name="description" content="Discover a wide range of properties in Noida with RisingInfra. From luxurious apartments to commercial spaces, explore the best real estate opportunities in Noida." />
-          <meta name="keywords" content="Noida properties, real estate in Noida, Noida apartments, commercial spaces in Noida, RisingInfra Noida, Noida real estate, Noida property listings, Noida residential properties, Noida office spaces, Noida rental properties, Noida investment properties, Noida property market, Noida real estate agents, Noida property deals, Noida real estate investments, Noida luxury apartments, Noida property for sale, Noida property for rent, Noida commercial real estate, Noida housing market, Noida property development, Noida land for sale, Noida flats, Noida villas, Noida real estate opportunities, Noida property management, Noida residential flats, Noida property services, Noida real estate company" />
+          <meta name="keywords" content="Rising infra,real estate in property realty, real estate clients, Noida properties, real estate in Noida, Noida apartments, commercial spaces in Noida, RisingInfra Noida, Noida real estate, Noida property listings, Noida residential properties, Noida office spaces, Noida rental properties, Noida investment properties, Noida property market, Noida real estate agents, Noida property deals, Noida real estate investments, Noida luxury apartments, Noida property for sale, Noida property for rent, Noida commercial real estate, Noida housing market, Noida property development, Noida land for sale, Noida flats, Noida villas, Noida real estate opportunities, Noida property management, Noida residential flats, Noida property services, Noida real estate company" />
         </Helmet>
         <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>Our Exclusive OnGoing Projects</h1>
@@ -66,6 +66,7 @@ const NoidaPage = (props) => {
                 <ul className='list-ul'>
                     <li className='list-li'>Excellent Connectivity and Infrastructure</li>
                     <li className='list-li'>Booming Commercial Hub</li>
+                    <li className='list-li'>commercial real estate buildings</li>
                     <li className='list-li'>World-Class Educational Institutions</li>
                     <li className='list-li'>Modern Amenities and Lifestyle</li>
                     <li className='list-li'>Green and Sustainable Living</li>

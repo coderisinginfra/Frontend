@@ -36,7 +36,20 @@ const FooterBottom = () => {
     link:"/plotsproperty"
     }]
 
-    const realesattedevlopers = [{
+    const realesattedevlopers = [
+    {
+        name:"Gaurs Group",
+        link:"/gaursgroup"
+    },{
+        name:"Bhutani Group",
+        link:"/bhutanigroup"
+    },{
+        name:"ACE Group",
+        link:"/acegroup"
+    },{
+        name:"GyGy Group",
+        link:"/gygygroup"
+    },{
         name:"Paras Buildtech",
         link:"/"
     },{
@@ -52,22 +65,10 @@ const FooterBottom = () => {
         name:"Omaxe",
         link:"/"
     },{
-        name:"Gaurs Group",
-        link:"/"
-    },{
-        name:"Bhutani Group",
-        link:"/"
-    },{
-        name:"ACE Group",
-        link:"/"
-    },{
         name:"Lodha Group",
         link:"/"
     },{
         name:"DLF Group",
-        link:"/"
-    },{
-        name:"GyGy Group",
         link:"/"
     },{
         name:"Migsun",

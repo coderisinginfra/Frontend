@@ -38,7 +38,7 @@ const FooterBottom = () => {
 
     const realesattedevlopers = [
     {
-        name:"Gaurs Group",
+        name:"Gaur Group",
         link:"/gaursgroup"
     },{
         name:"Bhutani Group",

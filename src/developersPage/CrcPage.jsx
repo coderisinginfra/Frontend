@@ -64,8 +64,8 @@ const CrcPage = (props) => {
                 <ul className='list-ul'>
                     <li className='list-li'>A strong focus on meeting and exceeding customer expectations.</li>
                     <li className='list-li'>CRC Group operates with transparency and integrity in all its dealings.</li>
-                    <li className='list-li'>rojects are well-connected to major roads, highways, and public transport.</li>
-                    <li className='list-li'>rojects feature modern and innovative architectural designs.</li>
+                    <li className='list-li'>Projects are well-connected to major roads, highways, and public transport.</li>
+                    <li className='list-li'>Projects feature modern and innovative architectural designs.</li>
                     <li className='list-li'>Projects are completed on schedule, ensuring customer trust and satisfaction.</li>
                     <li className='list-li'>Emphasis on eco-friendly and sustainable building practices.</li>
                     <li className='list-li'>Projects feature modern and innovative architectural designs.</li>

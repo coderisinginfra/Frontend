@@ -28,8 +28,8 @@ const AcePage = (props) => {
         <Helmet>
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/acegroup" />
-          <meta name="description" content="Discover a wide range of properties in Noida with RisingInfra. From luxurious apartments to commercial spaces, explore the best real estate opportunities in Noida." />
-          <meta name="keywords" content="Rising infra, real estate clients, Noida properties, real estate in Noida, Noida apartments, commercial spaces in Noida, RisingInfra Noida, Noida real estate, Noida property listings, Noida residential properties, Noida office spaces, Noida rental properties, Noida investment properties, Noida property market, Noida real estate agents, Noida property deals, Noida real estate investments, Noida luxury apartments, Noida property for sale, Noida property for rent, Noida commercial real estate, Noida housing market, Noida property development, Noida land for sale, Noida flats, Noida villas, Noida real estate opportunities, Noida property management, Noida residential flats, Noida property services, Noida real estate company" />
+          <meta name="description" content="ACE Group is a premier real estate developer renowned for its innovative designs, high-quality construction, and commitment to sustainability, delivering exceptional residential and commercial properties." />
+          <meta name="keywords" content="Rising infra,ACE Group, ACE Group Real Estate, ACE Real Estate Developer, ACE Group Projects, ACE Group Properties, ACE Residential Projects, ACE Commercial Projects, ACE Group Noida, ACE Group Greater Noida, ACE Group Ghaziabad, ACE Group Delhi NCR, Best Real Estate Developer ACE, ACE Group Residential Apartments, ACE Group Commercial Spaces, ACE Group India, ACE Group Flats for Sale, ACE Group Office Spaces, ACE Group Luxury Apartments, ACE Group Villas, ACE Group Real Estate Solutions, ACE Group Residential Communities, ACE Group Urban Development, ACE Group Sustainable Development, ACE Group Modern Living, ACE Group Premium Properties, ACE Group Investment Opportunities, ACE Group Real Estate Listings, ACE Group Property Development, ACE Group Trusted Developer, ACE Group Real Estate Expertise, ACE Group Home Buyers, ACE Group Property Buyers, ACE Group Real Estate Trends, ACE Group Innovative Design, ACE Group Quality Construction, ACE Group Timely Delivery, ACE Group Realty, ACE Group New Projects, ACE Group Property Management, ACE Group High-End Properties, ACE Group Project Updates, ACE Group Real Estate Market, ACE Group Residential Complexes, ACE Group Smart Homes, ACE Group Real Estate Investment, ACE Group Property Search, ACE Group Real Estate News, ACE Group Apartments in Noida, ACE Group Realty Services, ACE Group Property Sales" />
         </Helmet>
         <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>ACE Group Exclusive OnGoing Projects </h1>
@@ -59,17 +59,17 @@ const AcePage = (props) => {
 </div>
 
             <div className='investment-topics'>
-                <h1 className='whoweare'>Why Noida is Top Investment For Real Estate</h1>
-                <p className='para-topics'>Noida, short for New Okhla Industrial Development Authority, is a city located in Gautam Buddha Nagar district of the Indian state of Uttar Pradesh. Noida is a satellite city of Delhi and is a part of the National Capital Region. According to the 2021 Delhi Master Plan, Noida is a part of CNCR (Central National Capital Region) or DMA (Delhi Metropolitan Area). As per provisional reports of Census of India, the population of Noida in 2011 was 642,381. The city is managed by New Okhla Industrial Development Authority (NOIDA). The district's administrative headquarters are in the nearby city of Greater Noida.</p>
+                 <h1 className='whoweare'>ACE Group  - Pioneering Excellence in Real Estate Development..</h1>
+                <p className='para-topics'>ACE Group stands out as a leading real estate developer with a reputation for delivering exceptional residential and commercial properties. Known for its <b>innovative designs</b> and <b> commitment to quality </b>, ACE Group focuses on creating spaces that combine functionality with elegance. Their projects are situated in prime locations, ensuring convenience and high investment potential. The group’s emphasis on sustainability and customer satisfaction highlights their dedication to creating lasting value. With a track record of <b>timely project completion </b> and <b>transparent practices </b>, ACE Group continues to set benchmarks in the real estate industry, enriching urban landscapes and lifestyles.</p>
                 <ul className='list-ul'>
-                    <li className='list-li'>Excellent Connectivity and Infrastructure</li>
-                    <li className='list-li'>Booming Commercial Hub</li>
-                    <li className='list-li'>commercial real estate buildings</li>
-                    <li className='list-li'>World-Class Educational Institutions</li>
-                    <li className='list-li'>Modern Amenities and Lifestyle</li>
-                    <li className='list-li'>Green and Sustainable Living</li>
-                    <li className='list-li'>Affordable Housing Options</li>
-                    <li className='list-li'>Planned Urban Development</li>
+                    <li className='list-li'>Strategically chosen sites for maximum convenience and value.</li>
+                    <li className='list-li'>Focus on superior materials and craftsmanship.</li>
+                    <li className='list-li'>Dedicated to meeting and exceeding client expectations.</li>
+                    <li className='list-li'>Transparent and honest business dealings.</li>
+                    <li className='list-li'>Utilization of the latest advancements in construction and design.</li>
+                    <li className='list-li'>Projects completed on schedule without compromising quality.</li>
+                    <li className='list-li'>Honesty and integrity in all business transactions.</li>
+                    <li className='list-li'>Stringent quality standards across all developments.</li>
                 </ul>
             </div>
 

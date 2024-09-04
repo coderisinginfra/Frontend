@@ -27,9 +27,9 @@ const ParasBuildtech = (props) => {
         <>
         <Helmet>
           <title>{props.title}</title>
-          <link rel="canonical" href="https://www.risinginfra.in/acegroup" />
-          <meta name="description" content="Discover a wide range of properties in Noida with RisingInfra. From luxurious apartments to commercial spaces, explore the best real estate opportunities in Noida." />
-          <meta name="keywords" content="Rising infra, real estate clients, Noida properties, real estate in Noida, Noida apartments, commercial spaces in Noida, RisingInfra Noida, Noida real estate, Noida property listings, Noida residential properties, Noida office spaces, Noida rental properties, Noida investment properties, Noida property market, Noida real estate agents, Noida property deals, Noida real estate investments, Noida luxury apartments, Noida property for sale, Noida property for rent, Noida commercial real estate, Noida housing market, Noida property development, Noida land for sale, Noida flats, Noida villas, Noida real estate opportunities, Noida property management, Noida residential flats, Noida property services, Noida real estate company" />
+          <link rel="canonical" href="https://www.risinginfra.in/parasgroup" />
+          <meta name="description" content="Paras Buildtech is a leading real estate developer known for its innovative residential and commercial projects, blending exceptional design, quality construction, and sustainability in prime locations." />
+          <meta name="keywords" content="Rising infra, Paras Buildtech, Paras Buildtech Real Estate, Paras Real Estate Developer, Paras Buildtech Projects, Paras Buildtech Properties, Paras Residential Projects, Paras Commercial Projects, Paras Buildtech Noida, Paras Buildtech Greater Noida, Paras Buildtech Ghaziabad, Paras Buildtech Delhi NCR, Best Real Estate Developer Paras, Paras Buildtech Residential Apartments, Paras Buildtech Commercial Spaces, Paras Buildtech India, Paras Buildtech Flats for Sale, Paras Buildtech Office Spaces, Paras Buildtech Luxury Apartments, Paras Buildtech Villas, Paras Buildtech Real Estate Solutions, Paras Buildtech Residential Communities, Paras Buildtech Urban Development, Paras Buildtech Sustainable Development, Paras Buildtech Modern Living, Paras Buildtech Premium Properties, Paras Buildtech Investment Opportunities, Paras Buildtech Real Estate Listings, Paras Buildtech Property Development, Paras Buildtech Trusted Developer, Paras Buildtech Real Estate Expertise, Paras Buildtech Home Buyers, Paras Buildtech Property Buyers, Paras Buildtech Real Estate Trends, Paras Buildtech Innovative Design, Paras Buildtech Quality Construction, Paras Buildtech Timely Delivery, Paras Buildtech Realty, Paras Buildtech New Projects, Paras Buildtech Property Management, Paras Buildtech High-End Properties, Paras Buildtech Project Updates, Paras Buildtech Real Estate Market, Paras Buildtech Residential Complexes, Paras Buildtech Smart Homes, Paras Buildtech Real Estate Investment, Paras Buildtech Property Search, Paras Buildtech Real Estate News, Paras Buildtech Apartments in Noida, Paras Buildtech Realty Services, Paras Buildtech Property Sales" />
         </Helmet>
         <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>Paras Group Exclusive OnGoing Projects </h1>
@@ -59,17 +59,17 @@ const ParasBuildtech = (props) => {
 </div>
 
             <div className='investment-topics'>
-                <h1 className='whoweare'>Why Noida is Top Investment For Real Estate</h1>
-                <p className='para-topics'>Noida, short for New Okhla Industrial Development Authority, is a city located in Gautam Buddha Nagar district of the Indian state of Uttar Pradesh. Noida is a satellite city of Delhi and is a part of the National Capital Region. According to the 2021 Delhi Master Plan, Noida is a part of CNCR (Central National Capital Region) or DMA (Delhi Metropolitan Area). As per provisional reports of Census of India, the population of Noida in 2011 was 642,381. The city is managed by New Okhla Industrial Development Authority (NOIDA). The district's administrative headquarters are in the nearby city of Greater Noida.</p>
+                <h1 className='whoweare'>Paras Buildtech - Building Dreams, Shaping Skylines.</h1>
+                <p className='para-topics'>Paras Buildtech is a distinguished real estate developer renowned for creating high-quality residential and commercial spaces. With a focus on <b>innovative design </b> and <b>superior construction </b>, Paras Buildtech delivers projects that enhance urban living and meet modern needs. Their developments are situated in strategic locations, ensuring excellent connectivity and significant investment potential. Committed to <b>sustainability </b> and <b>customer satisfaction </b>, the group emphasizes timely delivery and <b>transparent practices </b>. Paras Buildtech continues to set new standards in the real estate industry, contributing to the growth and transformation of urban landscapes with its cutting-edge projects.</p>
                 <ul className='list-ul'>
-                    <li className='list-li'>Excellent Connectivity and Infrastructure</li>
-                    <li className='list-li'>Booming Commercial Hub</li>
-                    <li className='list-li'>commercial real estate buildings</li>
-                    <li className='list-li'>World-Class Educational Institutions</li>
-                    <li className='list-li'>Modern Amenities and Lifestyle</li>
-                    <li className='list-li'>Green and Sustainable Living</li>
-                    <li className='list-li'>Affordable Housing Options</li>
-                    <li className='list-li'>Planned Urban Development</li>
+                    <li className='list-li'>Strategically chosen sites for maximum convenience and value.</li>
+                    <li className='list-li'>Focus on superior materials and craftsmanship.</li>
+                    <li className='list-li'>Dedicated to meeting and exceeding client expectations.</li>
+                    <li className='list-li'>Transparent and honest business dealings.</li>
+                    <li className='list-li'>Utilization of the latest advancements in construction and design.</li>
+                    <li className='list-li'>Projects completed on schedule without compromising quality.</li>
+                    <li className='list-li'>Honesty and integrity in all business transactions.</li>
+                    <li className='list-li'>Stringent quality standards across all developments.</li>
                 </ul>
             </div>
 

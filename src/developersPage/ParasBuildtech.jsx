@@ -12,7 +12,7 @@ const ParasBuildtech = (props) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get("https://www.backend.risinginfra.in/api/v1/parasgroupfetch")
+                const res = await axios.get("https://www.backend.risinginfra.in/api/v1/parasproject")
                 // console.log(res.data)
                 setData(res.data)
             } catch (error) {

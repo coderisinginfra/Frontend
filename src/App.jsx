@@ -118,20 +118,20 @@ function App() {
           <Route path='/residentialproperty' element={<ResidentialProperty title="Residential Properties - RisingInfra"/>} />
           <Route path='/commericalproperty' element={<CommercialProperty title="Commercial Properties - RisingInfra"/>} />
           <Route path='/plotsproperty' element={<PlotsProperty title="Plots - RisingInfra"/>} />
-          <Route path='/parasgroup' element={<ParasBuildtech title="Paras Group"/>} />
-          <Route path="/crcgroup" element={<CrcPage title="CRC Group"/>} />
-          <Route path="fairfoxgroup" element={<FairFoxPage title="FairFox Group"/>}/>
-          <Route path="/m3mgroup" element={<M3mPage title="M3M Group"/>} />
-          <Route path="/supertech" element={<Supertech title="SuperTech"/>} />
-          <Route path="/godrejproperties" element={<GodrejPage title="Godrej Group"/>} />
-          <Route path='/omaxe' element={<Omaxe title="OMAXE"/>}/>
-          <Route path="/gaursgroup" element={<GaursPage title="Gaurs Group"/>} />
-          <Route path="/bhutanigroup" element={<BhutaniPage title="Bhutani Infra"/>} />
-          <Route path="/acegroup" element={<AcePage title="ACE Group" />} />
-          <Route path="/lodhagroup" element={<LodhaPage  title="Lodha Group"/>} />
-          <Route path="/dlfgroup" element={<DlfPage title="DLF Group" />} />
-          <Route path="/gygygroup" element={<GyGyPage title="GyGY Group" />} />
-          <Route path="/migsun" element={<MigsunPage title="Migsun Group"/>} />
+          <Route path='/parasgroup' element={<ParasBuildtech title="Paras Group - Best Real estate Developer"/>} />
+          <Route path="/crcgroup" element={<CrcPage title="CRC Group - Best Real estate Developer"/>} />
+          <Route path="fairfoxgroup" element={<FairFoxPage title="FairFox Group - Best Real estate Developer"/>}/>
+          <Route path="/m3mgroup" element={<M3mPage title="M3M Group - Best Real estate Developer"/>} />
+          <Route path="/supertech" element={<Supertech title="SuperTech - Best Real estate Developer"/>} />
+          <Route path="/godrejproperties" element={<GodrejPage title="Godrej Group - Best Real estate Developer"/>} />
+          <Route path='/omaxe' element={<Omaxe title="OMAXE - Best Real estate Developer"/>}/>
+          <Route path="/gaursgroup" element={<GaursPage title="Gaur Group - Best Real estate Developer"/>} />
+          <Route path="/bhutanigroup" element={<BhutaniPage title="Bhutani Infra - Best Real estate Developer"/>} />
+          <Route path="/acegroup" element={<AcePage title="ACE Group - Best Real estate Developer" />} />
+          <Route path="/lodhagroup" element={<LodhaPage  title="Lodha Group  - Best Real estate Developer"/>} />
+          <Route path="/dlfgroup" element={<DlfPage title="DLF Group - Best Real estate Developer" />} />
+          <Route path="/gygygroup" element={<GyGyPage title="GyGY Group - Best Real estate Developer" />} />
+          <Route path="/migsun" element={<MigsunPage title="Migsun Group - Best Real estate Developer"/>} />
           <Route path="*" element={<HomePage  />} />
           <Route path="/certification" element={<Attraction title="Certification || Rising Infra" />} />
         </Routes>

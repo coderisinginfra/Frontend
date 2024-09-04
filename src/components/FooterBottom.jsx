@@ -51,12 +51,20 @@ const FooterBottom = () => {
         link:"/gygygroup"
     },{
         name:"Paras Buildtech",
-        link:"/"
+        link:"/parasgroup"
     },{
+        name:"DLF Group",
+        link:"/"
+    },
+    {
+        name:"CRC Group",
+        link:"/crcgroup"
+    },{
+        name:"FairFox Group",
+        link:"/fairfoxgroup"
+    }
+    ,{
         name:"M3M Group",
-        link:"/"
-    },{
-        name:"Supertech",
         link:"/"
     },{
         name:"Godrej Properties",
@@ -68,7 +76,7 @@ const FooterBottom = () => {
         name:"Lodha Group",
         link:"/"
     },{
-        name:"DLF Group",
+        name:"ATS Group",
         link:"/"
     },{
         name:"Migsun",

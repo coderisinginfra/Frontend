@@ -6,13 +6,13 @@ import { Link } from 'react-router-dom';
 import BlogsSection from '../components/BlogsSection';
 import { Helmet } from 'react-helmet';
 
-const ParasBuildtech = (props) => {
+const FairFoxPage = (props) => {
     const [data, setData] = useState([])
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get("https://www.backend.risinginfra.in/api/v1/parasgroupfetch")
+                const res = await axios.get("https://www.backend.risinginfra.in/api/v1/fairfoxproject")
                 // console.log(res.data)
                 setData(res.data)
             } catch (error) {
@@ -27,12 +27,12 @@ const ParasBuildtech = (props) => {
         <>
         <Helmet>
           <title>{props.title}</title>
-          <link rel="canonical" href="https://www.risinginfra.in/acegroup" />
+          <link rel="canonical" href="https://www.risinginfra.in/fairfoxgroup" />
           <meta name="description" content="Discover a wide range of properties in Noida with RisingInfra. From luxurious apartments to commercial spaces, explore the best real estate opportunities in Noida." />
           <meta name="keywords" content="Rising infra, real estate clients, Noida properties, real estate in Noida, Noida apartments, commercial spaces in Noida, RisingInfra Noida, Noida real estate, Noida property listings, Noida residential properties, Noida office spaces, Noida rental properties, Noida investment properties, Noida property market, Noida real estate agents, Noida property deals, Noida real estate investments, Noida luxury apartments, Noida property for sale, Noida property for rent, Noida commercial real estate, Noida housing market, Noida property development, Noida land for sale, Noida flats, Noida villas, Noida real estate opportunities, Noida property management, Noida residential flats, Noida property services, Noida real estate company" />
         </Helmet>
         <div className='projectcity'>
-            <h1 className='headingwhoweare hedas'>Paras Group Exclusive OnGoing Projects </h1>
+            <h1 className='headingwhoweare hedas'>CRC Group Exclusive OnGoing Projects </h1>
             <h1 className='heading-image props-name'>Discover Property With Rising Infra</h1>
         </div>
         <div className='tags-data-home-filter'>
@@ -78,4 +78,4 @@ const ParasBuildtech = (props) => {
     )
 }
 
-export default ParasBuildtech
+export default FairFoxPage

@@ -55,6 +55,8 @@ import Ghaziabad from './LocationPage/Ghaziabad';
 import AddEvents from './pages/AddEvents';
 import AllEvents from './pages/AllEvents';
 import Attraction from './websitepage/Attraction';
+import CrcPage from './developersPage/CrcPage';
+import FairFoxPage from './developersPage/FairFoxPage';
 
 export const datasets = createContext();
 
@@ -116,7 +118,9 @@ function App() {
           <Route path='/residentialproperty' element={<ResidentialProperty title="Residential Properties - RisingInfra"/>} />
           <Route path='/commericalproperty' element={<CommercialProperty title="Commercial Properties - RisingInfra"/>} />
           <Route path='/plotsproperty' element={<PlotsProperty title="Plots - RisingInfra"/>} />
-          <Route path='/parasbuildtech' element={<ParasBuildtech />} />
+          <Route path='/parasgroup' element={<ParasBuildtech title="Paras Group"/>} />
+          <Route path="/crcgroup" element={<CrcPage title="CRC Group"/>} />
+          <Route path="fairfoxgroup" element={<FairFoxPage title="FairFox Group"/>}/>
           <Route path="/m3mgroup" element={<M3mPage title="M3M Group"/>} />
           <Route path="/supertech" element={<Supertech title="SuperTech"/>} />
           <Route path="/godrejproperties" element={<GodrejPage title="Godrej Group"/>} />

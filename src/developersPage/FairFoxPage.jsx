@@ -28,11 +28,11 @@ const FairFoxPage = (props) => {
         <Helmet>
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/fairfoxgroup" />
-          <meta name="description" content="Discover a wide range of properties in Noida with RisingInfra. From luxurious apartments to commercial spaces, explore the best real estate opportunities in Noida." />
-          <meta name="keywords" content="Rising infra, real estate clients, Noida properties, real estate in Noida, Noida apartments, commercial spaces in Noida, RisingInfra Noida, Noida real estate, Noida property listings, Noida residential properties, Noida office spaces, Noida rental properties, Noida investment properties, Noida property market, Noida real estate agents, Noida property deals, Noida real estate investments, Noida luxury apartments, Noida property for sale, Noida property for rent, Noida commercial real estate, Noida housing market, Noida property development, Noida land for sale, Noida flats, Noida villas, Noida real estate opportunities, Noida property management, Noida residential flats, Noida property services, Noida real estate company" />
+          <meta name="description" content="Fairfox Group excels in real estate development with innovative residential and commercial projects, combining modern design, quality construction, and sustainability in prime locations for optimal value." />
+          <meta name="keywords" content="Rising infra, Fairfox Group, Fairfox Group Real Estate, Fairfox Real Estate Developer, Fairfox Group Projects, Fairfox Group Properties, Fairfox Residential Projects, Fairfox Commercial Projects, Fairfox Group Noida, Fairfox Group Greater Noida, Fairfox Group Ghaziabad, Fairfox Group Delhi NCR, Best Real Estate Developer Fairfox, Fairfox Group Residential Apartments, Fairfox Group Commercial Spaces, Fairfox Group India, Fairfox Group Flats for Sale, Fairfox Group Office Spaces, Fairfox Group Luxury Apartments, Fairfox Group Villas, Fairfox Group Real Estate Solutions, Fairfox Group Residential Communities, Fairfox Group Urban Development, Fairfox Group Sustainable Development, Fairfox Group Modern Living, Fairfox Group Premium Properties, Fairfox Group Investment Opportunities, Fairfox Group Real Estate Listings, Fairfox Group Property Development, Fairfox Group Trusted Developer, Fairfox Group Real Estate Expertise, Fairfox Group Home Buyers, Fairfox Group Property Buyers, Fairfox Group Real Estate Trends, Fairfox Group Innovative Design, Fairfox Group Quality Construction, Fairfox Group Timely Delivery, Fairfox Group Realty, Fairfox Group New Projects, Fairfox Group Property Management, Fairfox Group High-End Properties, Fairfox Group Project Updates, Fairfox Group Real Estate Market, Fairfox Group Residential Complexes, Fairfox Group Smart Homes, Fairfox Group Real Estate Investment, Fairfox Group Property Search, Fairfox Group Real Estate News, Fairfox Group Apartments in Noida, Fairfox Group Realty Services, Fairfox Group Property Sales" />
         </Helmet>
         <div className='projectcity'>
-            <h1 className='headingwhoweare hedas'>CRC Group Exclusive OnGoing Projects </h1>
+            <h1 className='headingwhoweare hedas'>FAIRFOX Group Exclusive OnGoing Projects </h1>
             <h1 className='heading-image props-name'>Discover Property With Rising Infra</h1>
         </div>
         <div className='tags-data-home-filter'>
@@ -59,17 +59,17 @@ const FairFoxPage = (props) => {
 </div>
 
             <div className='investment-topics'>
-                <h1 className='whoweare'>Why Noida is Top Investment For Real Estate</h1>
-                <p className='para-topics'>Noida, short for New Okhla Industrial Development Authority, is a city located in Gautam Buddha Nagar district of the Indian state of Uttar Pradesh. Noida is a satellite city of Delhi and is a part of the National Capital Region. According to the 2021 Delhi Master Plan, Noida is a part of CNCR (Central National Capital Region) or DMA (Delhi Metropolitan Area). As per provisional reports of Census of India, the population of Noida in 2011 was 642,381. The city is managed by New Okhla Industrial Development Authority (NOIDA). The district's administrative headquarters are in the nearby city of Greater Noida.</p>
+                <h1 className='whoweare'>Fairfox Group - Redefining Real Estate with Innovation and Integrity.</h1>
+                <p className='para-topics'>Fairfox Group is a prominent real estate developer celebrated for its commitment to creating exceptional <b>residential and commercial properties</b>. Known for its innovative designs and high-quality construction, Fairfox Group delivers projects that blend modern aesthetics with functionality. Their developments are situated in <b>strategic locations </b>, ensuring <b>excellent connectivity</b> and <b> strong investment potential </b>. The group prioritizes sustainability and customer satisfaction, emphasizing timely project completion and <b>transparent business practices</b>. Fairfox Group continues to set new benchmarks in the industry, transforming urban landscapes with its cutting-edge projects and dedication to excellence.</p>
                 <ul className='list-ul'>
-                    <li className='list-li'>Excellent Connectivity and Infrastructure</li>
-                    <li className='list-li'>Booming Commercial Hub</li>
-                    <li className='list-li'>commercial real estate buildings</li>
-                    <li className='list-li'>World-Class Educational Institutions</li>
-                    <li className='list-li'>Modern Amenities and Lifestyle</li>
-                    <li className='list-li'>Green and Sustainable Living</li>
-                    <li className='list-li'>Affordable Housing Options</li>
-                    <li className='list-li'>Planned Urban Development</li>
+                    <li className='list-li'>Strategically chosen sites for maximum convenience and value.</li>
+                    <li className='list-li'>Focus on superior materials and craftsmanship.</li>
+                    <li className='list-li'>Dedicated to meeting and exceeding client expectations.</li>
+                    <li className='list-li'>Transparent and honest business dealings.</li>
+                    <li className='list-li'>Utilization of the latest advancements in construction and design.</li>
+                    <li className='list-li'>Projects completed on schedule without compromising quality.</li>
+                    <li className='list-li'>Honesty and integrity in all business transactions.</li>
+                    <li className='list-li'>Stringent quality standards across all developments.</li>
                 </ul>
             </div>
 

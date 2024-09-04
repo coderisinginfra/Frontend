@@ -28,8 +28,8 @@ const GyGyPage = (props) => {
         <Helmet>
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/gygygroup" />
-          <meta name="description" content="Discover a wide range of properties in Noida with RisingInfra. From luxurious apartments to commercial spaces, explore the best real estate opportunities in Noida." />
-          <meta name="keywords" content="Rising infra, real estate clients, Noida properties, real estate in Noida, Noida apartments, commercial spaces in Noida, RisingInfra Noida, Noida real estate, Noida property listings, Noida residential properties, Noida office spaces, Noida rental properties, Noida investment properties, Noida property market, Noida real estate agents, Noida property deals, Noida real estate investments, Noida luxury apartments, Noida property for sale, Noida property for rent, Noida commercial real estate, Noida housing market, Noida property development, Noida land for sale, Noida flats, Noida villas, Noida real estate opportunities, Noida property management, Noida residential flats, Noida property services, Noida real estate company" />
+          <meta name="description" content="GyGy Group is a renowned real estate developer, specializing in creating modern, sustainable residential and commercial spaces with a commitment to quality and customer satisfaction." />
+          <meta name="keywords" content="Rising infra, GyGy Group, GyGy Group Real Estate, GyGy Real Estate Developer, GyGy Group Projects, GyGy Group Properties, GyGy Residential Projects, GyGy Commercial Projects, GyGy Group Noida, GyGy Group Greater Noida, GyGy Group Ghaziabad, GyGy Group Delhi NCR, Best Real Estate Developer GyGy, GyGy Group Residential Apartments, GyGy Group Commercial Spaces, GyGy Group India, GyGy Group Flats for Sale, GyGy Group Office Spaces, GyGy Group Luxury Apartments, GyGy Group Villas, GyGy Group Real Estate Solutions, GyGy Group Residential Communities, GyGy Group Urban Development, GyGy Group Sustainable Development, GyGy Group Modern Living, GyGy Group Premium Properties, GyGy Group Investment Opportunities, GyGy Group Real Estate Listings, GyGy Group Property Development, GyGy Group Trusted Developer, GyGy Group Real Estate Expertise, GyGy Group Home Buyers, GyGy Group Property Buyers, GyGy Group Real Estate Trends, GyGy Group Innovative Design, GyGy Group Quality Construction, GyGy Group Timely Delivery, GyGy Group Realty, GyGy Group New Projects, GyGy Group Property Management, GyGy Group High-End Properties, GyGy Group Project Updates, GyGy Group Real Estate Market, GyGy Group Residential Complexes, GyGy Group Smart Homes, GyGy Group Real Estate Investment, GyGy Group Property Search, GyGy Group Real Estate News, GyGy Group Apartments in Noida, GyGy Group Realty Services, GyGy Group Property Sales" />
         </Helmet>
         <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>GyGy Group Exclusive OnGoing Projects </h1>
@@ -59,17 +59,17 @@ const GyGyPage = (props) => {
 </div>
 
             <div className='investment-topics'>
-                <h1 className='whoweare'>Why Noida is Top Investment For Real Estate</h1>
-                <p className='para-topics'>Noida, short for New Okhla Industrial Development Authority, is a city located in Gautam Buddha Nagar district of the Indian state of Uttar Pradesh. Noida is a satellite city of Delhi and is a part of the National Capital Region. According to the 2021 Delhi Master Plan, Noida is a part of CNCR (Central National Capital Region) or DMA (Delhi Metropolitan Area). As per provisional reports of Census of India, the population of Noida in 2011 was 642,381. The city is managed by New Okhla Industrial Development Authority (NOIDA). The district's administrative headquarters are in the nearby city of Greater Noida.</p>
+                <h1 className='whoweare'>GyGy Group - Innovating Spaces, Enriching Lives.</h1>
+                <p className='para-topics'>GyGy Group is a distinguished real estate developer known for its excellence in crafting innovative residential and commercial properties. With a focus on <b>sustainability</b> and <b>modern design</b>, GyGy Group is committed to delivering high-quality developments that enhance urban living. Their projects are strategically located in <b>prime areas</b>, offering both convenience and investment potential. The group’s dedication to <b>customer satisfaction </b> and <b>timely delivery </b> sets them apart as a reliable partner in real estate. GyGy Group continues to lead the industry with its cutting-edge technology and <b> ethical practices </b>, creating spaces that elevate lifestyles and drive growth.</p>
                 <ul className='list-ul'>
-                    <li className='list-li'>Excellent Connectivity and Infrastructure</li>
-                    <li className='list-li'>Booming Commercial Hub</li>
-                    <li className='list-li'>commercial real estate buildings</li>
-                    <li className='list-li'>World-Class Educational Institutions</li>
-                    <li className='list-li'>Modern Amenities and Lifestyle</li>
-                    <li className='list-li'>Green and Sustainable Living</li>
-                    <li className='list-li'>Affordable Housing Options</li>
-                    <li className='list-li'>Planned Urban Development</li>
+                    <li className='list-li'>Strategically chosen sites for maximum convenience and value.</li>
+                    <li className='list-li'>Focus on superior materials and craftsmanship.</li>
+                    <li className='list-li'>Dedicated to meeting and exceeding client expectations.</li>
+                    <li className='list-li'>Transparent and honest business dealings.</li>
+                    <li className='list-li'>Utilization of the latest advancements in construction and design.</li>
+                    <li className='list-li'>Projects completed on schedule without compromising quality.</li>
+                    <li className='list-li'>Honesty and integrity in all business transactions.</li>
+                    <li className='list-li'>Stringent quality standards across all developments.</li>
                 </ul>
             </div>
 

@@ -59,7 +59,7 @@ const AcePage = (props) => {
 </div>
 
             <div className='investment-topics'>
-                 <h1 className='whoweare'>ACE Group  - Pioneering Excellence in Real Estate Development..</h1>
+                 <h1 className='whoweare'>ACE Group  - Pioneering Excellence in Real Estate Development.</h1>
                 <p className='para-topics'>ACE Group stands out as a leading real estate developer with a reputation for delivering exceptional residential and commercial properties. Known for its <b>innovative designs</b> and <b> commitment to quality </b>, ACE Group focuses on creating spaces that combine functionality with elegance. Their projects are situated in prime locations, ensuring convenience and high investment potential. The group’s emphasis on sustainability and customer satisfaction highlights their dedication to creating lasting value. With a track record of <b>timely project completion </b> and <b>transparent practices </b>, ACE Group continues to set benchmarks in the real estate industry, enriching urban landscapes and lifestyles.</p>
                 <ul className='list-ul'>
                     <li className='list-li'>Strategically chosen sites for maximum convenience and value.</li>

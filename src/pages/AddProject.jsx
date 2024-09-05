@@ -122,7 +122,7 @@ const AddProject = (props) => {
             type: 'select',
             value: projectType,
             options: [
-                // {label:'--Select Project Type--',value:'Commercial'},
+                {label:'--Select Project Type--',value:'Commercial'},
                 {label:'Independent Villa',value:'Independent Villa'},
                 {label: 'Builder Floor', value: 'Builder Floor' },
                 {label: 'Apartment', value: 'Apartment' },
@@ -145,7 +145,7 @@ const AddProject = (props) => {
             type: 'select',
             value: developer,
             options: [
-                // {label:'--Select City--',value:'Noida'},
+                {label:'--Select devloper--',value:'ACE Group'},
                 { label: 'ACE Group', value: 'ACE Group' },
                 {label:'GYGY', value:'GYGY'},
                 { label: 'Gaur Group', value: 'Gaur Group' },

@@ -37,7 +37,7 @@ function Navbarfront(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <img src={logo} alt="logo" style={{ width: "8em", height: "5em", objectFit: "cover" }}/>
+       <a href="https://www.risinginfra.in"><img src={logo} alt="Rising Infra Logo" className='logoimage'/></a>
       <Divider />
       <List>
         {navItems.map((item) => (

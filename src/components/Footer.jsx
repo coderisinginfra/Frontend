@@ -51,7 +51,7 @@ const Footer = () => {
     <div className='footer-concept'>
         <div className='container-footer-links'>
             <div className='logocontainer'>
-                <img src={logo} alt="Rising Infra Logo" className='logoimage'/>
+                <a href="https://www.risinginfra.in"><img src={logo} alt="Rising Infra Logo" className='logoimage'/></a>
             </div>
             <p className='paragraph-datasets-footer'>Rising Infra, your trusted partner in property management in Noida, ensures seamless and efficient solutions tailored to your real estate needs. Experience excellence with our dedicated team.</p>
             <div className='contact-footer'>

@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
-import logo from '../assets/adminimage/logo.png';
+import logo from '../assets/adminimage/finallogo.png';
 
 const pages = [
     {

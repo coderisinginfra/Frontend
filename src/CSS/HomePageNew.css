@@ -17,7 +17,7 @@
 .container-home{
     padding: 3em;
     display: flex;
-    background-color: #2d5026;
+    background-color: #0B3063;
     height: 30em;
 }
 
@@ -327,7 +327,7 @@
     .container-home{
         padding: 1em;
         display: flex;
-        background-color: #2d5026;
+        background-color: #0B3063;
         height: auto;
     }
 

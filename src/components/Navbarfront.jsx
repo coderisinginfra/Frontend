@@ -75,14 +75,14 @@ function Navbarfront(props) {
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
             <MenuIcon />
-            <img src={logo} alt="logo" style={{ width: "8em", height: "5em", objectFit: "cover",margin:"0 0 0 3em" }}/>
+          <a href='https://www.risinginfra.in'><img src={logo} alt="logo" style={{ width: "8em", height: "5em", objectFit: "cover",margin:"0 0 0 3em" }}/></a>  
           </IconButton>
           <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-           <img src={logo} alt="logo" style={{ width: "8em", height: "5em", objectFit: "cover", margin:"1em 0 0 3em" }}/>
+          <a href='https://www.risinginfra.in'><img src={logo} alt="logo" style={{ width: "8em", height: "5em", objectFit: "cover", margin:"1em 0 0 3em" }}/></a> 
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' }, marginRight:"1em" }}>
             {navItems.map((item) => (

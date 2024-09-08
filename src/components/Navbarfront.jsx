@@ -59,7 +59,7 @@ function Navbarfront(props) {
       <AppBar
         sx={{
           position:"sticky",
-          backgroundColor: '#0B3063',
+          backgroundColor: '#2d5026',
           transition: 'background-color 0.3s ease-in-out',
           boxShadow: 'none',
           zIndex: 999,

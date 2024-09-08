@@ -37,7 +37,7 @@ function Navbarfront(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-       <a href="https://www.risinginfra.in"><img src={logo} alt="Rising Infra Logo" className='logoimage'/></a>
+     <a href="https://www.risinginfra.in"><img src={logo} alt="logo" style={{ width: "8em", height: "5em", objectFit: "cover" }}/></a>
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -75,14 +75,14 @@ function Navbarfront(props) {
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
             <MenuIcon />
-          <a href='https://www.risinginfra.in'><img src={logo} alt="logo" style={{ width: "8em", height: "5em", objectFit: "cover",margin:"0 0 0 3em" }}/></a>  
+            <a href="https://www.risinginfra.in"><img src={logo} alt="logo" style={{ width: "8em", height: "5em", objectFit: "cover",margin:"0 0 0 3em" }}/></a>
           </IconButton>
           <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-          <a href='https://www.risinginfra.in'><img src={logo} alt="logo" style={{ width: "8em", height: "5em", objectFit: "cover", margin:"1em 0 0 3em" }}/></a> 
+           <img src={logo} alt="logo" style={{ width: "8em", height: "5em", objectFit: "cover", margin:"1em 0 0 3em" }}/>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' }, marginRight:"1em" }}>
             {navItems.map((item) => (

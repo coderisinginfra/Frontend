@@ -82,7 +82,7 @@ function Navbarfront(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-           <img src={logo} alt="logo" style={{ width: "8em", height: "5em", objectFit: "cover", margin:"1em 0 0 3em" }}/>
+           <img src={logo} alt="logo" style={{ width: "6em", height: "3em", objectFit: "cover", margin:"1em 0 0 3em" }}/>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' }, marginRight:"1em" }}>
             {navItems.map((item) => (

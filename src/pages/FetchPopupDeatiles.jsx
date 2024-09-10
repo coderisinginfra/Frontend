@@ -23,8 +23,8 @@ const FetchPopupDetailes = (props) => {
     return (
         <div className='blogs'>
             <div className='headingblog'>
-                <h1>All PopUp Detailes</h1> <br /> <br />
-            </div>
+                <h1>All PopUp Detailes</h1> 
+            </div><br /> <br />
             <div>
                 <table>
                     <thead>

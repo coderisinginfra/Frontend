@@ -23,8 +23,9 @@ const FetchNayaashiyana = (props) => {
     return (
         <div className='blogs'>
             <div className='headingblog'>
-                <h1>All Nayaashiyana Detailes</h1>  <br /> <br />
+                <h1>All Nayaashiyana Detailes</h1>  
             </div>
+            <br /><br />
             <div>
                 <table>
                     <thead>

@@ -23,8 +23,9 @@ const FetchGyGy = (props) => {
     return (
         <div className='blogs'>
             <div className='headingblog'>
-                <h1>Fetch GyGy Detailes</h1> <br /> <br />
+                <h1>Fetch GyGy Detailes</h1> 
             </div>
+            <br /> <br />
             <div>
                 <table>
                     <thead>

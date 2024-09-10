@@ -23,7 +23,7 @@ const FetchBlogReviewDetailes = (props) => {
     return (
         <div className='blogs'>
             <div className='headingblog'>
-                <h1>All Blog Review Detailes</h1>
+                <h1>All Blog Review Detailes</h1> <br /><br />
             </div>
             <div>
                 <table>

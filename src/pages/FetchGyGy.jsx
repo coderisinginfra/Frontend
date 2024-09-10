@@ -11,7 +11,7 @@ const FetchGyGy = (props) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("https://www.backend.risinginfra.in/api/v1/gygyfetch"); 
+                const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchusersubmit"); 
                 setData(response.data);
             } catch (error) {
                 // console.log(error);
@@ -23,7 +23,7 @@ const FetchGyGy = (props) => {
     return (
         <div className='blogs'>
             <div className='headingblog'>
-                <h1>Fetch GyGy Detailes</h1>
+                <h1>Fetch GyGy Detailes</h1> <br /> <br />
             </div>
             <div>
                 <table>

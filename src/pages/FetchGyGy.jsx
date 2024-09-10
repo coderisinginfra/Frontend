@@ -11,7 +11,7 @@ const FetchGyGy = (props) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchblogreview"); 
+                const response = await axios.get("https://www.backend.risinginfra.in/api/v1/gygyfetch"); 
                 setData(response.data);
             } catch (error) {
                 // console.log(error);

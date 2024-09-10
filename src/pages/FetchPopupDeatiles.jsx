@@ -12,7 +12,7 @@ const FetchPopupDetailes = (props) => {
         const fetchData = async () => {
             try {
                 const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchpopup"); 
-                setData(response.data);
+                setData(response.data.reverse());
             } catch (error) {
                 // console.log(error);
             }
@@ -23,7 +23,7 @@ const FetchPopupDetailes = (props) => {
     return (
         <div className='blogs'>
             <div className='headingblog'>
-                <h1>All PopUp Detailes</h1> 
+                <h2>All PopUp Detailes</h2> 
             </div><br /> <br />
             <div>
                 <table>

@@ -12,7 +12,7 @@ const FetchBlogReviewDetailes = (props) => {
         const fetchData = async () => {
             try {
                 const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchblogreview"); 
-                setData(response.data);
+                setData(response.data.reverse());
             } catch (error) {
                 // console.log(error);
             }
@@ -23,7 +23,7 @@ const FetchBlogReviewDetailes = (props) => {
     return (
         <div className='blogs'>
             <div className='headingblog'>
-                <h1>All Blog Review Detailes</h1> 
+                <h2>All Blog Review Detailes</h2> 
             </div>
             <br /><br />
             <div>

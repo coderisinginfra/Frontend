@@ -12,7 +12,7 @@ const FetchContactDetailes = (props) => {
         const fetchData = async () => {
             try {
                 const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchcontact"); // Added await
-                setData(response.data);
+                setData(response.data.reverse());
             } catch (error) {
                 // console.log(error);
             }
@@ -23,7 +23,7 @@ const FetchContactDetailes = (props) => {
     return (
         <div className='blogs'>
             <div className='headingblog'>
-                <h1>All Contact Detailes</h1>  
+                <h2>All Contact Detailes</h2>  
             </div>
             <br /> <br />
             <div>

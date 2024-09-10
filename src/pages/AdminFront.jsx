@@ -20,13 +20,13 @@ const AdminFront = (props) => {
 
     const city = [{
         name: "Manage Careers",
-        link: "/private/allresume"
+        link: "/"
     },{
         name:"Add Careers",
         link:"/private/Jobopening"
     },{
         name:"View Submit Resumes",
-        link:"#"
+        link:"/private/allresume"
     }]
 
     const developer = [{

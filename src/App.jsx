@@ -62,6 +62,8 @@ import FetchPopupDetailes from './pages/FetchPopupDeatiles';
 import FetchNayaashiyana from './pages/FetchNayaashiyana';
 import FetchGyGy from './pages/FetchGyGy';
 import FetchBlogReviewDetailes from './pages/FetchBlogReviewDetailes';
+import FooterUserPanel from './components/FooterUserPanel';
+import FooterAdminPanel from './components/FooterAdminPanel';
 
 export const datasets = createContext();
 
@@ -145,7 +147,9 @@ function App() {
           <Route path="*" element={<HomePage  />} />
           <Route path="/certification" element={<Attraction title="Certification || Rising Infra" />} />
         </Routes>
-       <FooterBottom />
+        <FooterUserPanel>
+          <FooterBottom />
+        </FooterUserPanel>
           <Footer />
       </Router>
     </datasets.Provider>

@@ -63,7 +63,6 @@ import FetchNayaashiyana from './pages/FetchNayaashiyana';
 import FetchGyGy from './pages/FetchGyGy';
 import FetchBlogReviewDetailes from './pages/FetchBlogReviewDetailes';
 import FooterUserPanel from './components/FooterUserPanel';
-import FooterAdminPanel from './components/FooterAdminPanel';
 
 export const datasets = createContext();
 

@@ -11,6 +11,7 @@ const NavbarAdminPanel = ({ children }) => {
       '/private/addproject',
       '/private/blogproject',
       '/private/manageblog',
+      '/private/allresume',
       '/private/jobopening',
       '/private/updateblog/:id',
       '/private/addteammember',

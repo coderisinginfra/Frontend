@@ -30,14 +30,17 @@ const AdminFront = (props) => {
     }]
 
     const developer = [{
-        name: "Manage developer",
-        link: "#"
+        name:"Fetch Nayaashiyana Contact",
+        link:"/private/fetchnayaashiyana"
     },{
-        name:"Manage Project Category",
-        link:"#"
+        name:"Fetch GyGy Contact",
+        link:"/private/fetchgygy"
     },{
-        name:"View Registered Projects Infromation",
-        link:"#"
+        name:"Fetch Rising infra Contact",
+        link:"/private/fetchcontactdetailes"
+    },,{
+        name:"Fetch Rising infra PopUp",
+        link:"/private/fetchpopup"
     }]
 
     
@@ -48,8 +51,8 @@ const AdminFront = (props) => {
         name:"Manage Blog",
         link:"/private/manageblog"
     },,{
-        name:"View Registered Blogs Infromation",
-        link:"#"
+        name:"View Blog Reviews",
+        link:"/private/fetchblogReview"
     }]
 
   return (

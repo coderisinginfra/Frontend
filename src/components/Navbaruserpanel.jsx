@@ -16,7 +16,12 @@ const Navbaruserpanel = ({ children }) => {
       '/private/allresume',
       '/private/addteammember',
       '/private/Jobopening',
-      '/private/addevent'
+      '/private/addevent',
+      '/private/fetchcontactdetailes',
+      '/private/fetchpopup',
+      '/private/fetchnayaashiyana',
+      '/private/fetchgygy',
+      '/private/fetchblogReview'
     ];
 
     if (adminPaths.includes(location.pathname)) {

@@ -57,6 +57,11 @@ import AllEvents from './pages/AllEvents';
 import Attraction from './websitepage/Attraction';
 import CrcPage from './developersPage/CrcPage';
 import FairFoxPage from './developersPage/FairFoxPage';
+import FetchContactDetailes from './pages/FetchContactDetailes';
+import FetchPopupDetailes from './pages/FetchPopupDeatiles';
+import FetchNayaashiyana from './pages/FetchNayaashiyana';
+import FetchGyGy from './pages/FetchGyGy';
+import FetchBlogReviewDetailes from './pages/FetchBlogReviewDetailes';
 
 export const datasets = createContext();
 
@@ -94,6 +99,11 @@ function App() {
               <Route path="allresume" element={<FetchResume title="All Resume" />} />
               <Route path='addteammember' element={<AddTeamMember title="Add Team Member"/>}/>
               <Route path='addevent' element={<AddEvents title="Add Events" />} />
+              <Route path="fetchcontactdetailes" element={<FetchContactDetailes title="Fetch Contact || Rising Infra" />} />
+              <Route path="fetchpopup" element={<FetchPopupDetailes title="Fetch Popup || Rising infra" />}/>
+              <Route path="fetchnayaashiyana"  element={<FetchNayaashiyana title="Fetch Nayaashiyana || Rising Infra"/>}/>
+              <Route path="fetchgygy" element={<FetchGyGy title="Fetch GyGy || Rising Infra" />} />
+              <Route path="fetchblogReview" element={<FetchBlogReviewDetailes title="Fetch Blog Review || Rising Infra" />} />
           </Route>
           {/* Admin Panel Routes pages  */}
 

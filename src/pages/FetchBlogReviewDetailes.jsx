@@ -30,6 +30,7 @@ const FetchBlogReviewDetailes = (props) => {
                 <table>
                     <thead>
                         <tr>
+                            <th>SR.NO.</th>
                             <th>Name</th>
                             <th>Phone Number</th>
                             <th>Message</th>
@@ -39,6 +40,7 @@ const FetchBlogReviewDetailes = (props) => {
                     <tbody>
                         {data.map((item, index) => (
                             <tr key={index}>
+                                <td>{index+1}</td>
                                 <td>{item.blogsubmittername}</td>
                                 <td>{item.contactnumber}</td>
                                 <td>{item.blogmessage}</td>

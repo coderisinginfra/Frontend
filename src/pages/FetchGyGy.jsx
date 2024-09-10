@@ -30,6 +30,7 @@ const FetchGyGy = (props) => {
                 <table>
                     <thead>
                         <tr>
+                            <th>SR.NO.</th>
                             <th>Name</th>
                             <th>Phone Number</th>
                             <th>Email</th>
@@ -39,6 +40,7 @@ const FetchGyGy = (props) => {
                     <tbody>
                         {data.map((item, index) => (
                             <tr key={index}>
+                                <td>{index+1}</td>
                                 <td>{item.name}</td>
                                 <td>{item.phoneNumber}</td>
                                 <td>{item.email}</td>

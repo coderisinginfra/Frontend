@@ -29,6 +29,7 @@ const FetchPopupDetailes = (props) => {
                 <table>
                     <thead>
                         <tr>
+                            <th>SR.NO.</th>
                             <th>Name</th>
                             <th>Email</th>
                             <th>Phone Number</th>
@@ -38,6 +39,7 @@ const FetchPopupDetailes = (props) => {
                     <tbody>
                         {data.map((item, index) => (
                             <tr key={index}>
+                                <td>{index+1}</td>
                                 <td>{item.name}</td>
                                 <td>{item.email}</td>
                                 <td>{item.contact}</td>

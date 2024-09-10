@@ -44,7 +44,10 @@ const FetchGyGy = (props) => {
                                 <td>{item.name}</td>
                                 <td>{item.phoneNumber}</td>
                                 <td>{item.email}</td>
-                                <td>{item.submitdate}</td>
+                                <td>
+                                    {new Date(item.date).toISOString().split('T')[0]} {/* For Date: YYYY-MM-DD */}
+                                    {new Date(item.date).toLocaleTimeString()} {/* For Time: HH:MM:SS */}
+                                </td>
                             </tr>
                         ))}
                     </tbody>

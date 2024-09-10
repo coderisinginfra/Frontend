@@ -45,8 +45,8 @@ const FetchBlogReviewDetailes = (props) => {
                                 <td>{item.contactnumber}</td>
                                 <td>{item.blogmessage}</td>
                                 <td>
-                                    {new Date(item.date).toISOString().split('T')[0]} {/* For Date: YYYY-MM-DD */}
-                                    {new Date(item.date).toLocaleTimeString()} {/* For Time: HH:MM:SS */}
+                                    {new Date(item.submitdate).toISOString().split('T')[0]} {/* For Date: YYYY-MM-DD */}
+                                    {new Date(item.submitdate).toLocaleTimeString()} {/* For Time: HH:MM:SS */}
                                 </td>
                             </tr>
                         ))}

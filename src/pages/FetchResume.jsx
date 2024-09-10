@@ -45,7 +45,10 @@ const FetchResume = (props) => {
                                 <td>{item.phoneNumber}</td>
                                 <td>{item.categoriesd}</td>
                                 <td><a href={item.files} target='main'>{item.files}</a></td>
-                                <td>{item.date}</td>
+                                <td>
+                                    {new Date(item.date).toISOString().split('T')[0]} {/* For Date: YYYY-MM-DD */}
+                                    {new Date(item.date).toLocaleTimeString()} {/* For Time: HH:MM:SS */}
+                                </td>
                             </tr>
                         ))}
                     </tbody>

@@ -43,9 +43,6 @@ const Footer = () => {
     },{
         title:"Privacy Policy",
         link:"/privacy-policy"
-    },{
-        title:"Certification",
-        link:"/certification"
     }]
   return (
     <div className='footer-concept'>

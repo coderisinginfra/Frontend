@@ -62,7 +62,7 @@ const AllEvents = (props) => {
         <title>{props.title}</title>
         <link rel="canonical" href="https://www.risinginfra.in/events" />
         <meta name="description" content="" />
-        <meta name="keywords" content="Rising Infra Events, Agra Events, Property Events, PropertyExpo, Properties, Rising Infra, Rising Infra Noida, Property Expo 2024, Navratri Property Expo, Navratri Real estate Events, Events in Noida, M3m Events, Real estate Events, Prestige Events, GyGy Mentis Expo, real estate expo, property expo, Events in Navratri, Expo Real estate Events" />
+        <meta name="keywords" content="Rising Infra Events, Agra Events, Property Events, PropertyExpo, Properties, Rising Infra, Rising Infra Noida, Property Expo 2024, Navratri Property Expo, Navratri Real estate Events, Events in Noida, M3m Events, Real estate Events, Prestige Events, GyGy Mentis Expo, real estate expo, property expo, Events in Navratri, Expo Real estate Events,commercial real estate events near me,commercial real estate events,events real estate, real estate events in Noida, real estate events in Delhi, real estate events in Delhi NCR, real estate events in Gurugram,real estate events in gurgaon, real estate events in ghaziabad, real estate events in haryana,real estate events in uttar pradesh, m3m events, crc group events,commercial real estate events near me,navratri nyc, Property Mela" />
       </Helmet>
       <div className='flex-content'>
             <ToastContainer />

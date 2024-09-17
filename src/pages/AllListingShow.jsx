@@ -108,7 +108,7 @@ const AllListingShow = () => {
       </Helmet>
     )}
       <ToastContainer />
-      <Dialog
+      {/* <Dialog
         open={open}
         onClose={handleClose}
         PaperProps={{
@@ -167,7 +167,7 @@ const AllListingShow = () => {
           <Button type="submit" variant='contained' color='primary' disabled={isButtonDisabled}>Submit</Button>
           <Button onClick={handleClose}>Cancel</Button>
         </DialogActions>
-      </Dialog>
+      </Dialog> */}
       {propertyData && propertyData.map((item, index) => (
         <div key={index} >
           {/* images flex  */}

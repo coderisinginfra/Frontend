@@ -66,7 +66,7 @@ const AllEvents = (props) => {
       </Helmet>
       <div className='flex-content'>
             <ToastContainer />
-            <Dialog
+            {/* <Dialog
         open={open}
         onClose={handleClose}
         PaperProps={{
@@ -132,7 +132,7 @@ const AllEvents = (props) => {
           <Button type="submit" variant='contained' color='primary' onClick={handleSubmitquery} disabled={isButtonDisabled}>Submit</Button>
           <Button onClick={handleClose}>Cancel</Button>
         </DialogActions>
-      </Dialog>
+      </Dialog> */}
       </div>
       <div className='heading-blogs-2'>
                 <h1>Our Latest Events</h1>

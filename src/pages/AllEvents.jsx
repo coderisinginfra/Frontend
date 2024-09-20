@@ -81,7 +81,7 @@ const AllEvents = (props) => {
           },
         }}
       >
-        <DialogTitle>Get In Touch With Us</DialogTitle>
+        <DialogTitle>Join One The Event</DialogTitle>
         <DialogContent>
           <DialogContentText sx={{marginBottom:"2em"}}>
             Submit this form, please enter your Detailes our team will contact to soon.

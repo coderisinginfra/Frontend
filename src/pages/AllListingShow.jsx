@@ -293,6 +293,10 @@ const AllListingShow = () => {
                   <img src={ac} alt="ac" className='icons-pages' />
                   <p>Herb Garden</p>
                 </div>
+                <div className='amenties-data'>
+                  <img src={park} alt="park" className='icons-pages' />
+                  <p>pedestrian</p>
+                </div>
               </div>
             </div>
 

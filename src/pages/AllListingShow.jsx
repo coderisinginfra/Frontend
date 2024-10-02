@@ -102,8 +102,8 @@ const AllListingShow = () => {
       <Helmet>
         <title>{propertyTitle}</title>
         <link rel="canonical" href={`https://www.risinginfra.in/projects/${propertyTitle}`} />
-        <meta name="description" content={propertyData.description} />
-        <meta name="keywords" content={propertyData.keywords} />
+        <meta name="description" content={propertyData[0].description} />
+        <meta name="keywords" content={propertyData[0].keywords} />
       </Helmet>
       <ToastContainer />
       <Dialog

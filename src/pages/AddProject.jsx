@@ -146,6 +146,8 @@ const AddProject = (props) => {
             value: developer,
             options: [
                 {label:'--Select devloper--',value:'ACE Group'},
+                { label: 'Sam India', value: 'Sam India' },
+                { label: 'Stellar Group', value: 'Stellar Group' },
                 { label: 'ACE Group', value: 'ACE Group' },
                 {label:'GYGY', value:'GYGY'},
                 { label: 'Gaur Group', value: 'Gaur Group' },

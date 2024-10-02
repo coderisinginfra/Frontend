@@ -49,6 +49,13 @@ const AllListingShow = () => {
   }, [propertyTitle]);
 
   useEffect(() => {
+    if (propertyData.description && propertyData.keywords) {
+      document.querySelector('meta[name="description"]').setAttribute('content', propertyData.description);
+      document.querySelector('meta[name="keywords"]').setAttribute('content', propertyData.keywords);
+    }
+  }, [propertyData]);
+
+  useEffect(() => {
     const timer = setTimeout(() => {
       setOpen(true);
     }, 5000);

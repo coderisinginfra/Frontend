@@ -261,6 +261,7 @@ const AddProject = (props) => {
             formData.append('category', category);
             formData.append('projectType', projectType);
             formData.append('description', description);
+            formData.append('keywords', keywords);
             formData.append('developer', developer);
             formData.append('city', city);
             formData.append('location', location);
@@ -269,8 +270,6 @@ const AddProject = (props) => {
             formData.append('price', price);
             formData.append('amenties', JSON.stringify(amenties));
             formData.append('content', content);
-            formData.append('featuredproject', featuredproject);
-            formData.append('prelease', prelease);
             if (image) {
                 formData.append('image', image);
             }
@@ -290,6 +289,7 @@ const AddProject = (props) => {
             setdeveloper('')
             setcity('')
             setlocation('')
+            setkeywords('')
             setsitelocation('')
             setsize('')
             setprice('')

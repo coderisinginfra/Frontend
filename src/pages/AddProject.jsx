@@ -149,6 +149,7 @@ const AddProject = (props) => {
                 { label: 'Sam India', value: 'Sam India' },
                 { label: 'Stellar Group', value: 'Stellar Group' },
                 { label: 'ACE Group', value: 'ACE Group' },
+                { label: 'ACE Group', value: 'ACE Group' },
                 {label:'GYGY', value:'GYGY'},
                 { label: 'Gaur Group', value: 'Gaur Group' },
                 {label:'Bhutani Infra',value:'Bhutani Infra'},
@@ -295,6 +296,7 @@ const AddProject = (props) => {
         } catch (error) {
             // console.error('There was an error!', error);
             alert('Oops! Sorry, something went wrong.');
+            console.log(error)
         }
     };
 

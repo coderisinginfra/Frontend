@@ -99,14 +99,12 @@ const AllListingShow = () => {
 
   return (
     <div className='all'>
-     {propertyData && (
       <Helmet>
         <title>{propertyTitle}</title>
         <link rel="canonical" href={`https://www.risinginfra.in/projects/${propertyTitle}`} />
-        <meta name="description" content={description} />
-        <meta name="keywords" content={keywords} />
+        <meta name="description" content={propertyData.description} />
+        <meta name="keywords" content={propertyData.keywords} />
       </Helmet>
-    )}
       <ToastContainer />
       <Dialog
         open={open}

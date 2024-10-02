@@ -39,6 +39,7 @@ const AllListingShow = () => {
         const response = await axios.get(`https://www.backend.risinginfra.in/api/v1/fetchalllistings/${propertyTitle}`);
         setPropertyData(response.data.data);
         setLoading(false);
+        console.log(propertyData.description)
       } catch (error) {
         setError(error.message);
         setLoading(false);

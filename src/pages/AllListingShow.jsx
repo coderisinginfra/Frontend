@@ -247,13 +247,13 @@ const AllListingShow = () => {
               <h1 className='description-location'>Gallery Images</h1>
               <div className='floorplans-flex-data'>
                 <div className='floorplans1'>
-                  <img src={item.galleryimage1} alt='images' className='floorplans-data' />
+                  <img src={item.galleryimage1} alt='images' className='floorplans-data' onClick={()=>setOpen(true)} />
                 </div>
                 <div className='floorplans1'>
-                  <img src={item.galleryimage2} alt='images' className='floorplans-data' />
+                  <img src={item.galleryimage2} alt='images' className='floorplans-data' onClick={()=>setOpen(true)} />
                 </div>
                 <div className='floorplans1'>
-                  <img src={item.galleryimage3} alt='images' className='floorplans-data' />
+                  <img src={item.galleryimage3} alt='images' className='floorplans-data' onClick={()=>setOpen(true)} />
                 </div>
               </div>
             </div>
@@ -305,13 +305,13 @@ const AllListingShow = () => {
               <h1 className='description-location'>Floor Images</h1>
               <div className='floorplans-flex-data'>
                 <div className='floorplans1'>
-                  <img src={item.floorplan1} alt='images' className='floorplans-data' />
+                  <img src={item.floorplan1} alt='images' className='floorplans-data' onClick={()=>setOpen(true)}/>
                 </div>
                 <div className='floorplans1'>
-                  <img src={item.floorplan2} alt='images' className='floorplans-data' />
+                  <img src={item.floorplan2} alt='images' className='floorplans-data' onClick={()=>setOpen(true)}/>
                 </div>
                 <div className='floorplans1'>
-                  <img src={item.floorplan3} alt='images' className='floorplans-data' />
+                  <img src={item.floorplan3} alt='images' className='floorplans-data' onClick={()=>setOpen(true)}/>
                 </div>
               </div>
             </div>

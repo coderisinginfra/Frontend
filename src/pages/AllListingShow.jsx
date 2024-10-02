@@ -103,8 +103,8 @@ const AllListingShow = () => {
       <Helmet>
         <title>{propertyTitle}</title>
         <link rel="canonical" href={`https://www.risinginfra.in/projects/${propertyTitle}`} />
-        <meta name="description" content={propertyData.description || "Discover exceptional real estate opportunities with our comprehensive services, offering a wide range of residential and commercial properties."} />
-        <meta name="keywords" content={propertyData.keywords || "Rising Infra,Contact a real estate agent, Find a real estate agent, Free home valuation, Free home appraisal, Home Buyer’s Guide, Home Seller’s Guide, Exclusive listings, Real estate newsletter,Luxury homes, Waterfront property, Single-family homes, Condos for sale, Townhomes for sale, Fixer-upper homes, Noida homes for sale with a pool, Noida homes for sale with a view, Noida homes for sale with a garage, Noida homes for sale in a gated community, Noida homes for sale with a large backyard, Noida homes for sale with a guest house, Noida homes for sale with solar panels, Noida homes for sale near [popular attraction], Noida homes for sale in a top-rated school district, Noida homes for sale with a fireplace, Noida homes for sale with a balcony or terrace, Noida homes for sale with a home office, Noida homes for sale with a gourmet kitchen, Noida homes for sale with a wine cellar, Noida homes for sale with a pool house, Noida homes for sale with a tennis court, Noida homes for sale with a home theater, Noida homes for sale with a gym or fitness room, Noida homes for sale with a backyard oasis, Noida homes for sale with a chef’s kitchen, Noida homes for sale with a private beach access property in noida"} />
+        <meta name="description" content={propertyData.description} />
+        <meta name="keywords" content={propertyData.keywords} />
       </Helmet>
     )}
       <ToastContainer />

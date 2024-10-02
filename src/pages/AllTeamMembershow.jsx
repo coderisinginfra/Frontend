@@ -47,7 +47,7 @@ const AllTeamMembershow = (props) => {
             <div>
               <div className='container-items'>
                 <h1 className='itemname'>{item.name}</h1>
-                <Link to={item.linkedin}>
+                <Link to={item.linkedin} target="_main">
                   <img src={Linkedin} alt="linkedin" className='linkedin-fa' />
                 </Link>
               </div>

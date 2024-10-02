@@ -16,7 +16,7 @@ const NoidaPage = (props) => {
             try {
                 const res = await axios.get("https://www.backend.risinginfra.in/api/v1/noidaproperty")
                 // console.log(res.data)
-                setData(res.data)
+                setData(res.data.reverse())
             } catch (error) {
                 // console.log(error)
             }

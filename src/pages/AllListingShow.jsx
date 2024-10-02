@@ -291,7 +291,7 @@ const AllListingShow = () => {
                 </div>
                 <div className='amenties-data'>
                   <img src={ac} alt="ac" className='icons-pages' />
-                  <p>Parking</p>
+                  <p>Herb Garden</p>
                 </div>
               </div>
             </div>

@@ -173,7 +173,7 @@ const AllListingShow = () => {
           {/* images flex  */}
           <div className='flex-container-data-flex'>
               <div className='featuredimages'>
-                  <img src={item.images} alt="images" className='images-featuredimages'/>
+                  <img src={item.images} alt="images" className='images-featuredimages' onClick={()=>setOpen(true)}/>
               </div>
               <div className='featured-container'>
               <h1 className='propertyTitle'>{item.propertyTitle}</h1>

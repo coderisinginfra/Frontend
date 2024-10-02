@@ -292,6 +292,7 @@ const AddProject = (props) => {
             setsitelocation('')
             setsize('')
             setprice('')
+            setdescription('')
             setamenties([])
             setcontent('')
             setImage(null)

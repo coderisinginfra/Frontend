@@ -260,6 +260,7 @@ const AddProject = (props) => {
             formData.append('propertyTitle', propertyTitle);
             formData.append('category', category);
             formData.append('projectType', projectType);
+            formData.append('description', description);
             formData.append('developer', developer);
             formData.append('city', city);
             formData.append('location', location);

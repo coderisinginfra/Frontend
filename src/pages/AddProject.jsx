@@ -20,6 +20,7 @@ const AddProject = (props) => {
     const [sitelocation, setsitelocation] = useState('');
     const [isbuttonsubmit,setisbuttonsubmit] = useState(false)
     const [keywords,setkeywords] = useState('')
+    const [ description,setdescription] = useState('')
 
     const editor = useRef(null);
     const [content, setcontent] = useState('');
@@ -207,6 +208,13 @@ const AddProject = (props) => {
             type: 'text',
             value: keywords,
             onchange: (e) => setkeywords(e.target.value),
+        },
+        {
+            label: ' description*',
+            placeholder: ' description',
+            type: 'text',
+            value:  description,
+            onchange: (e) => setdescription(e.target.value),
         },
         {
             type: "text",

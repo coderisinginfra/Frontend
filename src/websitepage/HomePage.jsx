@@ -127,7 +127,7 @@ const [open, setOpen] = useState(false);
 useEffect(()=>{
  setTimeout(()=>{
     setOpen(true)
- },1000)
+ },100)
 },[])
 
   const handleClose = () => {

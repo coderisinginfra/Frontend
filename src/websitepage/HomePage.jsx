@@ -226,6 +226,8 @@ useEffect(()=>{
       handleClose();
     },
   }}
+  maxWidth="sm" // You can adjust the size here as per your need
+  fullWidth 
   sx={{ '& .MuiDialog-paper': { margin: 0, width: '100%', height: '100%', backgroundColor:"rgb(11,48,99)"} }} // Full width and height for the popup
 >
   <DialogContent sx={{ padding: 0, width: '100%', height: '100%', overflow: 'hidden' }}>
@@ -245,7 +247,6 @@ useEffect(()=>{
     <Button onClick={handleClose} sx={{color:"white"}}>Cancel</Button>
   </DialogActions>
 </Dialog>
-
 
       <div> 
         <h1 className='headiing-home-fron-container'>Find Your Property <br />With Rising Infra</h1>

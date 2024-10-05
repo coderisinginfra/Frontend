@@ -236,8 +236,8 @@ useEffect(()=>{
         height: '100%', 
         objectFit: 'contain'
       }}
-      autoPlay
       loop
+      autoPlay
     />
   </DialogContent>
   <DialogActions sx={{ position: 'absolute', bottom: 0, right: 0 }}>

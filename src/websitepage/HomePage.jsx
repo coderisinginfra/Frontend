@@ -238,7 +238,6 @@ useEffect(()=>{
       }}
       loop
       autoPlay
-      muted
     />
   </DialogContent>
   <DialogActions sx={{ position: 'absolute', bottom: 0, right: 0 }}>

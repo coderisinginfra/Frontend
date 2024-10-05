@@ -25,8 +25,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from 'react-helmet'
 import navratri from '../assets/ria offer.mp4'
-import texturalimage from '../assets/architechure.jpg'
-import navratriaudio from '../assets/audio.mpeg'
+import navratriaudio from '../assets/navratrireel.mp3'
 
 const HomePage = () => {
 

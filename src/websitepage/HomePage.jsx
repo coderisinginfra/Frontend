@@ -238,9 +238,9 @@ useEffect(()=>{
       }}
       loop
       autoPlay
-      muted
+      // muted
     />
-    <audio src={navratriaudio} loop autoPlay muted></audio>
+    {/* <audio src={navratriaudio} loop autoPlay></audio> */}
   </DialogContent>
   <DialogActions sx={{ position: 'absolute', bottom: 0, right: 0 }}>
     <Button onClick={handleClose} sx={{color:"white"}}>Cancel</Button>

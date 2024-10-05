@@ -24,6 +24,8 @@ import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from 'react-helmet'
+import navratri from '../assets/ria offer.mp4'
+import texturalimage from '../assets/architechure.jpg'
 
 const HomePage = () => {
 
@@ -125,7 +127,7 @@ const [open, setOpen] = useState(false);
 useEffect(()=>{
  setTimeout(()=>{
     setOpen(true)
- },5000)
+ },1000)
 },[])
 
   const handleClose = () => {
@@ -142,7 +144,7 @@ useEffect(()=>{
   </Helmet>
      <ToastContainer style={{marginTop:"7em"}}/>
    <div className='container-home'>
-     <Dialog
+     {/* <Dialog
         open={open}
         onClose={handleClose}
         PaperProps={{
@@ -208,7 +210,42 @@ useEffect(()=>{
           <Button type="submit" variant='contained' color='primary' onClick={handleSubmit} disabled={isButtonDisabled}>Submit</Button>
           <Button onClick={handleClose}>Cancel</Button>
         </DialogActions>
-      </Dialog> 
+      </Dialog>  */}
+
+<Dialog
+  open={open}
+  onClose={handleClose}
+  PaperProps={{
+    component: 'form',
+    onSubmit: (event) => {
+      event.preventDefault();
+      const formData = new FormData(event.currentTarget);
+      const formJson = Object.fromEntries(formData.entries());
+      const email = formJson.email;
+      console.log(email);
+      handleClose();
+    },
+  }}
+  sx={{ '& .MuiDialog-paper': { margin: 0, width: '100%', height: '100%', backgroundColor:"rgb(11,48,99)"} }} // Full width and height for the popup
+>
+  <DialogContent sx={{ padding: 0, width: '100%', height: '100%', overflow: 'hidden' }}>
+    <video
+      src={navratri}
+      style={{ 
+        width: '100%', 
+        height: '100%', 
+        objectFit: 'contain'
+      }}
+      autoPlay
+      loop
+      playsInline
+    />
+  </DialogContent>
+  <DialogActions sx={{ position: 'absolute', bottom: 0, right: 0 }}>
+    <Button onClick={handleClose} sx={{color:"white"}}>Cancel</Button>
+  </DialogActions>
+</Dialog>
+
 
       <div> 
         <h1 className='headiing-home-fron-container'>Find Your Property <br />With Rising Infra</h1>

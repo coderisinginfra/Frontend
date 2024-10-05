@@ -238,11 +238,9 @@ useEffect(()=>{
       }}
       autoPlay
       loop
-      muted
     />
   </DialogContent>
   <DialogActions sx={{ position: 'absolute', bottom: 0, right: 0 }}>
-   <Button sx={{color:"white"}}><Link to="tel://+917303713669">Call Us Now</Link></Button>
     <Button onClick={handleClose} sx={{color:"white"}}>Cancel</Button>
   </DialogActions>
 </Dialog>

@@ -24,7 +24,7 @@ import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from 'react-helmet'
-import navratri from '../assets/ria offer.mp4'
+import navratri from '../assets/navratri.MP4'
 import navratriaudio from '../assets/navratrireel.mp3'
 
 const HomePage = () => {
@@ -238,9 +238,7 @@ useEffect(()=>{
       }}
       loop
       autoPlay
-      // muted
     />
-    {/* <audio src={navratriaudio} loop autoPlay></audio> */}
   </DialogContent>
   <DialogActions sx={{ position: 'absolute', bottom: 0, right: 0 }}>
     <Button onClick={handleClose} sx={{color:"white"}}>Cancel</Button>

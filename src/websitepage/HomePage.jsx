@@ -24,7 +24,7 @@ import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from 'react-helmet'
-import navratri from '../assets/navratri.MP4'
+import navratri from '../assets/navratri.mp4'
 import navratriaudio from '../assets/navratrireel.mp3'
 
 const HomePage = () => {

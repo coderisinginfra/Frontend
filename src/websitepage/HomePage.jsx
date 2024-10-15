@@ -319,7 +319,7 @@ useEffect(()=>{
                   <h1 className='title-home'>{item.propertyTitle}</h1>
                   <div className='icons-image-home'>
                 <LocationOnIcon style={{color:"green"}}/>
-                <p style={{ color: 'gray', marginLeft: '10px' }}><b>{item.location}</b></p>
+                <p style={{ color: '#3C3D37', marginLeft: '10px' }}><b>{item.location}</b></p>
               </div>
               <div className="prices-demad">
                 <div className="left"><h6 style={{ marginTop: '-5px' }}>Size {item.size}.<sup>*</sup></h6></div>

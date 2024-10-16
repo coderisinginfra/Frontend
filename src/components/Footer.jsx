@@ -28,7 +28,7 @@ const Footer = () => {
         link:"/blogs"
     },{
         title:"Contact us",
-        link:"/contactus"
+        link:"/contact"
     },{
         title:"Careers",
         link:"/careers"

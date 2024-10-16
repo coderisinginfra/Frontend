@@ -23,7 +23,7 @@ const navItems = [
   { name: 'About Us', link: '/aboutus' },
   { name: 'Our Team', link: '/ourteam' },
   { name: 'Blogs', link: '/blogs' },
-  { name: 'Contact us', link: '/contactus' },
+  { name: 'Contact us', link: '/contact' },
   { name: 'Careers', link: '/careers' },
 ];
 

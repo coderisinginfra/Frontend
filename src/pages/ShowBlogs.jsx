@@ -58,7 +58,7 @@ const ShowBlogs = () => {
     useEffect(() => {
         const fetchBlogById = async () => {
             try {
-                const result = await axios.get(`https://www.backend.risinginfra.in/api/v1//FetchBlogById/${postTitle}`);
+                const result = await axios.get(`https://www.backend.risinginfra.in/api/v1/FetchBlogById/${postTitle}`);
                 setBlogingData(result.data[0]);
                 document.title = result.data[0].postTitle;
             } catch (error) {

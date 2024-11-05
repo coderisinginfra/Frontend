@@ -179,7 +179,7 @@ const AllListingShow = () => {
                   <LocationOnIcon />
                   <p>{item.location}</p>
               </div>
-              <h2 className='prices-list'>Satrting Price {item.price} Onwards</h2>
+              <h2 className='prices-list'>Starting Price {item.price} Onwards</h2>
               <div className='data-need-buttons da-ba'>
                 <Button variant='contained' style={{color:"white",background:"#0B3063"}} onClick={()=>setOpen(true)}><CallIcon style={{marginRight:"10px"}}/>INSTANT CALL BACK</Button>
               </div>

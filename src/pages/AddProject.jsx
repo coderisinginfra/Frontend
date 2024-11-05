@@ -152,6 +152,7 @@ const AddProject = (props) => {
                 { label: 'ACE Group', value: 'ACE Group' },
                 { label: 'ACE Group', value: 'ACE Group' },
                 {label:'GYGY', value:'GYGY'},
+                {label:'NCR Group',value:'NCR Group'},
                 { label: 'Gaur Group', value: 'Gaur Group' },
                 {label:'Bhutani Infra',value:'Bhutani Infra'},
                 {label:'Paras Buldtech',value:'Paras Buldtech'},

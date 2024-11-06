@@ -142,7 +142,6 @@ useEffect(()=>{
     <meta name="description" content="Best Real Estate Consultant in Delhi/NCR Best Real Estate Property Consultant in Delhi/NCR, Search Real Estate in Noida - Buy Best Residential Properties by Owners, Dealers, and Real Estate Agents. " />
     <link rel='canonical' href='https://www.risinginfra.in' />
   </Helmet>
-     <ToastContainer style={{marginTop:"7em"}}/>
    <div className='container-home'>  
 
 

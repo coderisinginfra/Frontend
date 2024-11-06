@@ -38,7 +38,7 @@ const Ghaziabad = (props) => {
       {
         data.map((item,index)=>(
           <div key={index} className='data-front-home'>
-              <Link to={`/projects/${item.propertyTitle}`} className='links-data-home'>
+              <Link to={`/projects/${item.propertyTitle.replace(/ /g, '-').toLowerCase()}`} className='links-data-home'>
                 <div>
                   <img src={item.images} alt="images" className='images-listing' />
                   <h1 className='title-home'>{item.propertyTitle}</h1>

@@ -95,7 +95,7 @@ const AllBlogs = (props) => {
                 {displayBlogs.map((item, index) => (
                     <div key={index} className='data-front-home-blog'>
                         <Link
-                            to={`/blogs/${item.postTitle}`}
+                            to={`/blogs/${item.postTitle.replace(/ /g, '-').toLowerCase()}`}
                             onClick={() => {
                                 setBlogData({
                                     postTitle: item.postTitle,

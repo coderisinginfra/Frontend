@@ -138,79 +138,12 @@ useEffect(()=>{
    <>
    <Helmet>
     <title>Rising Infra - Best Real Estate Property Consultant in Delhi/NCR. Improve Your Real Estate Investment In India With Rising infra</title>
-    <meta name="keywords" content="Rising Infra, Rising Infra Noida,Real estate, Real estate near me, Real estate for sale, Real Estate listings, Realtor, Best Realtor in noida, Real Estate Agent, Real Estate Brokerage, MLS Listings, Realty, Investment property, Commercial real estate,property expo,expo real estate,max estate 128, max estate, max sector 128 noida, max estate sector 128 noida, luxury apartments, max apartments, luxury flats, residential apartments in noida, upcoming projects in noida, best society in noida, apartments in noida, 4 bhk flats in noida, luxury apartments in noida, max sector 128 luxury homes,crc group, crc maesta, crc maesta noida extension, crc maesta greater noida west, Best Property In Noida, Buy Property In Noida, Property In Noida Ready To Move,commercial Property In Noida, Luxury Property In Noida,residential property in Noida, residential properties in Noida, best residential property in Noida, best residential projects in Noida, top residential properties in Noida,property investment in noida" />
-    <meta name="description" content="Best Real Estate Consultant in Delhi/NCR Best Real Estate Property Consultant in Delhi/NCR, Search Real Estate in Noida - Buy Best Residential Properties by Owners, Dealers, and Real Estate Agents." />
+    <meta name="keywords" content="Rising Infra, Rising Infra Noida,Real estate, Real estate near me, Real estate for sale, Real Estate listings, Realtor, Best Realtor in noida, Real Estate Agent, Real Estate Brokerage, MLS Listings, Realty, Investment property, Commercial real estate, properties in Noida,property investment in noida" />
+    <meta name="description" content="Best Real Estate Consultant in Delhi/NCR Best Real Estate Property Consultant in Delhi/NCR, Search Real Estate in Noida - Buy Best Residential Properties by Owners, Dealers, and Real Estate Agents. " />
     <link rel='canonical' href='https://www.risinginfra.in' />
   </Helmet>
      <ToastContainer style={{marginTop:"7em"}}/>
-   <div className='container-home'>
-    <Dialog
-        open={open}
-        onClose={handleClose}
-        PaperProps={{
-          component: 'form',
-          onSubmit: (event) => {
-            event.preventDefault();
-            const formData = new FormData(event.currentTarget);
-            const formJson = Object.fromEntries(formData.entries());
-            const email = formJson.email;
-            console.log(email);
-            handleClose();
-          },
-        }}
-      >
-        <DialogTitle>Get In Touch With Us</DialogTitle>
-        <DialogContent>
-          <DialogContentText sx={{marginBottom:"2em"}}>
-            Submit this form, please enter your Detailes our team will contact to soon.
-          </DialogContentText>
-          <TextField
-            autoFocus
-            required
-            margin="dense"
-            id="name"
-            name="name"
-            label="Your Name"
-            type="text"
-            fullWidth
-            variant="outlined"
-            value={name}
-            onChange={(e)=>setName(e.target.value)}
-            sx={{marginBottom:"1em"}}
-          />
-          <TextField
-            required
-            margin="dense"
-            id="name"
-            name="email"
-            label="Email Address"
-            type="email"
-            value={email}
-            onChange={(e)=>setEmail(e.target.value)}
-            fullWidth
-            variant="outlined"
-            sx={{marginBottom:"1em"}}
-          />
-          <TextField
-              required
-              margin="dense"
-              id="contactnumber"
-              name="contact number"
-              label="Contact Number"
-              type="tel"
-              fullWidth
-              variant="outlined"
-              value={contact}
-              inputProps={{ maxLength: 10, pattern: '[0-9]*' }}
-              onChange={(e)=>setContact(e.target.value)}
-              sx={{ marginBottom: '1em' }}
-             />
-        </DialogContent>
-        <DialogActions>
-          <Button type="submit" variant='contained' color='primary' onClick={handleSubmit} disabled={isButtonDisabled}>Submit</Button>
-          <Button onClick={handleClose}>Cancel</Button>
-        </DialogActions>
-      </Dialog>  
+   <div className='container-home'>  
 
 
       <div> 
@@ -282,7 +215,7 @@ useEffect(()=>{
       {
         responsefilter.map((item,index)=>(
           <div key={index} className='data-front-home'>
-              <Link to={`/projects/${item.propertyTitle}`} className='links-data-home'>
+              <Link to={`/projects/${item.propertyTitle.replace(/ /g, '-').toLowerCase()}`} className='links-data-home'>
                 <div>
                   <img src={item.images} alt="images" className='images-listing' />
                   <h1 className='title-home'>{item.propertyTitle}</h1>
@@ -313,7 +246,7 @@ useEffect(()=>{
 {
         visibleListings.map((item,index)=>(
           <div key={index} className='data-front-home'>
-              <Link to={`/projects/${item.propertyTitle}`} className='links-data-home'>
+              <Link to={`/projects/${item.propertyTitle.replace(/ /g, '-').toLowerCase()}`} className='links-data-home'>
                 <div>
                   <img src={item.images} alt="images" className='images-listing' />
                   <h1 className='title-home'>{item.propertyTitle}</h1>
@@ -458,7 +391,7 @@ useEffect(()=>{
                 {displayBlogs.map((item, index) => (
                     <div key={index} className='flex-blogsimage-show'>
                         <Link
-                            to={`/blogs/${item.postTitle}`}
+                            to={`/blogs/${item.postTitle.replace(/ /g, '-').toLowerCase()}`}
                             className='list-color'
                         >
                             <div className='flex-blogs-content'>

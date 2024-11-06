@@ -11,6 +11,7 @@ const BlogsSection = () => {
     const [currentPage, setCurrentPage] = useState(0);
     const blogsPerPage = 3;
     const [category, setCategory] = useState([]);
+    
   
     useEffect(() => {
         const fetch = async () => {
@@ -53,7 +54,7 @@ const displayBlogs = blogs.slice(currentPage * blogsPerPage, (currentPage + 1) *
                 {displayBlogs.map((item, index) => (
                     <div key={index} className='flex-blogsimage-show'>
                         <Link
-                           to={`/blogs/${item.postTitle}`}
+                           to={`/blogs/${item.postTitle.replace(/ /g, '-').toLowerCase()}`}
                             className='list-color'
                         >
                             <div className='flex-blogs-content'>

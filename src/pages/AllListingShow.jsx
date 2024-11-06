@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import DOMPurify from 'dompurify';
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField } from '@mui/material';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../CSS/Listingcssdata.css';
@@ -20,6 +20,12 @@ import { Helmet } from 'react-helmet';
 
 const AllListingShow = () => {
   const { propertyTitle } = useParams();
+  const formattedTitle = propertyTitle.toUpperCase()
+  .replace(/-/g, ' ') // Replace hyphens with spaces
+  .split(' ')
+  .join(' ');
+  console.log(formattedTitle)
+  const navigate = useNavigate();
   const [propertyData, setPropertyData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -36,7 +42,7 @@ const AllListingShow = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`https://www.backend.risinginfra.in/api/v1/fetchalllistings/${propertyTitle}`);
+        const response = await axios.get(`https://www.backend.risinginfra.in/api/v1/fetchalllistings/${formattedTitle}`);
         setPropertyData(response.data.data);
         setLoading(false);
       } catch (error) {

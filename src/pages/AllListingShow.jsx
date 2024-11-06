@@ -21,9 +21,9 @@ import { Helmet } from 'react-helmet';
 const AllListingShow = () => {
   const { propertyTitle } = useParams();
   const formattedTitle = propertyTitle.toUpperCase()
-  .replace(/-/g, ' ') // Replace hyphens with spaces
+  .replace(/-/g, ' ') 
   .split(' ')
-  .join(' ');
+  .join(' ')
   console.log(formattedTitle)
   const navigate = useNavigate();
   const [propertyData, setPropertyData] = useState(null);
@@ -106,7 +106,7 @@ const AllListingShow = () => {
   return (
     <div className='all'>
       <Helmet>
-        <title>{propertyTitle}</title>
+        <title>{propertyTitle.toUpperCase()}</title>
         <link rel="canonical" href={`https://www.risinginfra.in/projects/${propertyTitle}`} />
         <meta name="description" content={propertyData[0].description} />
         <meta name="keywords" content={propertyData[0].keywords} />

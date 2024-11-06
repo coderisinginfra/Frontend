@@ -106,7 +106,7 @@ const AllListingShow = () => {
   return (
     <div className='all'>
       <Helmet>
-        <title>{propertyTitle.toUpperCase()}</title>
+        <title>{formattedTitle.toUpperCase()}</title>
         <link rel="canonical" href={`https://www.risinginfra.in/projects/${propertyTitle}`} />
         <meta name="description" content={propertyData[0].description} />
         <meta name="keywords" content={propertyData[0].keywords} />

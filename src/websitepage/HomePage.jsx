@@ -247,7 +247,7 @@ useEffect(()=>{
           <div key={index} className='data-front-home'>
               <Link to={`/projects/${item.propertyTitle.replace(/ /g, '-').toLowerCase()}`} className='links-data-home'>
                 <div>
-                  <img src={item.images} alt="images" className='images-listing' />
+                  <img src={item.images} alt="images" className='images-listing' sizes='(max-width: 768px)100vw,(max-width:1200px)50vw,33vw'/>
                   <h1 className='title-home'>{item.propertyTitle}</h1>
                   <div className='icons-image-home'>
                 <LocationOnIcon style={{color:"green"}}/>

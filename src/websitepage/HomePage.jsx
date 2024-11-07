@@ -138,7 +138,7 @@ useEffect(()=>{
    <>
    <Helmet>
     <title>Rising Infra - Best Real Estate Property Consultant in Delhi/NCR. Improve Your Real Estate Investment In India With Rising infra</title>
-    <meta name="keywords" content="Rising Infra, Rising Infra Noida,Real estate, Real estate near me, Real estate for sale, Real Estate listings, Realtor, Best Realtor in noida, Real Estate Agent, Real Estate Brokerage, MLS Listings, Realty, Investment property, Commercial real estate, properties in Noida,property investment in noida" />
+    <meta name="keywords" content="rising infra, rising infra noida, residential property near me, Commercial property near me, Best Real Estate Consultant in Noida, Best Real Estate Property Consultant in noida, Property in Noida,real estate company in noida, residential property in noida" />
     <meta name="description" content="Best Real Estate Consultant in Delhi/NCR Best Real Estate Property Consultant in Delhi/NCR, Search Real Estate in Noida - Buy Best Residential Properties by Owners, Dealers, and Real Estate Agents. " />
     <link rel='canonical' href='https://www.risinginfra.in' />
   </Helmet>

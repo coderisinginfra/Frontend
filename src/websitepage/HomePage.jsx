@@ -143,8 +143,6 @@ useEffect(()=>{
     <link rel='canonical' href='https://www.risinginfra.in' />
   </Helmet>
    <div className='container-home'>  
-
-
       <div> 
         <h1 className='headiing-home-fron-container'>Find Your Property <br />With Rising Infra</h1>
         <p className='heading-image paragraph-home-front-data'>Discover your dream property nestled in the heart of serene surroundings, offering unparalleled luxury and comfort.</p>

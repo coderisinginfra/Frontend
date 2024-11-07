@@ -26,7 +26,8 @@ const CommercialProperty = (props) => {
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/commericalproperty" />
           <meta name="description" content="Explore a range of commercial properties with RisingInfra. Find prime office spaces, retail locations, and industrial properties suited for your business needs and investments." />
-          <meta name="keywords" content="commercial properties, office spaces for lease, retail properties, industrial properties, commercial real estate, business properties, commercial real estate investment, office space rental, commercial property listings, retail space for rent,  commercial property management, business space rental, commercial property investment, commercial space for lease, commercial property for sale, commercial building for lease, office building for sale, commercial property opportunities, business real estate, industrial space for rent . " />
+          <meta name="keywords" content="commercial properties, office spaces for lease, retail properties, industrial properties, commercial real estate, business properties, commercial real estate investment, office space rental, commercial property listings, retail space for rent,  commercial property management, business space rental, commercial property investment, commercial space for lease, commercial property for sale, commercial building for lease, office building for sale'
+          /cial property opportunities, business real estate, industrial space for rent . " />
         </Helmet>
     <div className='projectcity'>
           <h1 className='headingwhoweare hedas'>Our Exclusive Commercial Projects</h1>

@@ -33,7 +33,7 @@ const Aboutus = (props) => {
       <title>{props.title}</title>
       <link rel="canonical" href="https://www.risinginfra.in/aboutus" />
       <meta name="description" content="Learn more about RisingInfra, our mission, vision, and the team behind our success in the real estate industry." />
-      <meta name="keywords" content="Rising Infra,Rising infra About us,About us page, real estate profession, top real estate, Rising infra Aboutus, Rising infra -Noida India's Largest Real Estate Company, Best Real Estate Company, Best Property Consultant, Real Estate Company, India's Best Real Estate Consultant, Real Estate Consultants, Property Consultants Delhi/NCR, Real Estate Experts, 3 bhk flat in noida extension, 4 bhk flat in noida extension, Residential Project, residential property in Noida, residential properties in Noida, best residential property in Noida, best residential projects in Noida, top residential properties in Noida" />
+      <meta name="keywords" content="Rising Infra,Rising infra About us,About us page, real estate profession, top real estate, Rising infra Aboutus, Rising infra -Noida India's Largest Real Estate Company, Best Real Estate Company, Best Property Consultant, Property Consultants in Noida" />
     </Helmet>
    <div className='container-abouts'>
    <div className='about-tags'>

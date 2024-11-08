@@ -19,7 +19,6 @@ import LT from '../assets/parteners/LT.avif'
 import m3m from '../assets/parteners/m3m.avif'
 import hiranandani from '../assets/parteners/hiranandani.avif'
 import tata from '../assets/parteners/tata.avif'
-import supertech from '../assets/parteners/supertech.avif'
 import omaxe from '../assets/parteners/omaxe.avif'
 import oberoi from '../assets/parteners/oberoi.avif'
 import paras from '../assets/parteners/paras.avif'
@@ -44,7 +43,6 @@ const Carousel = () => {
             <img className="image-crouseal" src={prateek} alt="prateek" /> 
             <img className="image-crouseal" src={maxstates} alt="maxstates" />
             <img className="image-crouseal" src={tata} alt="tata" />
-            <img className="image-crouseal" src={supertech} alt="supertech" />
             <img className="image-crouseal" src={jaypee} alt="jaypee" />
             <img className="image-crouseal" src={mahagun} alt="mahagun" />
             <img className="image-crouseal" src={logix} alt="logix" />
@@ -69,7 +67,6 @@ const Carousel = () => {
             <img className="image-crouseal" src={prateek} alt="prateek" /> 
             <img className="image-crouseal" src={maxstates} alt="maxstates" />
             <img className="image-crouseal" src={tata} alt="tata" />
-            <img className="image-crouseal" src={supertech} alt="supertech" />
             <img className="image-crouseal" src={jaypee} alt="jaypee" />
             <img className="image-crouseal" src={mahagun} alt="mahagun" />
             <img className="image-crouseal" src={logix} alt="logix" />

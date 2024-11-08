@@ -18,7 +18,7 @@ import goa from '../assets/location/goa.jpg'
 import Ayodhya from '../assets/location/Ayodhya.jpg'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import testimonialclient from '../assets/imges/testimonialclient.jpg'
-import HomePhoto from '../assets/home.avif'
+import HomePhoto from '../assets/home.jpg'
 import ghaziabad from '../assets/imges/ghaziabad.jpg'
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { ToastContainer, toast } from 'react-toastify';

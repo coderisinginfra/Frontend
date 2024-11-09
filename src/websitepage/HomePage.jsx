@@ -12,7 +12,7 @@ import Notesimage from '../assets/notes.png'
 import building from '../assets/building.png'
 import '../CSS/HomePageNew.css';
 import Carousel from '../components/Carousel'
-import noida from '../assets/location/Noida.jpg'
+import noida from '../assets/adminimage/frontimage.jpg'
 import gurugram from '../assets/location/gurugram.jpg'
 import goa from '../assets/location/goa.jpg'
 import Ayodhya from '../assets/location/Ayodhya.jpg'

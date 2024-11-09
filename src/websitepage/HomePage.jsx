@@ -194,9 +194,6 @@ useEffect(()=>{
         </form>
       </div>
       </div>
-    <div className='home-images-div'>
-      <img src={HomePhoto} alt="Home Photo" className="home-images" />
-    </div>
    </div>
 
 {

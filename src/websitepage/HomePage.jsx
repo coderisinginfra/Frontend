@@ -195,7 +195,7 @@ useEffect(()=>{
       </div>
       </div>
     <div className='home-images-div'>
-      <img src={HomePhoto} alt="Home Photo" className="home-images" />
+      <img src={HomePhoto} alt="Home Photo" className="home-images" loading='lazy' />
     </div>
    </div>
 

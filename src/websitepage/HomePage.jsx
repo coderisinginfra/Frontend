@@ -195,7 +195,7 @@ useEffect(()=>{
       </div>
       </div>
     <div className='home-images-div'>
-      {/* <img src={HomePhoto} alt="Home Photo" className="home-images" /> */}
+      <img src={HomePhoto} alt="Home Photo" className="home-images" />
     </div>
    </div>
 
@@ -263,7 +263,7 @@ useEffect(()=>{
     </div>
 
 {/* Home About Us Css start here  */}
-   {/* <div className="home-aboutus">
+   <div className="home-aboutus">
       <div className="aboutushome1">
             <h1 className='headingwhoweare'>10 YEARS OF EXPERIENCE IN PROPERTY MANAGEMENT AND CONSULTANT</h1>
             <p className='paragraph-home home-about-para'>Welcome to The Rising Infra (RERA Reg.), where excellence meets expertise in the world of real estate. Our team of proficient professionals is dedicated to providing world-class real estate services to our esteemed clients.We offer a diverse catalogue of properties, ranging from residential to commercial, catering to the varied needs of our clients. Whether you are looking for your dream home or a prime commercial space, our extensive portfolio ensures that you find the perfect property to meet your requirements.</p>
@@ -286,7 +286,7 @@ useEffect(()=>{
           <img src={buyhome} alt="Residential" className='residential-home'/>
           <img src={leasecommercial} alt="Commercial" className='commercial-home'/>
         </div>
-   </div> */}
+   </div>
    {/* Home About Us Css stop here  */}
 
 

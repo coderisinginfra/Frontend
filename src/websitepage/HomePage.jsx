@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
 import '../CSS/HomePage.css'
 import buyhome from '../assets/adminimage/buyinghome.jpg'
-import leasecommercial from '../assets/adminimage/leasecommercialsapce.png'
+import leasecommercial from '../assets/adminimage/officespace.avif'
 import { Link } from 'react-router-dom'
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField, TextareaAutosize } from '@mui/material'
 import axios from 'axios'

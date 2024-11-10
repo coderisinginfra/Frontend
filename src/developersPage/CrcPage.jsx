@@ -29,7 +29,7 @@ const CrcPage = (props) => {
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/crcgroup" />
           <meta name="description" content="CRC Group is a prominent real estate developer known for delivering exceptional residential and commercial properties across prime locations." />
-          <meta name="keywords" content="Rising infra, CRC Group, CRC Group Real Estate, CRC Real Estate Developer, CRC Group Projects, CRC Group Properties, CRC Residential Projects, CRC Commercial Projects, CRC Group Noida, CRC Group Greater Noida, CRC Group Noida, CRC Group Delhi NCR, CRC Group Real Estate News, CRC Group Apartments in Noida," />
+          <meta name="keywords" content="CRC Group, CRC Group Real Estate, CRC Real Estate Developer, CRC Group Projects, CRC Group Properties, CRC Residential Projects, CRC Commercial Projects, CRC Group Noida, CRC Group Greater Noida, CRC Group Noida, CRC Group Delhi NCR, CRC Group Real Estate News, CRC Group Apartments in Noida" />
         </Helmet>
         <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>CRC Group Exclusive OnGoing Projects </h1>

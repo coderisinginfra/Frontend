@@ -30,7 +30,7 @@ const PlotsProperty = (props) => {
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/plotsproperty" />
           <meta name="description" content="Discover a wide selection of plots for sale with RisingInfra. Explore prime land options for residential, commercial, and investment purposes in various locations." />
-          <meta name="keywords" content="plots for sale, land for sale, real estate plots, residential plots, commercial plots, RisingInfra plots, property investment, land investment, buy plots, plot listings, prime land, real estate land, vacant land, plots for development, investment land, property development, land purchase, plot deals, land opportunities, real estate plots for sale, property for sale, plots for investment, land acquisition, plots for commercial use, plots for residential use, real estate market, land for residential development, land for commercial development, plot buying guide, plot management" />
+          <meta name="keywords" content="plots for sale, land for sale, real estate plots, residential plots, commercial plots, real estate land, vacant land, plots for development, plot in noida, plot in greater noida, plot near jewar airport, land in noida, plot deals, land opportunities, real estate plots for sale, property for sale, plots for investment, plots for commercial use, plots for residential use, real estate market, land for residential development, land for commercial development" />
      </Helmet>
     <div className='projectcity'>
           <h1 className='headingwhoweare hedas'>Our Exclusive Plots Projects</h1>

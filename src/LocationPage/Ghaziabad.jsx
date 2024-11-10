@@ -28,7 +28,7 @@ const Ghaziabad = (props) => {
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/ghaziabadproperties" />
           <meta name="description" content="Discover a variety of properties in Ghaziabad with RisingInfra. Explore residential, commercial, and investment opportunities in this thriving city." />
-          <meta name="keywords" content="Ghaziabad properties, real estate in Ghaziabad, Ghaziabad apartments, commercial properties in Ghaziabad, residential plots in Ghaziabad, RisingInfra Ghaziabad, property listings Ghaziabad, Ghaziabad real estate market, Ghaziabad property deals, Ghaziabad flats, Ghaziabad villas, Ghaziabad property management, real estate investment Ghaziabad, property for rent Ghaziabad, Ghaziabad real estate agents, property for sale Ghaziabad, Ghaziabad housing market,  residential properties Ghaziabad, real estate opportunities Ghaziabad, property trends Ghaziabad" />
+          <meta name="keywords" content="Ghaziabad properties, real estate in Ghaziabad, Ghaziabad apartments, commercial properties in Ghaziabad, residential plots in Ghaziabad, RisingInfra Ghaziabad, property listings Ghaziabad, Ghaziabad real estate market, Ghaziabad property deals, Ghaziabad flats, Ghaziabad villas, Ghaziabad property management, real estate investment Ghaziabad, property for rent Ghaziabad, Ghaziabad real estate agents, property for sale Ghaziabad,  residential properties in Ghaziabad" />
       </Helmet>
       <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>Our Exclusive Projects</h1>

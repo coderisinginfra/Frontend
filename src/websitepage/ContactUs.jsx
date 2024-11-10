@@ -34,7 +34,7 @@ const ContactUs = (props) => {
             <title>{props.title}</title>
             <link rel="canonical" href="https://www.risinginfra.in/contact" />
             <meta name="description" content="Get in touch with RisingInfra for all your real estate needs. Contact us via phone, email, or visit our office" />
-            <meta name="keywords" content="Rising Infra, Rising infra Contact us, Contact a real estate agent, Find a real estate agent, property dealer near me, real estate broker contactus." />
+            <meta name="keywords" content="Rising infra Contact us, Contact a real estate agent, Find a real estate agent, property dealer near me, real estate broker contactus, Top Real estate Broker in Noida, Top Property Broker in Noida, Residential Property in Noida, Residential Property in Greater Noida" />
         </Helmet>
             <div className='display-container'>
                 <div className='display-conatiner1'>

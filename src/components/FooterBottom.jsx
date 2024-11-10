@@ -27,7 +27,7 @@ const FooterBottom = () => {
 
     const topics = [{
         name:"Residential Property",
-        link:"https://nayaashiyana.com/"
+        link:"/residentialproperty"
     },{
         name:"Commercial Property",
         link:"/commericalproperty"

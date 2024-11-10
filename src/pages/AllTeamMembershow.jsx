@@ -25,7 +25,7 @@ const AllTeamMembershow = (props) => {
        <title>{props.title}</title>
        <link rel="canonical" href="https://www.risinginfra.in/ourteam" />
        <meta name="description" content="Meet the dedicated and experienced teams behind RisingInfra. Learn about our professionals who drive our success in property management, real estate, marketing, and more." />
-        <meta name="keywords" content="Our teams, RisingInfra team, property management team, real estate experts, RisingInfra professionals, team members, real estate team, property management professionals, marketing team, sales team, HR team, RisingInfra staff, company team, real estate industry experts, property management specialists, RisingInfra employees." />
+        <meta name="keywords" content="Our teams, RisingInfra team, property management team, real estate experts, Top Real estate professionals in Noida, Best property management  company in Noida, real estate industry expert, property management specialists, top property broker in noida, Best real estate consultant in Noida, best real estate consultant in greater noida" />
      </Helmet>
         <div className='meet-our-team'>
             <div>

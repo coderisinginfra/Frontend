@@ -117,7 +117,7 @@ function App() {
           <Route path="/projects/:propertyTitle" element={<AllListingShow />} />
           <Route path="/aboutus" element={<Aboutus title="About Us - RisingInfra" />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy title="Privacy Policy - Rising infra" />} />
-          <Route path="/contact" element={<ContactUs title="Contact Us - RisingInfra" />} />
+          <Route path="/contactus" element={<ContactUs title="Contact Us - RisingInfra" />} />
           <Route path='/managementteams' element={<ManagementTeam title="Our Leadership Team" />} />
           <Route path='/careers' element={<Careers title="Careers - RisingInfra" />} />
           <Route path='/sellyourproperty' element={<SellyourProperty  title="Sell Ypur Property"/>} />

@@ -138,7 +138,7 @@ useEffect(()=>{
    <>
    <Helmet>
     <title>Rising Infra - Best Real Estate Property Consultant in Noida. </title>
-    <meta name="keywords" content="rising infra, rising infra noida, residential property near me, Commercial property near me, Best Real Estate Consultant in Noida, Best Real Estate Property Consultant in noida, Property in Noida,real estate company in noida, residential property in noida,Commercial Property in  Noida, Top Real estate Broker in Noida, Top Property Broker in Noida, Residential Property in Noida, Residential Property in Greater Noida," />
+    <meta name="keywords" content="rising infra, rising infra noida, residential property near me, Commercial property near me, Best Real Estate Consultant in Noida, Best Real Estate Property Consultant in noida, Property in Noida,real estate company in noida, residential property in noida,Commercial Property in  Noida, Top Real estate Broker in Noida, Top Property Broker in Noida, Residential Property in Noida, Residential Property in Greater Noida" />
     <meta name="description" content="Risinginfra offers expert real estate services, helping you buy, or invest in premium property in Noida" />
     <link rel='canonical' href='https://www.risinginfra.in' />
   </Helmet>

@@ -127,7 +127,7 @@ function App() {
           <Route path="/ghaziabad-properties" element={<Ghaziabad title="Ghaziabad Properties - Rising infra" />}/>
           <Route path='/residential-properties' element={<ResidentialProperty title="Residential Properties - Rising infra"/>} />
           <Route path='/commerical-properties' element={<CommercialProperty title="Commercial Properties - Rising infra"/>} />
-          <Route path='/plots' element={<PlotsProperty title="Plots - Rising infra"/>} />
+          <Route path='/plots' element={<PlotsProperty title="Plots in sale - Rising infra"/>} />
           <Route path='/paras-group' element={<ParasBuildtech title="Paras Group - Rising infra"/>} />
           <Route path="/crc-group" element={<CrcPage title="CRC Group - Rising infra"/>} />
           <Route path="fairfox-group" element={<FairFoxPage title="FairFox Group - Rising infra"/>}/>

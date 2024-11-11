@@ -8,7 +8,7 @@ import '../CSS/Footer.css'
 const FooterBottom = () => {
     const location = [{
         name:'Property in Noida',
-        link:"noidaproperty"
+        link:"noida-properties"
     },{
         name:'Property in Gurgaon',
         link:"gurgaon-properties"

@@ -271,7 +271,7 @@ useEffect(()=>{
               <img src={Notesimage} alt="Notesimage" className='icons-data-home'/>
               <div className='port-home-center'>
                   <h4 className='content-para-home'>Concept PortFolio</h4>
-                   <p className='paragraph-home content-para-home'>Whether you're looking to buy, sell, or rent a home, our extensive portfolio of residential properties ensures that you find the perfect place..</p>
+                   <p className='paragraph-home content-para-home'>Whether you're looking to buy, sell, or rent a home, our extensive portfolio of residential properties ensures that you find the perfect place.</p>
               </div>
             </div>
             <div className='iconsimage-section-home'>

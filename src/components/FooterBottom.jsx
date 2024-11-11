@@ -11,57 +11,57 @@ const FooterBottom = () => {
         link:"noidaproperty"
     },{
         name:'Property in Gurgaon',
-        link:"gurgaonproperty"
+        link:"gurgaon-properties"
     },
     {
         name:'Property in Ghaziabad',
-        link:"ghaziabadproperties"
+        link:"ghaziabad-propertiess"
     },
     {
         name:'Property in Goa',
-        link:"goaproperty"
+        link:"goa-properties"
     },{
         name:"Property in Ayodhya",
-        link:"ayodhyaproperty"
+        link:"ayodhya-properties"
     }]
 
     const topics = [{
         name:"Residential Property",
-        link:"/residentialproperty"
+        link:"/residential-properties"
     },{
         name:"Commercial Property",
-        link:"/commericalproperty"
+        link:"/commerical-properties"
     },{
     name:"Plots",
-    link:"/plotsproperty"
+    link:"/plots"
     }]
 
     const realesattedevlopers = [
     {
         name:"Gaur Group",
-        link:"/gaursgroup"
+        link:"/gaurs-group"
     },{
         name:"Bhutani Group",
-        link:"/bhutanigroup"
+        link:"/bhutani-group"
     },{
         name:"ACE Group",
-        link:"/acegroup"
+        link:"/ace-group"
     },{
         name:"GyGy Group",
-        link:"/gygygroup"
+        link:"/gygy-group"
     },{
         name:"Paras Buildtech",
-        link:"/parasgroup"
+        link:"/paras-group"
     },{
         name:"DLF Group",
         link:"/"
     },
     {
         name:"CRC Group",
-        link:"/crcgroup"
+        link:"/crc-group"
     },{
         name:"FairFox Group",
-        link:"/fairfoxgroup"
+        link:"/fairfox-group"
     }
     ,{
         name:"M3M Group",

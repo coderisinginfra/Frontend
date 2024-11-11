@@ -309,14 +309,14 @@ useEffect(()=>{
       <h1 className='location-content-name-home'>Our Projects</h1>
       <div className='location-flex'>
           <div className='data-image-flex-home'>
-           <Link to="/noidaproperty" className='link-container'>
+           <Link to="/noida-properties" className='link-container'>
            <img src={noida} alt="Noida" className='image-location'/>
             <div className='name-images-flex-home'>
               Noida
             </div></Link>
           </div>
           <div className='data-image-flex-home'>
-           <Link to="/gurgaonproperty" className='link-container'>
+           <Link to="/gurgaon-properties" className='link-container'>
             <img src={gurugram} alt="Noida" className='image-location'/>
               <div className='name-images-flex-home'>
               Gurugram
@@ -324,7 +324,7 @@ useEffect(()=>{
             </Link>
           </div>
           <div className='data-image-flex-home'>
-           <Link to="/ghaziabadproperties" className='link-container'>
+           <Link to="/ghaziabad-properties" className='link-container'>
             <img src={ghaziabad} alt="Noida" className='image-location'/>
               <div className='name-images-flex-home'>
               Ghaziabad
@@ -332,7 +332,7 @@ useEffect(()=>{
            </Link>
           </div>
           <div className='data-image-flex-home'>
-           <Link to="/ayodhyaproperty" className='link-container'>
+           <Link to="/ayodhya-properties" className='link-container'>
             <img src={Ayodhya} alt="Noida" className='image-location'/>
               <div className='name-images-flex-home'>
                 Ayodhya

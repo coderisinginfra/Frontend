@@ -16,10 +16,9 @@ import Login from './websitepage/Login';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import ContactUs from './websitepage/ContactUs';
 import Navbarfront from './components/Navbarfront';
-import ManagementTeam from './pages/ManagementTeam';
 import Careers from './websitepage/Careers';
 import AddJobs from './pages/AddJobs';
-import SellyourProperty from './pages/SellyourProperty';
+// import SellyourProperty from './pages/SellyourProperty';
 import GurugramPage from './LocationPage/GurugramPage';
 import GoaPage from './LocationPage/GoaPage';
 import AyodhyaPage from './LocationPage/AyodhyaPage';
@@ -111,16 +110,16 @@ function App() {
           <Route path="/login" element={<Login title="Login Risinginfra" />} />
           {/* <Route path="/register" element={<Signup title="Register Risinginfra" />} /> */}
           <Route path="/events" element={<AllEvents title="Events - Rising infra" />}/>
-          <Route path="/ourteam" element={<AllTeamMembershow title="Our Teams - Rising infra"/>}/>
+          <Route path="/our-team" element={<AllTeamMembershow title="Our Teams - Rising infra"/>}/>
           <Route path="/blogs" element={<AllBlogs title="Blogs - Risinginfra"/>} />
           <Route path="/blogs/:postTitle" element={<ShowBlogs />} />
           <Route path="/projects/:propertyTitle" element={<AllListingShow />} />
           <Route path="/aboutus" element={<Aboutus title="About Us - RisingInfra" />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy title="Privacy Policy - Rising infra" />} />
           <Route path="/contactus" element={<ContactUs title="Contact Us - RisingInfra" />} />
-          <Route path='/our-teams' element={<ManagementTeam title="Our Leadership Team - Rising infra" />} />
+          {/* <Route path='/our-teams' element={<ManagementTeam title="Our Leadership Team - Rising infra" />} /> */}
           <Route path='/careers' element={<Careers title="Careers - Rising infra" />} />
-          <Route path='/sell-your-properties' element={<SellyourProperty  title="Sell Ypur Property - Rising infra"/>} />
+          {/* <Route path='/sell-your-properties' element={<SellyourProperty  title="Sell Ypur Property - Rising infra"/>} /> */}
           <Route path='/gurgaon-properties' element={<GurugramPage title="Gurgaon Properties - Rising infra"/>}/>
           <Route path='/goa-properties' element={<GoaPage title="Goa Properties - Rising infra"/>}/>
           <Route path='/ayodhya-properties' element={<AyodhyaPage title="Ayodhya Properties - Rising infra"/>} />

@@ -120,11 +120,11 @@ function App() {
           {/* <Route path='/our-teams' element={<ManagementTeam title="Our Leadership Team - Rising infra" />} /> */}
           <Route path='/careers' element={<Careers title="Careers - Rising infra" />} />
           {/* <Route path='/sell-your-properties' element={<SellyourProperty  title="Sell Ypur Property - Rising infra"/>} /> */}
-          <Route path='/gurgaon-properties' element={<GurugramPage title="Gurgaon Properties - Rising infra"/>}/>
-          <Route path='/goa-properties' element={<GoaPage title="Goa Properties - Rising infra"/>}/>
-          <Route path='/ayodhya-properties' element={<AyodhyaPage title="Ayodhya Properties - Rising infra"/>} />
-          <Route path='/noida-properties' element={<NoidaPage title="Noida Properties - Rising infra"/>} />
-          <Route path="/ghaziabad-properties" element={<Ghaziabad title="Ghaziabad Properties - Rising infra" />}/>
+          <Route path='/property-in-gurgaon' element={<GurugramPage title="Property in Gurgaon  - Rising infra"/>}/>
+          <Route path='/property-in-goa' element={<GoaPage title="Property in Goa  - Rising infra"/>}/>
+          <Route path='/property-in-ayodhya' element={<AyodhyaPage title="Property in Ayodhya  - Rising infra"/>} />
+          <Route path='/property-in-noida' element={<NoidaPage title="Property in Noida  - Rising infra"/>} />
+          <Route path="/property-in-ghaziabad" element={<Ghaziabad title="Property in Ghaziabad  - Rising infra" />}/>
           <Route path='/residential-properties' element={<ResidentialProperty title="Residential Properties - Rising infra"/>} />
           <Route path='/commerical-properties' element={<CommercialProperty title="Commercial Properties - Rising infra"/>} />
           <Route path='/plots' element={<PlotsProperty title="Plots in sale - Rising infra"/>} />

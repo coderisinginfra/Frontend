@@ -8,21 +8,21 @@ import '../CSS/Footer.css'
 const FooterBottom = () => {
     const location = [{
         name:'Property in Noida',
-        link:"noida-properties"
+        link:"property-in-noida"
     },{
         name:'Property in Gurgaon',
-        link:"gurgaon-properties"
+        link:"property-in-gurgaon"
     },
     {
         name:'Property in Ghaziabad',
-        link:"ghaziabad-propertiess"
+        link:"property-in-ghaziabad"
     },
     {
         name:'Property in Goa',
-        link:"goa-properties"
+        link:"property-in-goa"
     },{
         name:"Property in Ayodhya",
-        link:"ayodhya-properties"
+        link:"property-in-ayodhya"
     }]
 
     const topics = [{

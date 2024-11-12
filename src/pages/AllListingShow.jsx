@@ -108,7 +108,7 @@ const AllListingShow = () => {
       <Helmet>
         <title>{formattedTitle.toUpperCase()} - Rising infra</title>
         <link rel="canonical" href={`https://www.risinginfra.in/projects/${propertyTitle}`} />
-        <meta name="description" content={propertyData[0].description} />
+        <meta name="description" content={propertyData[0].description -  `contact us +91 9990633353 now`} />
         <meta name="keywords" content={propertyData[0].keywords} />
       </Helmet>
       <ToastContainer />

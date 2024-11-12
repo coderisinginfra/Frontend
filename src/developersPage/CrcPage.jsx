@@ -28,7 +28,7 @@ const CrcPage = (props) => {
         <Helmet>
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/crcgroup" />
-          <meta name="description" content="CRC Group is a prominent real estate developer known for delivering exceptional residential and commercial properties across prime locations." />
+          <meta name="description" content="CRC Group is a prominent real estate developer known for delivering exceptional residential and commercial properties in Delhi/NCR" />
           <meta name="keywords" content="CRC Group, CRC Real Estate Developer, CRC Group Projects, CRC Group Properties, " />
         </Helmet>
         <div className='projectcity'>

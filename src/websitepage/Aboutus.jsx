@@ -32,7 +32,7 @@ const Aboutus = (props) => {
     <Helmet>
       <title>{props.title}</title>
       <link rel="canonical" href="https://www.risinginfra.in/aboutus" />
-      <meta name="description" content="Learn more about RisingInfra, our mission, vision, and the team behind our success in the real estate industry." />
+      <meta name="description" content="Learn more about RisingInfra, our mission, vision, and the team behind our success in the real estate industry. contact us +91 9990633353 now" />
       <meta name="keywords" content="About us" />
     </Helmet>
    <div className='container-abouts'>

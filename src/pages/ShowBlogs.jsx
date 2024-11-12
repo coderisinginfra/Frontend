@@ -83,7 +83,7 @@ const ShowBlogs = () => {
     <Helmet>
         <title>{formattedTitle.toUpperCase()} - Rising infra</title>
         <link rel="canonical" href={`https://www.risinginfra.in/blogs/${postTitle}`} />
-        <meta name="description" content={DOMPurify.sanitize(blogingData.description || '')} />
+        <meta name="description" content={DOMPurify.sanitize(blogingData.description || '') -  `contact us +91 9990633353 now`} />
         <meta name="keywords" content={blogingData.keywords || ''} />
     </Helmet>
 

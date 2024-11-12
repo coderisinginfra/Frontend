@@ -28,7 +28,7 @@ const GyGyPage = (props) => {
         <Helmet>
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/gygygroup" />
-          <meta name="description" content="GyGy Group is a renowned real estate developer, specializing in creating modern, sustainable residential and commercial properties in delhi/NCR." />
+          <meta name="description" content="GyGy Group is a renowned real estate developer, specializing in creating modern, sustainable residential and commercial properties in delhi/NCR. contact us +91 9990633353 now" />
           <meta name="keywords" content="GyGy Group, GyGy Real Estate Developer, GyGy Group Projects, GyGy Group Properties" />
         </Helmet>
         <div className='projectcity'>

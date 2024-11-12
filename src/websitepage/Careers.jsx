@@ -119,7 +119,7 @@ const Careers = (props) => {
             <Helmet>
                 <title>{props.title}</title>
                 <link rel="canonical" href="https://www.risinginfra.in/career" />
-                <meta name="description" content="Join the RisingInfra team and build your career in the real estate industry. Explore current job openings and career opportunities with us." />
+                <meta name="description" content="Join the RisingInfra team and build your career in the real estate industry. Explore current job openings and career opportunities with us. contact us +91 9990633353 now" />
                 <meta name="keywords" content="careers, work with us" />
             </Helmet>
             <div className='imagedata-career'>

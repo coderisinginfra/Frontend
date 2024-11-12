@@ -28,7 +28,7 @@ const BhutaniPage = (props) => {
         <Helmet>
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/bhutanigroup" />
-          <meta name="description" content="Bhutani Infra is a leading real estate developer known for innovative residential and commercial properties." />
+          <meta name="description" content="Bhutani Infra is a leading real estate developer known for innovative residential and commercial properties. contact us +91 9990633353 now" />
           <meta name="keywords" content="Bhutani Infra,  Bhutani Real Estate Developer, Bhutani Infra Projects, Bhutani Infra Properties" />
         </Helmet>
         <div className='projectcity'>

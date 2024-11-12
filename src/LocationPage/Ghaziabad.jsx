@@ -27,7 +27,7 @@ const Ghaziabad = (props) => {
       <Helmet>
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/ghaziabadproperties" />
-          <meta name="description" content="Discover a variety of properties in Ghaziabad with RisingInfra. Explore residential, commercial, and investment opportunities in this thriving city." />
+          <meta name="description" content="Explore residential, commercial, and investment opportunities in this thriving city.contact us +91 9990633353 now." />
           <meta name="keywords" content="property in ghaziabad, buy apartment in ghaziabad, buy  plots in Ghaziabad, villas in Ghaziabad, property for rent in Ghaziabad,  property for sale in Ghaziabad, buy property for rent in ghaziabad, properties in Ghaziabad" />
       </Helmet>
       <div className='projectcity'>

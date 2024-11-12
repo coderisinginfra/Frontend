@@ -29,7 +29,7 @@ const GurugramPage = (props) => {
      <Helmet>
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/gurgaonproperty" />
-          <meta name="description" content="Explore a diverse range of properties in Gurgaon with RisingInfra. Whether you're looking for luxury apartments, commercial spaces, or investment opportunities, find the best real estate options in Gurgaon." />
+          <meta name="description" content="Whether you're looking for luxury apartments, commercial spaces, or investment opportunities, find the best real estate options in Gurgaon. contact us +91 9990633353 now" />
           <meta name="keywords" content="property in gurgaon, apartment in gurgaon,  plots in gurgaon, villas in gurgaon, property for rent in gurgaon,  property for sale in gurgaon, property for rent in gurgaon, properties in gurgaon" />
         </Helmet>
       <div className='projectcity'>

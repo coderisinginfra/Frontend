@@ -24,7 +24,7 @@ const AllTeamMembershow = (props) => {
      <Helmet>
        <title>{props.title}</title>
        <link rel="canonical" href="https://www.risinginfra.in/ourteam" />
-       <meta name="description" content="Meet the dedicated and experienced teams behind RisingInfra. Learn about our professionals who drive our success in property management, real estate, marketing, and more." />
+       <meta name="description" content="Learn about our professionals who drive our success in property management, real estate, marketing, and more. contact us +91 9990633353 now" />
         <meta name="keywords" content="Our teams" />
      </Helmet>
         <div className='meet-our-team'>

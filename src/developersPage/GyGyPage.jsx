@@ -29,7 +29,7 @@ const GyGyPage = (props) => {
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/gygygroup" />
           <meta name="description" content="GyGy Group is a renowned real estate developer, specializing in creating modern, sustainable residential and commercial spaces with a commitment to quality and customer satisfaction." />
-          <meta name="keywords" content="GyGy Group, GyGy Group Projects, GyGy Group Properties, GyGy Residential Projects, GyGy Commercial Projects, GyGy Group Noida, GyGy Group Greater Noida, GyGy Group Delhi NCR, GyGy Group Residential Apartments, GyGy Group Commercial Spaces, GyGy Group India,  GyGy Group Office Spaces." />
+          <meta name="keywords" content="GyGy Group, GyGy Real Estate Developer, GyGy Group Projects, GyGy Group Properties" />
         </Helmet>
         <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>GyGy Group Exclusive OnGoing Projects </h1>

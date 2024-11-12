@@ -29,7 +29,7 @@ const AcePage = (props) => {
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/acegroup" />
           <meta name="description" content="ACE Group is a premier real estate developer renowned for its innovative designs and high-quality construction residential and commercial properties." />
-          <meta name="keywords" content="ACE Group, ACE Group Real Estate, ACE Real Estate Developer, ACE Group Projects, ACE Group Properties, ACE Residential Projects, ACE Commercial Projects, ACE Group Noida, ACE Group Greater Noida, ACE Group Ghaziabad, ACE Group Delhi NCR, Best Real Estate Developer ACE, ACE Group Residential Apartments, ACE Group Residential Spaces, ACE Group India" />
+          <meta name="keywords" content="ACE Group, ACE Real Estate Developer, ACE Group Projects, ACE Group Properties" />
         </Helmet>
         <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>ACE Group Exclusive OnGoing Projects </h1>

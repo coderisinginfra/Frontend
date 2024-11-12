@@ -29,7 +29,7 @@ const BhutaniPage = (props) => {
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/bhutanigroup" />
           <meta name="description" content="Bhutani Infra is a leading real estate developer known for innovative residential and commercial properties." />
-          <meta name="keywords" content="Bhutani Infra, Bhutani Infra Real Estate, Bhutani Real Estate Developer, Bhutani Infra Projects, Bhutani Infra Properties, Bhutani Residential Projects, Bhutani Commercial Projects, Bhutani Infra Noida, Bhutani Infra Greater Noida,  Bhutani Group Noida, Best Real Estate Developer Bhutani, Bhutani Infra Residential Apartments, Bhutani Infra Commercial Spaces, Bhutani Infra India, Bhutani group Office Spaces." />
+          <meta name="keywords" content="Bhutani Infra,  Bhutani Real Estate Developer, Bhutani Infra Projects, Bhutani Infra Properties" />
         </Helmet>
         <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>Bhutani Infra Exclusive OnGoing Projects </h1>

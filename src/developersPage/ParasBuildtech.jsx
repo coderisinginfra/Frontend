@@ -29,7 +29,7 @@ const ParasBuildtech = (props) => {
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/parasgroup" />
           <meta name="description" content="Paras Buildtech is a leading real estate developer known for its innovative residential and commercial projects and sustainability in prime locations." />
-          <meta name="keywords" content="Paras Group, Paras Buildtech, Paras group Projects, Paras group Properties, Paras Residential Projects, Paras Commercial Projects, Paras Group Noida, Paras Group Greater Noida, Paras group Ghaziabad, Paras Group Delhi/NCR, Paras Group Residential Apartments, Paras Group Commercial Spaces, Paras Group India, Paras Group Office Spaces." />
+          <meta name="keywords" content="Paras Group, Paras Buildtech, Paras group Projects, Paras group Properties, Paras Group Delhi/NCR," />
         </Helmet>
         <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>Paras Group Exclusive OnGoing Projects </h1>

@@ -29,7 +29,7 @@ const FairFoxPage = (props) => {
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/fairfoxgroup" />
           <meta name="description" content="Fairfox Group excels in real estate development with innovative commercial projects combining modern design, and sustainability in prime locations for optimal value." />
-          <meta name="keywords" content="Fairfox Group, Fairfox Group properties, Fairfox Group Projects, Fairfox Group Properties, Fairfox Residential Projects, Fairfox Commercial Projects, Fairfox Group Noida, Fairfox Group Greater Noida, Fairfox Group Ghaziabad, Fairfox Group Residential Apartments, Fairfox Group Commercial Spaces, Fairfox Group Noida." />
+          <meta name="keywords" content="Fairfox Group, Fairfox Real Estate Developer, Fairfox Group properties, Fairfox Group Projects" />
         </Helmet>
         <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>FAIRFOX Group Exclusive OnGoing Projects </h1>

@@ -29,7 +29,7 @@ const GaursPage = (props) => {
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/gaursgroup" />
           <meta name="description" content="Gaur Group is a trusted real estate developer, delivering innovative residential projects in india." />
-          <meta name="keywords" content="Gaur Group, Gaur Group Real Estate, Gaur Real Estate Developer, Gaur Group Projects, Gaur Group Properties, Gaur Residential Projects, Gaur Commercial Projects, Gaur Group Noida, Gaur Group Greater Noida, Gaur Group Ghaziabad, Gaur Group Ghaziabad, Gaur Group Residential Apartments, Gaur Group India, gaur city" />
+          <meta name="keywords" content="Gaur Group, Gaur Real Estate Developer, Gaur Group Projects, Gaur Group Properties" />
         </Helmet>
         <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>GAUR Group Exclusive OnGoing Projects </h1>

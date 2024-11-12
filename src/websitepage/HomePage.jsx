@@ -139,7 +139,7 @@ useEffect(()=>{
    <Helmet>
     <title>Rising Infra - Best Real Estate Property Consultant in Noida. </title>
     <meta name="keywords" content="Best Real Estate Consultant in Noida, Best Real Estate Property Consultant in noida, Best Real Estate Consultant in Delhi/NCR, Top Real 10 estate Broker in Noida, Top 10 Property Broker in Noida,Top Real 5 estate Broker in Noida, Top 5 Property Broker in Noida" />
-    <meta name="description" content="Risinginfra - Best Real Estate Consultant in Delhi/NCR, Best Real Estate Property Consultant in noida" />
+    <meta name="description" content="Risinginfra - Best Real Estate Consultant in Delhi/NCR, Best Real Estate Property Consultant in noida. contact us +91 9990633353 now" />
     <link rel='canonical' href='https://www.risinginfra.in' />
   </Helmet>
    <div className='container-home'>  

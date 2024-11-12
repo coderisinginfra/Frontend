@@ -26,7 +26,7 @@ const ResidentialProperty = (props) => {
       <title>{props.title}</title>
       <link rel="canonical" href="https://www.risinginfra.in/residentialproperty" />
       <meta name="description" content="Explore a wide range of residential properties with RisingInfra. Find your dream home among our extensive listings of apartments, houses, and villas for sale or rent." />
-      <meta name="keywords" content="residential properties, homes for sale, apartments for sale, houses for rent, residential real estate,  villas for sale, rental apartments, residential property for rent, apartment for rent, Buy Residential property in Noida, Buy Commercial property in Noida" />
+      <meta name="keywords" content="residential properties in noida, apartment for rent in Noida,  villas for sale,  Buy Residential property in Noida, top 10 residential property in noida" />
     </Helmet>
     <div className='projectcity'>
           <h1 className='headingwhoweare hedas'>Our Exclusive Residential Projects</h1>

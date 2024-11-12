@@ -30,7 +30,7 @@ const PlotsProperty = (props) => {
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/plotsproperty" />
           <meta name="description" content=" Explore prime land options for residential, commercial, and investment purposes in Noida with risinginfra" />
-          <meta name="keywords" content="plots for sale, land for sale, real estate plots, residential plots, plot in noida, plot in greater noida, plot near jewar airport, land in noida, plots for sale near me, plots for commercial use, land for residential development, land for commercial development" />
+          <meta name="keywords" content="plots for sale, land for sale,  residential plots, plot in noida, plot in greater noida, plot near jewar airport, land in noida, plots for sale near me" />
      </Helmet>
     <div className='projectcity'>
           <h1 className='headingwhoweare hedas'>Our Exclusive Plots Projects</h1>

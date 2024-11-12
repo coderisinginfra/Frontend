@@ -29,7 +29,7 @@ const GoaPage = (props) => {
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/goaproperty" />
           <meta name="description" content="Explore a range of properties in Goa with RisingInfra. Find stunning beachfront homes, luxury villas, and investment opportunities in one of India's most sought-after destinations." />
-          <meta name="keywords" content="Goa properties, real estate in Goa,   luxury villas in Goa, homes for sale in Goa, rental properties Goa, investment properties Goa, land for sale in Goa, Goa flats, Goa bungalows, Goa property management, real estate investment Goa, property for rent Goa, property for sale in Goa, commercial properties Goa, residential properties Goa" />
+          <meta name="keywords" content="property in goa, buy apartment in goa, buy  plots in goa, buy villas in goa, property for rent in goa,  property for sale in goa, property for rent in goa, properties in goa" />
         </Helmet>
       <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>Our Exclusive Projects</h1>

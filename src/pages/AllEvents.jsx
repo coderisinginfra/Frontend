@@ -62,7 +62,7 @@ const AllEvents = (props) => {
         <title>{props.title}</title>
         <link rel="canonical" href="https://www.risinginfra.in/events" />
         <meta name="description" content="Explore a diverse array of events in IN. Find & compare, Reviews, Ratings, Timings, Entry Ticket Fees, Schedule, Calendar, Discussion Topics, Venue, Speakers, Agenda, Visitors Profile, Exhibitor Information etc. for your convenience. Don't miss out on these exciting opportunities" />
-        <meta name="keywords" content="Rising Infra Events, Agra Events, Property Events,property expo,expo real estate,real estate expo 2024 Properties, Rising Infra, Rising Infra Noida, Property Expo 2024, Navratri Property Expo, Navratri Real estate Events, Events in Noida, M3m Events, Real estate Events, Prestige Events, GyGy Mentis Expo, real estate expo, property expo, Events in Navratri, Expo Real estate Events,Property Mela" />
+        <meta name="keywords" content="Property Events, Rising infra events" />
       </Helmet>
       <div className='flex-content'>
             <ToastContainer />

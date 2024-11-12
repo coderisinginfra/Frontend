@@ -26,7 +26,7 @@ const CommercialProperty = (props) => {
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/commericalproperty" />
           <meta name="description" content="Explore a range of commercial properties with RisingInfra. Find prime office spaces, retail locations, and industrial properties suited for your business needs and investments." />
-          <meta name="keywords" content="commercial properties, office spaces for lease, retail space for rent,office space for rent, commercial property investment, commercial space for lease, commercial property for sale, commercial space for lease, office space for sale,  Buy Comercial property in Noida, Top 10 Commercial property in Noida" />
+          <meta name="keywords" content="commercial properties in noida, Buy Commercial property in Noida, Top 10 Commercial property in Noida" />
         </Helmet>
     <div className='projectcity'>
           <h1 className='headingwhoweare hedas'>Our Exclusive Commercial Projects</h1>

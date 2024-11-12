@@ -76,7 +76,7 @@ const AllBlogs = (props) => {
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/blogs" />
           <meta name="description" content="Read the latest articles and insights on real estate, property management, market trends, and more on the Risinginfra blog. Stay informed with our expert commentary and tips." />
-          <meta name="keywords" content="Property Consultant in Noida, Real Estate Consultants Noida, Real estate broker in noida , Best Real Estate Property Consultants  Noida, Real Estate Consultant Company Noida, Real Estate Consultants in Noida, Real Estate  Consultant Company, residential property in noida, commercial property in noida, real estate latest news" />
+          <meta name="keywords" content="Blogs" />
         </Helmet>
         <div className='container-blog'>
             <div>

@@ -32,7 +32,7 @@ const AyodhyaPage = (props) => {
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/ayodhyaproperty" />
           <meta name="description" content="Explore a variety of properties in Ayodhya with RisingInfra. Discover residential, commercial, and investment opportunities in this historically significant city." />
-          <meta name="keywords" content="Ayodhya properties, real estate in Ayodhya, Ayodhya apartments, commercial properties in Ayodhya, land for sale in Ayodhya,  real estate investment Ayodhya,   residential properties Ayodhya, plots in ram mandir ayodhya, home near ram mandir" />
+          <meta name="keywords" content="property in ayodhya, Buy apartment in ayodhya, Buy plots in ayodhya, villas in ayodhya, property for rent in ayodhya, property for sale in ayodhya, property for rent in ayodhya, properties in ayodhya" />
           <meta name="author" content="Rising Infra" />
         </Helmet>
     <div className='projectcity'>

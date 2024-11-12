@@ -30,7 +30,7 @@ const GurugramPage = (props) => {
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/gurgaonproperty" />
           <meta name="description" content="Explore a diverse range of properties in Gurgaon with RisingInfra. Whether you're looking for luxury apartments, commercial spaces, or investment opportunities, find the best real estate options in Gurgaon." />
-          <meta name="keywords" content="Gurgaon properties, real estate in Gurgaon, Gurgaon apartments, commercial spaces in Gurgaon, Gurgaon residential properties, Gurgaon office spaces, Gurgaon rental properties, Gurgaon investment properties, Gurgaon real estate, Gurgaon property deals, Gurgaon real estate investments, Gurgaon luxury apartments, Gurgaon property for sale, Gurgaon property for rent, Gurgaon commercial real estate, Gurgaon housing market, Gurgaon property development, Gurgaon land for sale, Gurgaon flats, Gurgaon real estate opportunities, Gurgaon property management, Gurgaon residential flats." />
+          <meta name="keywords" content="Gurgaon properties, real estate in Gurgaon, Buy Residential property in gurugaon, buy property in gurugram, buy commercial property in gurgaon, top 10 residential properties in Gurgaon, top 10 commercial properties in Gurgaon." />
         </Helmet>
       <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>Our Exclusive Projects</h1>

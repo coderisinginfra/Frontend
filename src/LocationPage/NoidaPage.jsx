@@ -31,7 +31,7 @@ const NoidaPage = (props) => {
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/noidaproperty" />
           <meta name="description" content="Discover a wide range of properties in Noida with RisingInfra. From luxurious apartments to commercial spaces, explore the best real estate opportunities in Noida." />
-          <meta name="keywords" content="Noida properties, real estate in Noida, Noida apartments, commercial spaces in Noida, Noida real estate, Noida property listings, Noida residential properties, Noida office spaces, Noida rental properties, Noida investment properties, residential property in Noida, residential properties in Noida, best residential property in Noida, best residential projects in Noida, top residential properties in Noida, top commercial properties in noida" />
+          <meta name="keywords" content="Noida properties, real estate in Noida,  Noida real estate, office spaces in Noida, ,  residential property in Noida, Comercial Property in Noida, Buy residential property in Noida, Buy residential projects in Noida, top 10 residential properties in Noida, top 10 commercial properties in noida" />
         </Helmet>
         <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>Our Exclusive OnGoing Projects</h1>

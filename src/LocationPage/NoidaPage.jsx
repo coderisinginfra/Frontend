@@ -61,7 +61,7 @@ const NoidaPage = (props) => {
 </div>
 
             <div className='investment-topics'>
-                <h1 className='whoweare'>Why Noida is Top Investment For Real Estate</h1>
+                <h1 className='whoweare'>Buy Property In Noida</h1>
                 <p className='para-topics'>Noida, short for New Okhla Industrial Development Authority, is a city located in Gautam Buddha Nagar district of the Indian state of Uttar Pradesh. Noida is a satellite city of Delhi and is a part of the National Capital Region. According to the 2021 Delhi Master Plan, Noida is a part of CNCR (Central National Capital Region) or DMA (Delhi Metropolitan Area). As per provisional reports of Census of India, the population of Noida in 2011 was 642,381. The city is managed by New Okhla Industrial Development Authority (NOIDA). The district's administrative headquarters are in the nearby city of Greater Noida.</p>
                 <ul className='list-ul'>
                     <li className='list-li'>Excellent Connectivity and Infrastructure</li>

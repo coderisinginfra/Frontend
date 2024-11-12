@@ -62,7 +62,7 @@ const AyodhyaPage = (props) => {
       }
 </div>
         <div className='investment-topics'>
-                <h1 className='whoweare'>Why Ayodhya is Top Investment For Real Estate</h1>
+                <h1 className='whoweare'>Buy Property in Ayodhya</h1>
                 <p className='para-topics'>Ayodhya was historically known as Saketa. The early Buddhist and Jain canonical texts mention that the religious leaders Gautama Buddha and Mahavira visited and lived in the city. The Jain texts also describe it as the birthplace of five tirthankaras namely, Rishabhanatha, Ajitanatha, Abhinandananatha, Sumatinatha and Anantanatha, and associate it with the legendary Bharata Chakravarti. From the Gupta period onwards, several sources mention Ayodhya and Saketa as the name of the same city.</p>
                 <ul className='list-ul'>
                     <li className='list-li'>Excellent Connectivity and Infrastructure</li>

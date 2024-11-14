@@ -27,7 +27,7 @@ const GoaPage = (props) => {
     <>
       <Helmet>
           <title>{props.title}</title>
-          <link rel="canonical" href="https://www.risinginfra.in/goaproperty" />
+          <link rel="canonical" href="https://www.risinginfra.in/property-in-goa" />
           <meta name="description" content="Find stunning beachfront homes, luxury villas, and investment opportunities in one of India's most sought-after destinations. contact us +91 9990633353 now" />
           <meta name="keywords" content="property in goa, buy apartment in goa, buy  plots in goa, buy villas in goa, property for rent in goa,  property for sale in goa, property for rent in goa, properties in goa" />
         </Helmet>

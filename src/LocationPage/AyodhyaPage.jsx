@@ -30,7 +30,7 @@ const AyodhyaPage = (props) => {
     <>
       <Helmet>
           <title>{props.title}</title>
-          <link rel="canonical" href="https://www.risinginfra.in/ayodhyaproperty" />
+          <link rel="canonical" href="https://www.risinginfra.in/property-in-noida" />
           <meta name="description" content="Discover residential, commercial, and investment opportunities in this historically significant city. contact us +91 9990633353 now" />
           <meta name="keywords" content="property in ayodhya, Buy apartment in ayodhya, Buy plots in ayodhya, villas in ayodhya, property for rent in ayodhya, property for sale in ayodhya, property for rent in ayodhya, properties in ayodhya" />
           <meta name="author" content="Rising Infra" />

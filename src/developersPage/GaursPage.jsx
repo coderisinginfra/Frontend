@@ -27,7 +27,7 @@ const GaursPage = (props) => {
         <>
         <Helmet>
           <title>{props.title}</title>
-          <link rel="canonical" href="https://www.risinginfra.in/gaursgroup" />
+          <link rel="canonical" href="https://www.risinginfra.in/gaurs-group" />
           <meta name="description" content="Gaur Group is a trusted real estate developer, delivering innovative residential projects in india. contact us +91 9990633353 now" />
           <meta name="keywords" content="Gaur Group, Gaur Real Estate Developer, Gaur Group Projects, Gaur Group Properties" />
         </Helmet>

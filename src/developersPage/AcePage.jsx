@@ -27,7 +27,7 @@ const AcePage = (props) => {
         <>
         <Helmet>
           <title>{props.title}</title>
-          <link rel="canonical" href="https://www.risinginfra.in/acegroup" />
+          <link rel="canonical" href="https://www.risinginfra.in/ace-group" />
           <meta name="description" content="ACE Group is a premier real estate developer renowned for its innovative designs and high-quality construction residential and commercial properties. contact us +91 9990633353 now" />
           <meta name="keywords" content="ACE Group, ACE Real Estate Developer, ACE Group Projects, ACE Group Properties" />
         </Helmet>

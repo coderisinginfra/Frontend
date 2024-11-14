@@ -29,7 +29,7 @@ const NoidaPage = (props) => {
         <>
         <Helmet>
           <title>{props.title}</title>
-          <link rel="canonical" href="https://www.risinginfra.in/noidaproperty" />
+          <link rel="canonical" href="https://www.risinginfra.in/property-in-noida" />
           <meta name="description" content="luxurious apartments to commercial spaces, explore the best real estate opportunities in Noida. contact us +91 9990633353 now" />
           <meta name="keywords" content="property in Noida, buy apartment in Noida, buy  properties in Noida, buy plots in Noida, villas in Noida, property for rent in Noida,  property for sale in Noida, property for sale in Noida" />
         </Helmet>

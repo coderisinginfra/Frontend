@@ -24,7 +24,7 @@ const ResidentialProperty = (props) => {
     <>
     <Helmet>
       <title>{props.title}</title>
-      <link rel="canonical" href="https://www.risinginfra.in/residentialproperty" />
+      <link rel="canonical" href="https://www.risinginfra.in/residential-properties" />
       <meta name="description" content=" Find your dream home among our extensive listings of apartments, houses, and villas for sale or rent. contact us +91 9990633353 now" />
       <meta name="keywords" content="residential properties in noida, apartment for rent in Noida,  villas for sale,  Buy Residential property in Noida, top 10 residential property in noida" />
     </Helmet>

@@ -32,7 +32,7 @@ const ContactUs = (props) => {
         <>
         <Helmet>
             <title>{props.title}</title>
-            <link rel="canonical" href="https://www.risinginfra.in/contact" />
+            <link rel="canonical" href="https://www.risinginfra.in/contactus" />
             <meta name="description" content="Get in touch with RisingInfra for all your real estate needs. Contact us via phone, email, or visit our office. contact us +91 9990633353 now" />
             <meta name="keywords" content="Contact us" />
         </Helmet>

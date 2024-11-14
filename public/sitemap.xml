@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+*<?xml version="1.0" encoding="UTF-8"?>
 <urlset  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
@@ -94,7 +94,7 @@
      <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.risinginfra.in/contact</loc>
+    <loc>https://www.risinginfra.in/contactus</loc>
     <lastmod>2024-08-14T09:50:12+00:00</lastmod>
         <changefreq>weekly</changefreq>
      <priority>0.9</priority>
@@ -142,41 +142,47 @@
      <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.risinginfra.in/noidaproperty</loc>
+    <loc>https://www.risinginfra.in/property-in-noida</loc>
     <lastmod>2024-08-14T09:50:12+00:00</lastmod>
      <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.risinginfra.in/gurgaonproperty</loc>
+    <loc>https://www.risinginfra.in/property-in-gurgaon</loc>
     <lastmod>2024-08-14T09:50:12+00:00</lastmod>
         <changefreq>weekly</changefreq>
      <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.risinginfra.in/ghaziabadproperties</loc>
+    <loc>https://www.risinginfra.in/property-in-ghaziabad</loc>
     <lastmod>2024-08-14T09:50:12+00:00</lastmod>
         <changefreq>weekly</changefreq>
      <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.risinginfra.in/goaproperty</loc>
+    <loc>https://www.risinginfra.in/property-in-goa</loc>
     <lastmod>2024-08-14T09:50:12+00:00</lastmod>
         <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://www.risinginfra.in/ayodhyaproperty</loc>
-    <lastmod>2024-08-14T09:50:12+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.risinginfra.in/commericalproperty</loc>
+    <loc>https://www.risinginfra.in/property-in-ayodhya</loc>
     <lastmod>2024-08-14T09:50:12+00:00</lastmod>
         <changefreq>weekly</changefreq>
      <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.risinginfra.in/plotsproperty</loc>
+    <loc>https://www.risinginfra.in/commerical-properties</loc>
+    <lastmod>2024-08-14T09:50:12+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+     <priority>0.9</priority>
+  </url>
+    <url>
+    <loc>https://www.risinginfra.in/residential-properties</loc>
+    <lastmod>2024-08-14T09:50:12+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.risinginfra.in/plots</loc>
     <lastmod>2024-08-14T09:50:12+00:00</lastmod>
         <changefreq>weekly</changefreq>
      <priority>0.9</priority>
@@ -292,6 +298,48 @@
    <url>
     <loc>https://www.risinginfra.in/blogs/commercial-vs-residential-property-for-investment</loc>
     <lastmod>2024-11-08T00:14:05+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.risinginfra.in/gaurs-group</loc>
+    <lastmod>2024-11-09T00:14:05+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.risinginfra.in/bhutani-group</loc>
+    <lastmod>2024-11-10T00:14:05+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.risinginfra.in/ace-group</loc>
+    <lastmod>2024-11-11T00:14:05+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.risinginfra.in/gygy-group</loc>
+    <lastmod>2024-11-12T00:14:05+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.risinginfra.in/paras-group</loc>
+    <lastmod>2024-11-13T00:14:05+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+    <url>
+    <loc>https://www.risinginfra.in/crc-group</loc>
+    <lastmod>2024-11-14T00:14:05+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+    <url>
+    <loc>https://www.risinginfra.in/fairfox-group</loc>
+    <lastmod>2024-11-14T00:14:05+00:00</lastmod>
         <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>

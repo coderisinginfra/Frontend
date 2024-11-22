@@ -22,7 +22,7 @@ const Footer = () => {
     },
     {
         title:"Our Team",
-        link:"/ourteam"
+        link:"/our-team"
     },{
         title:"Blogs",
         link:"/blogs"

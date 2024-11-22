@@ -94,7 +94,7 @@ function App() {
               <Route path="blogproject" element={<BlogProject title="Blog Project" />} />
               <Route path="admin/panel" element={<AdminFront title="Welcome In Admin" />} />
               <Route path='Jobopening' element={<AddJobs title="Add Job Opening"/>}/>
-              <Route path='updateblog/:id' element={<UpdateBlog />}/>
+              <Route path='updateblog/:id' element={<UpdateBlog title="Update Blog"/>}/>
               <Route path="manageblog" element={<Managebyadminblog title="All Blogs" />} />
               <Route path="allresume" element={<FetchResume title="All Resume" />} />
               <Route path='addteammember' element={<AddTeamMember title="Add Team Member"/>}/>

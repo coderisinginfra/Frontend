@@ -21,7 +21,7 @@ const drawerWidth = 240;
 const navItems = [
   { name: 'Home', link: '/' },
   { name: 'About Us', link: '/aboutus' },
-  { name: 'Our Team', link: '/ourteam' },
+  { name: 'Our Team', link: '/our-team' },
   { name: 'Blogs', link: '/blogs' },
   { name: 'Contact us', link: '/contactus' },
   { name: 'Careers', link: '/careers' },

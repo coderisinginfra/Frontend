@@ -28,8 +28,27 @@ const ParasBuildtech = (props) => {
         <Helmet>
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/paras-group" />
-          <meta name="description" content="Paras Buildtech is a leading real estate developer known for its innovative residential and commercial projects. contact us +91 9990633353 now" />
+          <meta name="description" content="Paras Buildtech is a leading real estate developer known for its innovative residential and commercial projects. contact us +91 9990633353 now." />
           <meta name="keywords" content="Paras Group, Paras Buildtech, Paras group Projects, Paras group Properties, Paras Group Delhi/NCR," />
+          <meta name="robots" content="INDEX,FOLLOW"/>
+          <meta name="Robots" content="INDEX, FOLLOW" />
+          <meta name="robots"  content="noydir" />
+          <meta name="Content-Language" content="en-us" />
+          <meta name="Publisher" content="Rising infra" />
+          <meta name="distribution" content="LOCAL" />
+          <meta name="page-topic" content="Rising infra"/>
+          <meta name="YahooSeeker" content="INDEX, FOLLOW"/>
+          <meta name="googlebot" content="index,follow"/>
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="Rising infra"/>
+          <meta property="og:url" content="https://www.risinginfra.in/paras-group" />
+          <meta property="og:image" content="https://www.risinginfra.in/assets/bhutaninfra-O_E715t1.avif" />
+          <meta property="og:title" content={props.title} />
+          <meta property="og:description" content="Paras Buildtech is a leading real estate developer known for its innovative residential and commercial projects. contact us +91 9990633353 now." />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:title" content={props.title} />
+          <meta name="twitter:description" content="Paras Buildtech is a leading real estate developer known for its innovative residential and commercial projects. contact us +91 9990633353 now."/>
+          <meta name="twitter:image" content="https://www.risinginfra.in/assets/bhutaninfra-O_E715t1.avif" />
         </Helmet>
         <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>Paras Group Exclusive OnGoing Projects </h1>

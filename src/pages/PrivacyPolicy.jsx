@@ -8,8 +8,29 @@ const PrivacyPolicy = (props) => {
     <Helmet>
      <title>{props.title} - Rising infra</title>
      <link rel="canonical" href="https://www.risinginfra.in/privacy-policy" />
-     <meta name="description" content="Read our Privacy Policy to understand how Risinginfra collects, uses, and protects your personal information when you visit our website. contact us +91 9990633353 now" />
+     <meta name="description" content="Read our Privacy Policy to understand how Risinginfra collects, uses, and protects your personal information when you visit our website. contact us +91 9990633353 now." />
      <meta name="keywords" content="Privacy Policy" />
+     <meta name="robots" content="INDEX,FOLLOW"/>
+     <meta name="Robots" content="INDEX, FOLLOW" />
+     <meta name="robots"  content="noydir" />
+     <meta name="Content-Language" content="en-us" />
+     <meta name="Publisher" content="Rising infra" />
+     <meta name="distribution" content="LOCAL" />
+     <meta name="page-topic" content="Rising infra"/>
+     <meta name="YahooSeeker" content="INDEX, FOLLOW"/>
+     <META name="msnbot"  content="INDEX, FOLLOW"/>
+     <meta name="googlebot" content="index,follow"/>
+     <META name="allow-search" content="yes"/>
+     <meta property="og:type" content="website" />
+     <meta property="og:site_name" content="Rising infra"/>
+     <meta property="og:url" content="https://www.risinginfra.in/privacy-policy" />
+     <meta property="og:image" content="https://www.risinginfra.in/assets/teamphoto-BRDjlWv7.png" />
+     <meta property="og:title" content={props.title - `-Rising infra`} />
+     <meta property="og:description" content="Read our Privacy Policy to understand how Risinginfra collects, uses, and protects your personal information when you visit our website. contact us +91 9990633353 now." />
+     <meta name="twitter:card" content="summary" />
+     <meta name="twitter:title" content={props.title - `-Rising infra`} />
+     <meta name="twitter:description" content="Read our Privacy Policy to understand how Risinginfra collects, uses, and protects your personal information when you visit our website. contact us +91 9990633353 now."/>
+     <meta name="twitter:image" content="https://www.risinginfra.in/assets/teamphoto-BRDjlWv7.png" />
    </Helmet>
    <div className='conatiner-privacy-policy'>
     <h1 className='heading-container'>Privacy Policy</h1>

@@ -29,8 +29,29 @@ const GurugramPage = (props) => {
      <Helmet>
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/property-in-gurgaon" />
-          <meta name="description" content="Whether you're looking for luxury apartments, commercial spaces, or investment opportunities, find the best real estate options in Gurgaon. contact us +91 9990633353 now" />
+          <meta name="description" content="Whether you're looking for luxury apartments, commercial spaces, or investment opportunities, find the best real estate options in Gurgaon. contact us +91 9990633353 now." />
           <meta name="keywords" content="property in gurgaon, apartment in gurgaon,  plots in gurgaon, villas in gurgaon, property for rent in gurgaon,  property for sale in gurgaon, property for rent in gurgaon, properties in gurgaon" />
+          <meta name="robots" content="INDEX,FOLLOW"/>
+          <meta name="Robots" content="INDEX, FOLLOW" />
+          <meta name="robots"  content="noydir" />
+          <meta name="Content-Language" content="en-us" />
+          <meta name="Publisher" content="Rising infra" />
+          <meta name="distribution" content="LOCAL" />
+          <meta name="page-topic" content="Rising infra"/>
+          <meta name="YahooSeeker" content="INDEX, FOLLOW"/>
+          <META name="msnbot"  content="INDEX, FOLLOW"/>
+          <meta name="googlebot" content="index,follow"/>
+          <META name="allow-search" content="yes"/>
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="Rising infra"/>
+          <meta property="og:url" content="https://www.risinginfra.in/property-in-gurgaon" />
+          <meta property="og:image" content="https://www.risinginfra.in/assets/gurugram-k5-OwaQC.jpg" />
+          <meta property="og:title" content={props.title} />
+          <meta property="og:description" content="Whether you're looking for luxury apartments, commercial spaces, or investment opportunities, find the best real estate options in Gurgaon. contact us +91 9990633353 now." />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:title" content={props.title} />
+          <meta name="twitter:description" content="Whether you're looking for luxury apartments, commercial spaces, or investment opportunities, find the best real estate options in Gurgaon. contact us +91 9990633353 now."/>
+          <meta name="twitter:image" content="https://www.risinginfra.in/assets/gurugram-k5-OwaQC.jpg" />
         </Helmet>
       <div className='projectcity'>
             <h1 className='headingwhoweare hedas'>Our Exclusive Projects</h1>

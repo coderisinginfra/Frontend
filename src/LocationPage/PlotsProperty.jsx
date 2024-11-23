@@ -29,9 +29,30 @@ const PlotsProperty = (props) => {
       <Helmet>
           <title>{props.title}</title>
           <link rel="canonical" href="https://www.risinginfra.in/plots" />
-          <meta name="description" content=" Explore prime land options for residential, commercial, and investment purposes in Noida with risinginfra. contact us +91 9990633353 now" />
+          <meta name="description" content="Explore prime land options for residential, commercial, and investment purposes in Noida with risinginfra. contact us +91 9990633353 now." />
           <meta name="keywords" content="plots for sale, land for sale,  residential plots, plot in noida, plot in greater noida, plot near jewar airport, land in noida, plots for sale near me" />
-     </Helmet>
+          <meta name="robots" content="INDEX,FOLLOW"/>
+          <meta name="Robots" content="INDEX, FOLLOW" />
+          <meta name="robots"  content="noydir" />
+          <meta name="Content-Language" content="en-us" />
+          <meta name="Publisher" content="Rising infra" />
+          <meta name="distribution" content="LOCAL" />
+          <meta name="page-topic" content="Rising infra"/>
+          <meta name="YahooSeeker" content="INDEX, FOLLOW"/>
+          <META name="msnbot"  content="INDEX, FOLLOW"/>
+          <meta name="googlebot" content="index,follow"/>
+          <META name="allow-search" content="yes"/>
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="Rising infra"/>
+          <meta property="og:url" content="https://www.risinginfra.in/plots" />
+          <meta property="og:image" content="https://www.risinginfra.in/assets/finallogo-BMQWcxs0.png" />
+          <meta property="og:title" content={props.title} />
+          <meta property="og:description" content="Explore prime land options for residential, commercial, and investment purposes in Noida with risinginfra. contact us +91 9990633353 now." />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:title" content={props.title} />
+          <meta name="twitter:description" content="Explore prime land options for residential, commercial, and investment purposes in Noida with risinginfra. contact us +91 9990633353 now."/>
+          <meta name="twitter:image" content="https://www.risinginfra.in/assets/finallogo-BMQWcxs0.png" />
+      </Helmet>
     <div className='projectcity'>
           <h1 className='headingwhoweare hedas'>Our Exclusive Plots Projects</h1>
           <h1 className='heading-image props-name'>Discover Plots Property With Rising Infra </h1>

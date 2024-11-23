@@ -35,6 +35,27 @@ const ContactUs = (props) => {
             <link rel="canonical" href="https://www.risinginfra.in/contactus" />
             <meta name="description" content="Get in touch with RisingInfra for all your real estate needs. Contact us via phone, email, or visit our office. contact us +91 9990633353 now" />
             <meta name="keywords" content="Contact us" />
+            <link rel='canonical' href='https://www.risinginfra.in/contactus' />
+            <meta name="robots" content="INDEX,FOLLOW"/>
+            <meta name="Robots" content="INDEX, FOLLOW" />
+            <meta name="robots"  content="noydir" />
+            <meta name="Content-Language" content="en-us" />
+            <meta name="Publisher" content="Rising infra" />
+            <meta name="distribution" content="LOCAL" />
+            <meta name="page-topic" content="Rising infra"/>
+            <meta name="YahooSeeker" content="INDEX, FOLLOW"/>
+            <META name="msnbot"  content="INDEX, FOLLOW"/>
+            <meta name="googlebot" content="index,follow"/>
+            <META name="allow-search" content="yes"/>
+            <meta property="og:type" content="website" />
+            <meta property="og:site_name" content="Rising infra"/>
+            <meta property="og:url" content="https://www.risinginfra.in/contactus" />
+            <meta property="og:image" content="https://www.risinginfra.in/assets/teamphoto-BRDjlWv7.png" />
+            <meta property="og:title" content={props.title} />
+            <meta property="og:description" content="Get in touch with RisingInfra for all your real estate needs. Contact us via phone, email, or visit our office. contact us +91 9990633353 now" />
+            <meta name="twitter:title" content={props.title} />
+            <meta name="twitter:description" content="Get in touch with RisingInfra for all your real estate needs. Contact us via phone, email, or visit our office. contact us +91 9990633353 now"/>
+            <meta name="twitter:image" content="https://www.risinginfra.in/assets/teamphoto-BRDjlWv7.png" />
         </Helmet>
             <div className='display-container'>
                 <div className='display-conatiner1'>

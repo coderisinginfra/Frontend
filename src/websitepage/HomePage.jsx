@@ -141,6 +141,26 @@ useEffect(()=>{
     <meta name="keywords" content="Best Real Estate Consultant in Noida, Best Real Estate Property Consultant in noida, Best Real Estate Consultant in Delhi/NCR, Top Real 10 estate Broker in Noida, Top 10 Property Broker in Noida,Top Real 5 estate Broker in Noida, Top 5 Property Broker in Noida" />
     <meta name="description" content="Risinginfra - Best Real Estate Consultant in Delhi/NCR, Best Real Estate Property Consultant in noida. contact us +91 9990633353 now" />
     <link rel='canonical' href='https://www.risinginfra.in' />
+    <meta name="robots" content="INDEX,FOLLOW"/>
+    <meta name="Robots" content="INDEX, FOLLOW" />
+    <meta name="robots"  content="noydir" />
+    <meta name="Content-Language" content="en-us" />
+    <meta name="Publisher" content="Rising infra" />
+    <meta name="distribution" content="LOCAL" />
+    <meta name="page-topic" content="Rising infra"/>
+    <meta name="YahooSeeker" content="INDEX, FOLLOW"/>
+    <META name="msnbot"  content="INDEX, FOLLOW"/>
+    <meta name="googlebot" content="index,follow"/>
+    <META name="allow-search" content="yes"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Rising Infra"/>
+    <meta property="og:url" content="https://www.risinginfra.in" />
+    <meta property="og:image" content="https://www.risinginfra.in/assets/buyinghome-8mxR9DOZ.jpg" />
+    <meta property="og:title" content="Rising Infra - Best Real Estate Property Consultant in Noida." />
+    <meta property="og:description" content="Risinginfra - Best Real Estate Consultant in Delhi/NCR, Best Real Estate Property Consultant in noida. contact us +91 9990633353 now." />
+    <meta name="twitter:title" content="Rising Infra - Best Real Estate Property Consultant in Noida." />
+    <meta name="twitter:description" content="Risinginfra - Best Real Estate Consultant in Delhi/NCR, Best Real Estate Property Consultant in noida. contact us +91 9990633353 now."/>
+    <meta name="twitter:image" content="https://www.risinginfra.in/assets/buyinghome-8mxR9DOZ.jpg" />
   </Helmet>
    <div className='container-home'>  
       <div> 
@@ -420,8 +440,8 @@ useEffect(()=>{
             </div>
             </div>
         </div>
-   </>
+  </>
   )
 }
 
-export default HomePage
+export default HomePage;

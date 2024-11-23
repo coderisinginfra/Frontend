@@ -25,8 +25,29 @@ const ResidentialProperty = (props) => {
     <Helmet>
       <title>{props.title}</title>
       <link rel="canonical" href="https://www.risinginfra.in/residential-properties" />
-      <meta name="description" content=" Find your dream home among our extensive listings of apartments, houses, and villas for sale or rent. contact us +91 9990633353 now" />
+      <meta name="description" content="Find your dream home among our extensive listings of apartments, houses, and villas for sale or rent. contact us +91 9990633353 now." />
       <meta name="keywords" content="residential properties in noida, apartment for rent in Noida,  villas for sale,  Buy Residential property in Noida, top 10 residential property in noida" />
+      <meta name="robots" content="INDEX,FOLLOW"/>
+      <meta name="Robots" content="INDEX, FOLLOW" />
+      <meta name="robots"  content="noydir" />
+      <meta name="Content-Language" content="en-us" />
+      <meta name="Publisher" content="Rising infra" />
+      <meta name="distribution" content="LOCAL" />
+      <meta name="page-topic" content="Rising infra"/>
+      <meta name="YahooSeeker" content="INDEX, FOLLOW"/>
+      <META name="msnbot"  content="INDEX, FOLLOW"/>
+      <meta name="googlebot" content="index,follow"/>
+      <META name="allow-search" content="yes"/>
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Rising infra"/>
+      <meta property="og:url" content="https://www.risinginfra.in/residential-properties" />
+      <meta property="og:image" content="https://www.risinginfra.in/assets/buyinghome-8mxR9DOZ.jpg" />
+      <meta property="og:title" content={props.title} />
+      <meta property="og:description" content="Find your dream home among our extensive listings of apartments, houses, and villas for sale or rent. contact us +91 9990633353 now." />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content={props.title} />
+      <meta name="twitter:description" content="Find your dream home among our extensive listings of apartments, houses, and villas for sale or rent. contact us +91 9990633353 now."/>
+      <meta name="twitter:image" content="https://www.risinginfra.in/assets/buyinghome-8mxR9DOZ.jpg" />
     </Helmet>
     <div className='projectcity'>
           <h1 className='headingwhoweare hedas'>Our Exclusive Residential Projects</h1>

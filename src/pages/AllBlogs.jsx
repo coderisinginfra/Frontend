@@ -77,6 +77,27 @@ const AllBlogs = (props) => {
           <link rel="canonical" href="https://www.risinginfra.in/blogs" />
           <meta name="description" content="Read the latest articles and insights on real estate, property management, market trends, and more on the Risinginfra blog. Stay informed with our expert commentary and tips." />
           <meta name="keywords" content="Blogs" />
+          <meta name="robots" content="INDEX,FOLLOW"/>
+          <meta name="Robots" content="INDEX, FOLLOW" />
+          <meta name="robots"  content="noydir" />
+          <meta name="Content-Language" content="en-us" />
+          <meta name="Publisher" content="Rising infra" />
+          <meta name="distribution" content="LOCAL" />
+          <meta name="page-topic" content="Rising infra"/>
+          <meta name="YahooSeeker" content="INDEX, FOLLOW"/>
+          <META name="msnbot"  content="INDEX, FOLLOW"/>
+          <meta name="googlebot" content="index,follow"/>
+          <META name="allow-search" content="yes"/>
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="Rising infra"/>
+          <meta property="og:url" content="https://www.risinginfra.in/blogs" />
+          <meta property="og:image" content="https://www.risinginfra.in/assets/blog%20photo-D9ow9bek.jpg" />
+          <meta property="og:title" content={props.title} />
+          <meta property="og:description" content="Read the latest articles and insights on real estate, property management, market trends, and more on the Risinginfra blog. Stay informed with our expert commentary and tips." />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:title" content={props.title} />
+          <meta name="twitter:description" content="Read the latest articles and insights on real estate, property management, market trends, and more on the Risinginfra blog. Stay informed with our expert commentary and tips."/>
+          <meta name="twitter:image" content="https://www.risinginfra.in/assets/blog%20photo-D9ow9bek.jpg" />
         </Helmet>
         <div className='container-blog'>
             <div>

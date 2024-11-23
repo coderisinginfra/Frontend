@@ -61,8 +61,29 @@ const AllEvents = (props) => {
       <Helmet>
         <title>{props.title}</title>
         <link rel="canonical" href="https://www.risinginfra.in/events" />
-        <meta name="description" content="Explore a diverse array of events in IN. Find & compare, Reviews, Ratings, Timings, Entry Ticket Fees, Schedule, Calendar, Discussion Topics, Venue, Speakers, Agenda, Visitors Profile, Exhibitor Information etc. for your convenience. Don't miss out on these exciting opportunities" />
+        <meta name="description" content="Explore a diverse array of events in IN. Find & compare, Reviews, Ratings, Venue, Speakers, Agenda, Visitors Profile, Exhibitor Information etc. for your convenience. Don't miss out on these exciting opportunities." />
         <meta name="keywords" content="Property Events, Rising infra events" />
+        <meta name="robots" content="INDEX,FOLLOW"/>
+        <meta name="Robots" content="INDEX, FOLLOW" />
+        <meta name="robots"  content="noydir" />
+        <meta name="Content-Language" content="en-us" />
+        <meta name="Publisher" content="Rising infra" />
+        <meta name="distribution" content="LOCAL" />
+        <meta name="page-topic" content="Rising infra"/>
+        <meta name="YahooSeeker" content="INDEX, FOLLOW"/>
+        <META name="msnbot"  content="INDEX, FOLLOW"/>
+        <meta name="googlebot" content="index,follow"/>
+        <META name="allow-search" content="yes"/>
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Rising infra"/>
+        <meta property="og:url" content="https://www.risinginfra.in/events" />
+        <meta property="og:image" content="https://res.cloudinary.com/dih6k3lqm/image/upload/v1728119382/WhatsApp_Image_2024-10-04_at_8.14.34_PM_1_zsrt79.png" />
+        <meta property="og:title" content={props.title} />
+        <meta property="og:description" content="Explore a diverse array of events in IN. Find & compare, Reviews, Ratings, Venue, Speakers, Agenda, Visitors Profile, Exhibitor Information etc. for your convenience. Don't miss out on these exciting opportunities." />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={props.title} />
+        <meta name="twitter:description" content="Explore a diverse array of events in IN. Find & compare, Reviews, Ratings, Venue, Speakers, Agenda, Visitors Profile, Exhibitor Information etc. for your convenience. Don't miss out on these exciting opportunities."/>
+        <meta name="twitter:image" content="https://res.cloudinary.com/dih6k3lqm/image/upload/v1728119382/WhatsApp_Image_2024-10-04_at_8.14.34_PM_1_zsrt79.png" />
       </Helmet>
       <div className='flex-content'>
             <ToastContainer />

@@ -22,6 +22,8 @@ import tata from '../assets/parteners/tata.avif'
 import omaxe from '../assets/parteners/omaxe.avif'
 import oberoi from '../assets/parteners/oberoi.avif'
 import paras from '../assets/parteners/paras.avif'
+import fairfox from '../assets/parteners/fairfox.jpeg'
+import crc from '../assets/parteners/crc.jpg'
 
 
 const Carousel = () => {
@@ -34,6 +36,8 @@ const Carousel = () => {
             <img className="image-crouseal" src={gulshan} alt="gulshan" />
             <img className="image-crouseal" src={saya} alt="saya" />
             <img className="image-crouseal" src={gygy} alt="gygy" />
+            <img className="image-crouseal" src={fairfox} alt="fairfox" />
+            <img className="image-crouseal" src={crc} alt="crc" />
             <img className="image-crouseal" src={hiranandani} alt="hiranandani" />
             <img className="image-crouseal" src={omaxe} alt="omaxe" />
             <img className="image-crouseal" src={m3m} alt="m3m" />
@@ -51,6 +55,7 @@ const Carousel = () => {
             <img className="image-crouseal" src={gaurs} alt="gaurs" />
             <img className="image-crouseal" src={godrej} alt="godrej" />
             <img className="image-crouseal" src={saviour} alt="saviour" />
+            <img className="image-crouseal" src={paras} alt="paras" />
         </div>
         <div className='flex-crouseal-images'>
             <img className="image-crouseal" src={ace} alt="ace" />
@@ -58,6 +63,8 @@ const Carousel = () => {
             <img className="image-crouseal" src={gulshan} alt="gulshan" />
             <img className="image-crouseal" src={saya} alt="saya" />
             <img className="image-crouseal" src={gygy} alt="gygy" />
+            <img className="image-crouseal" src={fairfox} alt="fairfox" />
+            <img className="image-crouseal" src={crc} alt="crc" />
             <img className="image-crouseal" src={hiranandani} alt="hiranandani" />
             <img className="image-crouseal" src={omaxe} alt="omaxe" />
             <img className="image-crouseal" src={m3m} alt="m3m" />
@@ -75,6 +82,7 @@ const Carousel = () => {
             <img className="image-crouseal" src={gaurs} alt="gaurs" />
             <img className="image-crouseal" src={godrej} alt="godrej" />
             <img className="image-crouseal" src={saviour} alt="saviour" />
+            <img className="image-crouseal" src={paras} alt="paras" />
         </div>
     </div>
     </>

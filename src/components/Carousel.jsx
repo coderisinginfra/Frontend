@@ -22,8 +22,8 @@ import tata from '../assets/parteners/tata.avif'
 import omaxe from '../assets/parteners/omaxe.avif'
 import oberoi from '../assets/parteners/oberoi.avif'
 import paras from '../assets/parteners/paras.avif'
-import fairfox from '../assets/parteners/fairfox.jpeg'
-import crc from '../assets/parteners/crc.jpg'
+import fairfox from '../assets/parteners/fairfox.avif'
+import crc from '../assets/parteners/crc.avif'
 
 
 const Carousel = () => {

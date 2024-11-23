@@ -122,13 +122,13 @@ const AllListingShow = () => {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Rising infra"/>
         <meta property="og:url" content={`https://www.risinginfra.in/projects/${propertyTitle}`} />
-        <meta property="og:image" content="https://www.risinginfra.in/assets/teamphoto-BRDjlWv7.png" />
+        <meta property="og:image" content={propertyData[0].coverimage} />
         <meta property="og:title" content={formattedTitle.toUpperCase()- ` - Rising infra`} />
         <meta property="og:description" content={propertyData[0].description -  `contact us +91 9990633353 now`} />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={formattedTitle.toUpperCase()- ` - Rising infra`} />
         <meta name="twitter:description" content={propertyData[0].description -  `contact us +91 9990633353 now`}/>
-        <meta name="twitter:image" content="https://www.risinginfra.in/assets/teamphoto-BRDjlWv7.png" />
+        <meta name="twitter:image" content={propertyData[0].coverimage} />
       </Helmet>
       <ToastContainer />
       <Dialog

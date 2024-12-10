@@ -23,11 +23,11 @@
     display: inline-block; /* Ensures the rotation works as intended */
 }
 
-@media screen and (max-width:440px) {
+/* @media screen and (max-width:440px) {
     .booknow {
        display: none;
     }
     .book {
         display: none;
     }
-}
+} */

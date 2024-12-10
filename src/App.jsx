@@ -62,6 +62,7 @@ import FetchNayaashiyana from './pages/FetchNayaashiyana';
 import FetchGyGy from './pages/FetchGyGy';
 import FetchBlogReviewDetailes from './pages/FetchBlogReviewDetailes';
 import FooterUserPanel from './components/FooterUserPanel';
+import Booknow from './components/Booknow';
 
 export const datasets = createContext();
 
@@ -84,6 +85,7 @@ function App() {
           }
         <ScrollToTop />
         <SocialIconsfixed />
+        <Booknow />
         <Routes>
           <Route path="/" element={<HomePage />} />
 

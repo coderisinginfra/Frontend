@@ -60,7 +60,6 @@ const HomePage = () => {
               setBlogs(response.data.reverse());
               const categoryData = await axios.get("https://www.backend.risinginfra.in/api/v1/categoryfind");
               setCategory(categoryData.data);
-              toast("Anupam Sharma Just Bought 4BHK In Gaur NH24!");
           } catch (error) {
               // console.log(error);
           }
@@ -360,42 +359,7 @@ useEffect(()=>{
       </div>
     </div>
 
-    {/* <div className="testimonials">
-      <div className='testi-monial'>
-       <div className='conatiner-testimonials'> 
-        <h1 className='heading-image'>TESTIMONIALS</h1>
-        </div>
-      </div>
-      <div className='testimonial'>
-        <div className='container-testimonial'>
-          <div className='testimonial-data-home'>
-           <div className='testimonialclient'> 
-            <img src={testimonialclient} alt="testimonialclient" className='testimonialclientimage'/>
-            <h1 className='heading-testimonial'>Vansh Chawla </h1>
-            </div>
-          </div>
-          <h1 className='para'>RisingInfra is India's premier property management company, providing exceptional services and unmatched expertise. Their dedication to excellence ensures a seamless experience for property owners and tenants alike.</h1>
-        </div>
-        <div className='container-testimonial'>
-        <div className='testimonial-data-home'>
-           <div className='testimonialclient' >
-             <img src={testimonialclient} alt="testimonialclient" className='testimonialclientimage' />
-              <h1 className='heading-testimonial'>Gaurav Chamoli </h1>
-            </div>
-          </div>
-          <h1 className='para'>Rising Infra provides very genuine and wise advice to their clients. I really appreciate the working experience the seniors have. Yes the name Rising Infra justifies its existence in the market as the best real estate consultant in Delhi/NCR and why people call it Rising Infra.</h1>
-        </div>
-        <div className='container-testimonial'>
-        <div className='testimonial-data-home'>
-           <div className='testimonialclient'>
-             <img src={testimonialclient} alt="testimonial client" className='testimonialclientimage'/>
-            <h1 className='heading-testimonial'>JaiRaj Panekar</h1>
-            </div>
-          </div>
-          <h1 className='para'>Rising Infra provides very genuine and wise advice to their clients. I really appreciate the working experience the seniors have. Yes the name Rising Infra justifies its existence in the market as the best real estate consultant in Delhi/NCR and why people call it Rising Infra.</h1>
-        </div>
-      </div>
-    </div> */}
+   
     <div className='container-div-blogs'>
       <div className='heading-blogs home-front-blogs'>
                   <h1>Must Read Blogs</h1>

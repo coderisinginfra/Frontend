@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
 import '../CSS/Booknow.css'
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer , toast  } from 'react-toastify';
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField } from '@mui/material';
+import axios from 'axios';
 
 const Booknow = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [contact, setContact] = useState('');
-  const [message, setMessage] = useState('');
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const [open, setOpen] = useState(false);
   const [isButtonDisabled,setIsButtonDisabled] =useState(false)
@@ -24,6 +23,7 @@ const Booknow = () => {
       setOpen(false);
       toast("Thank you for your response! Our team will contact you soon.");
     } catch (error) {
+      // setOpen(false);
       toast.error("Submission failed. Please try again.");
     }
   };

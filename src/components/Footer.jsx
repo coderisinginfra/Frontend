@@ -3,7 +3,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import CallIcon from '@mui/icons-material/Call';
 import PlaceIcon from '@mui/icons-material/Place';
 import { Link } from 'react-router-dom';
-import logo from '../assets/adminimage/finallogo.png'
+import logo from '../assets/adminimage/logo.png'
 import '../CSS/Footer.css'
 import { Button } from '@mui/material';
 import instagram from '../assets/imges/instagram.png'

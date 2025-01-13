@@ -46,7 +46,7 @@ const HomePage = () => {
     e.preventDefault();
     setIsButtonDisabled(true)
     try {
-        const response = await axios.post("https://www.backend.risinginfra.in/api/v1/popupform", { name, email, contact });    
+        const response = await axios.post("https://www.backendrisinginfra.risinginfra.in/api/v1/popupform", { name, email, contact });    
         setOpen(false);
         toast("Thank Your For your reponse our team will contact to you soon");
     } catch (error) {
@@ -56,9 +56,9 @@ const HomePage = () => {
   useEffect(() => {
       const fetch = async () => {
           try {
-              const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchblogs");
+              const response = await axios.get("https://www.backendrisinginfra.risinginfra.in/api/v1/fetchblogs");
               setBlogs(response.data.reverse());
-              const categoryData = await axios.get("https://www.backend.risinginfra.in/api/v1/categoryfind");
+              const categoryData = await axios.get("https://www.backendrisinginfra.risinginfra.in/api/v1/categoryfind");
               setCategory(categoryData.data);
           } catch (error) {
               // console.log(error);
@@ -73,7 +73,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetch = async () => {
       try {
-        const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchlistings");
+        const response = await axios.get("https://www.backendrisinginfra.risinginfra.in/api/v1/fetchlistings");
         setistings(response.data.reverse());
         setVisibleListings(response.data.slice(0, 9));
       } catch (error) {
@@ -106,7 +106,7 @@ const HomePage = () => {
 
   const handleSubmitSearch = async () => {
     try {
-        const response = await axios.get('https://www.backend.risinginfra.in/api/v1/fetchhomedata', {
+        const response = await axios.get('https://www.backendrisinginfra.risinginfra.in/api/v1/fetchhomedata', {
             params: {
                 city: newcity,
                 category: newcategory

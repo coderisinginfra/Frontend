@@ -35,8 +35,8 @@ const Careers = (props) => {
         const fetch = async () => {
             try {
                 const [response, categories] = await Promise.all([
-                    axios.get("https://www.backend.risinginfra.in/api/v1/fetchcareers"),
-                    axios.get("https://www.backend.risinginfra.in/api/v1/fetchjobcategory")
+                    axios.get("https://www.backendrisinginfra.risinginfra.in/api/v1/fetchcareers"),
+                    axios.get("https://www.backendrisinginfra.risinginfra.in/api/v1/fetchjobcategory")
                 ]);
                 setData(response.data.reverse());
                 setCategory(categories.data);
@@ -56,7 +56,7 @@ const Careers = (props) => {
                 formDataToSend2.append(key, formData2[key]);
             }
 
-            await axios.post("https://www.backend.risinginfra.in/api/v1/applynow", formDataToSend2, {
+            await axios.post("https://www.backendrisinginfra.risinginfra.in/api/v1/applynow", formDataToSend2, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
@@ -80,7 +80,7 @@ const Careers = (props) => {
                 formDataToSend.append(key, formData[key]);
             }
 
-            await axios.post("https://www.backend.risinginfra.in/api/v1/applynow", formDataToSend, {
+            await axios.post("https://www.backendrisinginfra.risinginfra.in/api/v1/applynow", formDataToSend, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

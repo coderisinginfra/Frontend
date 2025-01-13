@@ -22,7 +22,7 @@ const AddJobs = (props) => {
     event.preventDefault();
     setIsButtonSubmit(true);
     try {
-      const response = await axios.post('https://www.backend.risinginfra.in/api/v1/careers', {
+      const response = await axios.post('https://www.backendrisinginfra.risinginfra.in/api/v1/careers', {
         title,
         description,
         numberofOpenings,

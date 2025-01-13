@@ -10,7 +10,7 @@ const AllTeamMembershow = (props) => {
     const [data,setdata] = useState([])
     useEffect(()=>{
         const fetch = async()=>{
-            const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchteammember")
+            const response = await axios.get("https://backendrisinginfra.risinginfra.in/api/v1/fetchteammember")
             setdata(response.data)
         }
         fetch()

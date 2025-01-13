@@ -12,7 +12,7 @@ const CommercialProperty = (props) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get("https://www.backend.risinginfra.in/api/v1/findcommercial")
+                const res = await axios.get("https://backendrisinginfra.risinginfra.in/api/v1/findcommercial")
                 setData(res.data)
             } catch (error) {
                 // console.log(error)

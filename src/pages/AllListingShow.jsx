@@ -42,7 +42,7 @@ const AllListingShow = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`https://www.backend.risinginfra.in/api/v1/fetchalllistings/${formattedTitle}`);
+        const response = await axios.get(`https://backendrisinginfra.risinginfra.in/api/v1/fetchalllistings/${formattedTitle}`);
         setPropertyData(response.data.data);
         setLoading(false);
       } catch (error) {
@@ -69,7 +69,7 @@ const AllListingShow = () => {
     e.preventDefault();
     setIsButtonDisabled(true)
     try {
-      await axios.post("https://www.backend.risinginfra.in/api/v1/popupform", { name, email, contact });
+      await axios.post("https://backendrisinginfra.risinginfra.in/api/v1/popupform", { name, email, contact });
       setOpen(false);
       toast("Thank you for your response! Our team will contact you soon.");
     } catch (error) {
@@ -80,7 +80,7 @@ const AllListingShow = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://www.backend.risinginfra.in/api/v1/contactus", { name, email, contact, message });
+      await axios.post("https://backendrisinginfra.risinginfra.in/api/v1/contactus", { name, email, contact, message });
       setIsSubmitted(true);
       toast("Thanks for your message!");
     } catch (error) {

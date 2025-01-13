@@ -16,7 +16,7 @@ const PlotsProperty = (props) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get("https://www.backend.risinginfra.in/api/v1/buyplots")
+                const res = await axios.get("https://backendrisinginfra.risinginfra.in/api/v1/buyplots")
                 setData(res.data)
             } catch (error) {
                 // console.log(error)

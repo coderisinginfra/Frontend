@@ -23,7 +23,7 @@ const Signup = (props) => {
 
   const handlesubmit = async () => {
     try {
-      const response = await axios.post("https://www.backendrisinginfra.risinginfra.in/api/v1/signup", { name, email, password, confirmationCode });
+      const response = await axios.post("https://backendrisinginfra.risinginfra.in/api/v1/signup", { name, email, password, confirmationCode });
       if (response.data.token) {
         localStorage.setItem('token', response.data.token);
         navigate('/private/admin/panel'); 

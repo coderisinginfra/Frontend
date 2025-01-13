@@ -11,7 +11,7 @@ const FetchBlogReviewDetailes = (props) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchblogreview"); 
+                const response = await axios.get("https://backendrisinginfra.risinginfra.in/api/v1/fetchblogreview"); 
                 setData(response.data.reverse());
             } catch (error) {
                 // console.log(error);

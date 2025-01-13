@@ -32,7 +32,7 @@ const AddEvents = (props) => {
     formData.append('image', image);
 
     try {
-      await axios.post('https://www.backendrisinginfra.risinginfra.in/api/v1/eventadd', formData, {
+      await axios.post('https://backendrisinginfra.risinginfra.in/api/v1/eventadd', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       alert('Event Added Successfully');

@@ -12,7 +12,7 @@ const FairFoxPage = (props) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get("https://www.backend.risinginfra.in/api/v1/fairfoxproject")
+                const res = await axios.get("https://backendrisinginfra.risinginfra.in/api/v1/fairfoxproject")
                 // console.log(res.data)
                 setData(res.data)
             } catch (error) {

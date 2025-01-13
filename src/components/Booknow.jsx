@@ -19,7 +19,7 @@ const Booknow = () => {
     e.preventDefault();
     setIsButtonDisabled(true)
     try {
-      await axios.post("https://www.backend.risinginfra.in/api/v1/popupform", { name, email, contact });
+      await axios.post("https://backendrisinginfra.risinginfra.in/api/v1/popupform", { name, email, contact });
       setOpen(false);
       toast("Thank you for your response! Our team will contact you soon.");
     } catch (error) {

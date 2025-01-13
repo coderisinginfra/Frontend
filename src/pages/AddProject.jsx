@@ -281,7 +281,7 @@ const AddProject = (props) => {
             formData.append('floorplan2',floorplan2)
             formData.append('floorplan3',floorplan3)
 
-            const response = await axios.post('https://www.backendrisinginfra.risinginfra.in/api/v1/addproject', formData);
+            const response = await axios.post('https://backendrisinginfra.risinginfra.in/api/v1/addproject', formData);
             alert('Project added successfully!');
             setisbuttonsubmit(false)
             setpropertyTitle('')

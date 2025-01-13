@@ -21,7 +21,7 @@ const ContactUs = (props) => {
         e.preventDefault();
         setIsButtonDisabled(true)
         try {
-            const response = await axios.post("https://www.backend.risinginfra.in/api/v1/contactus", { name, email, contact, message });
+            const response = await axios.post("https://backendrisinginfra.risinginfra.in/api/v1/contactus", { name, email, contact, message });
             setIsSubmitted(false);
         } catch (error) {
             alert("Ooops! Something Went Wrong");

@@ -24,7 +24,7 @@ const AllEvents = (props) => {
     useEffect(() => {
         const fetchEvents = async () => {
             try {
-                const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchevents")
+                const response = await axios.get("https://backendrisinginfra.risinginfra.in/api/v1/fetchevents")
                 setFetchData(response.data.reverse())
             } catch (error) {
                 console.error("Error fetching event data:", error)
@@ -48,7 +48,7 @@ const AllEvents = (props) => {
         e.preventDefault();
         setIsButtonDisabled(true)
         try {
-            const response = await axios.post("https://www.backend.risinginfra.in/api/v1/popupform", { name, email, contact });
+            const response = await axios.post("https://backendrisinginfra.risinginfra.in/api/v1/popupform", { name, email, contact });
             setOpen(false);
             setIsButtonDisabled(false)
             toast("Thank Your For your reponse our team will contact to you soon");

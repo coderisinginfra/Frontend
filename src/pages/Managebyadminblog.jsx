@@ -20,7 +20,7 @@ const Managebyadminblog = (props) => {
     useEffect(() => {
         const fetchBlogs = async () => {
             try {
-                const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchblogs");
+                const response = await axios.get("https://backendrisinginfra.risinginfra.in/api/v1/fetchblogs");
                 setBlogs(response.data.reverse());
             } catch (error) {
                 // console.log(error);
@@ -36,9 +36,9 @@ const Managebyadminblog = (props) => {
 
     const deleteBlog = async (id) => {
         try {
-            await axios.delete(`https://www.backend.risinginfra.in/api/v1/deleteblog/${id}`);
+            await axios.delete(`https://backendrisinginfra.risinginfra.in/api/v1/deleteblog/${id}`);
             alert("Blog Deleted Successfully");
-            const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchblogs");
+            const response = await axios.get("https://backendrisinginfra.risinginfra.in/api/v1/fetchblogs");
             setBlogs(response.data.reverse());
         } catch (error) {
             alert("Oops, something went wrong");

@@ -12,7 +12,7 @@ const Ghaziabad = (props) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get("https://www.backend.risinginfra.in/api/v1/ghaziabadproperties")
+                const res = await axios.get("https://backendrisinginfra.risinginfra.in/api/v1/ghaziabadproperties")
                 setData(res.data.reverse())
             } catch (error) {
                 // console.log(error)

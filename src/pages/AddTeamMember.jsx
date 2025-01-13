@@ -39,7 +39,7 @@ const AddTeamMember = (props) => {
     formData.append('image', image);
 
     try {
-      const response = await axios.post('https://www.backendrisinginfra.risinginfra.in/api/v1/addteammember', formData, {
+      const response = await axios.post('https://backendrisinginfra.risinginfra.in/api/v1/addteammember', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

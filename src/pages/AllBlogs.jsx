@@ -28,9 +28,9 @@ const AllBlogs = (props) => {
     useEffect(() => {
         const fetch = async () => {
             try {
-                const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchblogs");
+                const response = await axios.get("https://backendrisinginfra.risinginfra.in/api/v1/fetchblogs");
                 setBlogs(response.data.reverse());
-                const categoryData = await axios.get("https://www.backend.risinginfra.in/api/v1/categoryfind");
+                const categoryData = await axios.get("https://backendrisinginfra.risinginfra.in/api/v1/categoryfind");
                 setCategory(categoryData.data);
             } catch (error) {
                 // console.log(error);
@@ -60,7 +60,7 @@ const AllBlogs = (props) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("https://www.backend.risinginfra.in/api/v1/contactus", { name, email, contact, message });
+            const response = await axios.post("https://backendrisinginfra.risinginfra.in/api/v1/contactus", { name, email, contact, message });
             setIsSubmitted(false);
         } catch (error) {
             alert("Ooops! Something Went Wrong");

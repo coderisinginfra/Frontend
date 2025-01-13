@@ -12,7 +12,7 @@ const AcePage = (props) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get("https://www.backend.risinginfra.in/api/v1/acegroupfetch")
+                const res = await axios.get("https://backendrisinginfra.risinginfra.in/api/v1/acegroupfetch")
                 // console.log(res.data)
                 setData(res.data)
             } catch (error) {

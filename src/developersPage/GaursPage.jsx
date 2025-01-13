@@ -12,7 +12,7 @@ const GaursPage = (props) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get("https://www.backend.risinginfra.in/api/v1/gaurfetch")
+                const res = await axios.get("https://backendrisinginfra.risinginfra.in/api/v1/gaurfetch")
                 // console.log(res.data)
                 setData(res.data)
             } catch (error) {

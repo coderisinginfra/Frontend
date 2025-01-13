@@ -11,7 +11,7 @@ const FetchResume = (props) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchresume"); // Added await
+                const response = await axios.get("https://backendrisinginfra.risinginfra.in/api/v1/fetchresume"); // Added await
                 setData(response.data);
             } catch (error) {
                 // console.log(error);

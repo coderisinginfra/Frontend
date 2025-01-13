@@ -37,7 +37,7 @@ const BlogProject = (props) => {
     formData.append('Category', Category);
 
     try {
-      const response = await axios.post('https://www.backend.risinginfra.in/api/v1/blogproject', formData, {
+      const response = await axios.post('https://backendrisinginfra.risinginfra.in/api/v1/blogproject', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

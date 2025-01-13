@@ -19,7 +19,7 @@ const UpdateBlog = (props) => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await axios.get(`https://www.backend.risinginfra.in/api/v1/fetchblog/${id}`);
+        const response = await axios.get(`https://backendrisinginfra.risinginfra.in/api/v1/fetchblog/${id}`);
         const blog = response.data;
         setPostTitle(blog.postTitle);
         setDescription(blog.description);
@@ -37,7 +37,7 @@ const UpdateBlog = (props) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.put(`https://www.backend.risinginfra.in/api/v1/updateblog/${id}`, {
+      await axios.put(`https://backendrisinginfra.risinginfra.in/api/v1/updateblog/${id}`, {
         postTitle,
         description,
         keywords,

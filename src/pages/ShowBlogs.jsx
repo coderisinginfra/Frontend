@@ -35,7 +35,7 @@ const ShowBlogs = () => {
         e.preventDefault();
         setIsButtonDisabled(true);
         try {
-            await axios.post("https://www.backend.risinginfra.in/api/v1/contactus", { name, email, contact, message });
+            await axios.post("https://backendrisinginfra.risinginfra.in/api/v1/contactus", { name, email, contact, message });
             setIsSubmitted(true);
             setIsButtonDisabled(false);
             setName('');
@@ -51,7 +51,7 @@ const ShowBlogs = () => {
     useEffect(() => {
         const fetchBlogs = async () => {
             try {
-                const response = await axios.get("https://www.backend.risinginfra.in/api/v1/fetchblogs");
+                const response = await axios.get("https://backendrisinginfra.risinginfra.in/api/v1/fetchblogs");
                 setBlogs(response.data.reverse());  
             } catch (error) {
                 // toast.error("Failed to load blogs");
@@ -63,7 +63,7 @@ const ShowBlogs = () => {
     useEffect(() => {
         const fetchBlogById = async () => {
             try {
-                const result = await axios.get(`https://www.backend.risinginfra.in/api/v1/FetchBlogById/${formattedTitle}`);
+                const result = await axios.get(`https://backendrisinginfra.risinginfra.in/api/v1/FetchBlogById/${formattedTitle}`);
                 setBlogingData(result.data[0]);
                 document.title = result.data[0].postTitle;
             } catch (error) {

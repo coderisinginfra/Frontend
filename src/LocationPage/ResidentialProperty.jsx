@@ -12,7 +12,7 @@ const ResidentialProperty = (props) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get("https://www.backend.risinginfra.in/api/v1/findresidential")
+                const res = await axios.get("https://backendrisinginfra.risinginfra.in/api/v1/findresidential")
                 setData(res.data)
             } catch (error) {
                 // console.log(error)

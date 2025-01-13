@@ -41,7 +41,6 @@ const pages = [
 // Define the logout function
 const logout = () => {
     localStorage.removeItem('token');
-    // Additional logout operations can be added here
 };
 
 const settings = [
@@ -59,8 +58,8 @@ const settings = [
     },
     {
         name: "Logout",
-        link: "/logout",
-        onClick: logout // Reference to the logout function
+        link: "/",
+        onClick: logout() // Reference to the logout function
     }
 ];
 

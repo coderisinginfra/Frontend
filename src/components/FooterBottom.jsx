@@ -52,9 +52,6 @@ const FooterBottom = () => {
     },{
         name:"Paras Buildtech",
         link:"/paras-group"
-    },{
-        name:"DLF Group",
-        link:"/"
     },
     {
         name:"CRC Group",
@@ -63,25 +60,7 @@ const FooterBottom = () => {
         name:"FairFox Group",
         link:"/fairfox-group"
     }
-    ,{
-        name:"M3M Group",
-        link:"/"
-    },{
-        name:"Godrej Properties",
-        link:"/"
-    },{
-        name:"Omaxe",
-        link:"/"
-    },{
-        name:"Lodha Group",
-        link:"/"
-    },{
-        name:"ATS Group",
-        link:"/"
-    },{
-        name:"Migsun",
-        link:"/"
-    }]
+    ]
 
   return (
    <>

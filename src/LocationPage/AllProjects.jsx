@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import '../CSS/HomePage.css'
 import axios from 'axios';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const AllProjects = (props) => {
 

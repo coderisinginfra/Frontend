@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../CSS/HomePage.css'
 import axios from 'axios';
 import { Helmet } from 'react-helmet';

@@ -64,6 +64,7 @@ import FetchBlogReviewDetailes from './pages/FetchBlogReviewDetailes';
 import FooterUserPanel from './components/FooterUserPanel';
 import Booknow from './components/Booknow';
 import Whatsappicons from './components/Whatsappicons';
+import AllProjects from './LocationPage/AllProjects';
 
 export const datasets = createContext();
 
@@ -148,6 +149,7 @@ function App() {
           <Route path="/migsun" element={<MigsunPage title="Migsun Group - Rising infra"/>} />
           <Route path="*" element={<HomePage  />} />
           <Route path="/certification" element={<Attraction title="Certification || Rising Infra" />} />
+          <Route path='/properties' element={<AllProjects title="All Properties - Rising Infra"/>}/>
         </Routes>
         <FooterUserPanel>
           <FooterBottom />

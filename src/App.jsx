@@ -63,6 +63,7 @@ import FetchGyGy from './pages/FetchGyGy';
 import FetchBlogReviewDetailes from './pages/FetchBlogReviewDetailes';
 import FooterUserPanel from './components/FooterUserPanel';
 import Booknow from './components/Booknow';
+import Whatsappicons from './components/Whatsappicons';
 
 export const datasets = createContext();
 
@@ -86,6 +87,7 @@ function App() {
         <ScrollToTop />
         <SocialIconsfixed />
         <Booknow />
+        <Whatsappicons />
         <Routes>
           <Route path="/" element={<HomePage />} />
 

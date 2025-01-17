@@ -148,7 +148,7 @@ const AllEvents = (props) => {
              />
         </DialogContent>
         <DialogActions>
-          <Button type="submit" variant='contained' color='primary' onClick={handleSubmitquery} disabled={isButtonDisabled}>Submit</Button>
+          <Button type="submit" variant='contained' sx={{backgroundColor:'#115850'}} className='buttons-home' onClick={handleSubmitquery} disabled={isButtonDisabled}>Submit</Button>
           <Button onClick={handleClose}>Cancel</Button>
         </DialogActions>
       </Dialog>

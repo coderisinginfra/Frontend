@@ -187,7 +187,7 @@ const AllListingShow = () => {
           />
         </DialogContent>
         <DialogActions>
-          <Button type="submit" variant='contained' color='primary' disabled={isButtonDisabled}>Submit</Button>
+          <Button type="submit" variant='contained' style={{color:"white",background:"#115850"}} className='buttons-home' disabled={isButtonDisabled}>Submit</Button>
           <Button onClick={handleClose}>Cancel</Button>
         </DialogActions>
       </Dialog>
@@ -206,7 +206,7 @@ const AllListingShow = () => {
               </div>
               <h2 className='prices-list'>Starting Price {item.price} Onwards</h2>
               <div className='data-need-buttons da-ba'>
-                <Button variant='contained' style={{color:"white",background:"#0B3063"}} onClick={()=>setOpen(true)}><CallIcon style={{marginRight:"10px"}}/>INSTANT CALL BACK</Button>
+                <Button variant='contained' style={{color:"white",background:"#115850"}} className='buttons-home' onClick={()=>setOpen(true)}><CallIcon style={{marginRight:"10px"}}/>INSTANT CALL BACK</Button>
               </div>
                   <h1 className='prices-list'>Projects Highlights</h1>
                 <div className='conection-data'>
@@ -349,7 +349,7 @@ const AllListingShow = () => {
                 <div className='form-field-datasets'>
                   <h4 className='heading-container' style={{ fontSize: "20px" }}>Enquiry Now</h4>
                   <div style={{ display: 'flex', marginTop: "10px", marginBottom: "1em", alignItems: "center" }}>
-                    <div style={{ backgroundColor: "#1976d2", width: "20%", height: "4px" }}></div>
+                    <div style={{ backgroundColor: "#115850", width: "20%", height: "4px" }}></div>
                     <div style={{ backgroundColor: "gray", width: "100%", height: "2px" }}></div>
                   </div>
                   <form className='forms' onSubmit={handleSubmit}>
@@ -379,7 +379,7 @@ const AllListingShow = () => {
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                     ></textarea> <br />
-                    <Button type='submit' variant='contained' color='primary' className='button-form'>Submit</Button>
+                    <Button type='submit' variant='contained' style={{color:"white",background:"#115850"}} className='button-form buttons-home'>Submit</Button>
                   </form>
                 </div>
               ) : (

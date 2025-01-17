@@ -34,7 +34,7 @@
 
 
 .footer-concept{
-    background-color: black;
+    background-color: #115850;
     display: flex;
     padding: 3em 1em;
 }
@@ -94,7 +94,7 @@
 }
 
 .secondary-contact{
-    margin: 0 1em;
+    margin: 0 10px 0 1em;
     color: white;
     font-size: 2em;
 }
@@ -109,13 +109,13 @@
 .linkes-flield:hover{
     margin-left: 10px;
     text-decoration: none;
-    color: #28a745;
+    color: #08ff4a;
 }
 
 .properties-system{
     display: flex;
     padding: 3em 5em 1em 5em;
-    background-color: #0B3063;
+    background-color: #007a6b;
     justify-content: space-around;
 }
 
@@ -130,7 +130,7 @@
     .properties-system{
         display: block;
         padding: 3em 5em 1em 1em;
-        background-color: #0B3063;
+        background-color: #007E70;
         justify-content: space-around;
     }
     .container-footer-links{

@@ -30,7 +30,7 @@ const AllProjects = (props) => {
             <meta name="description" content="Best Real Estate Consultant in Delhi/NCR Best Real Estate Property Consultant in Delhi/NCR, Search Real Estate in Noida"/>
             <meta name='keyword' content="Best Real Estate Consultant in Delhi/NCR, Best Real Estate Property Consultant in Delhi/NCR Real Estate, Property in Noida, Properties, Property sites India, Commercial Properties For Sale, Buy Properties, Properties To Buy, Buy Residential Properties, Buy Commercial Properties, Residential Properties For Sale, Residential Properties In Noida, Buy Residential Properties In Noida, Residential Properties For Sale In Noida, Buy Commercial Properties In Noida, Commercial Properties In Noida" />
         </Helmet>
-      <div className='projectcity-title' style={{marginTop:"-4em"}}>
+      <div className='projectcity-title' style={{marginTop:"-1em"}}>
             <h1 className='headingwhoweare hedas'>Our Exclusive Projects</h1>
             <h1 className='heading-image props-name'>Discover Property With Rising Infra in India</h1>
         </div>

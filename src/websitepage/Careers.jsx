@@ -140,14 +140,14 @@ const Careers = (props) => {
                 <meta name="twitter:description" content="Join the RisingInfra team and build your career in the real estate industry. Explore current job openings and career opportunities with us."/>
                 <meta name="twitter:image" content="https://www.risinginfra.in/assets/teamphoto-BRDjlWv7.png" />
             </Helmet>
-            <div className='imagedata-career'>
+            {/* <div className='imagedata-career'>
                 <img src={banner} alt="Banner image" className='imagedata-career' />
-            </div>
+            </div> */}
             <div id="first">
                 <div id="alldata">
                     <h2 className='heading-container-h2'>Jobs</h2>
                     <div style={{ display: 'flex', marginTop: "10px", marginBottom: "1em", alignItems: "center" }}>
-                        <div style={{ backgroundColor: "#1976d2", width: "20%", height: "4px" }}></div>
+                        <div style={{ backgroundColor: "#115850", width: "20%", height: "4px" }}></div>
                         <div style={{ backgroundColor: "#E5E5E5", width: "100%", height: "2px" }}></div>
                     </div>
                     {
@@ -181,10 +181,10 @@ const Careers = (props) => {
                                         <p className='comapny-reputation'>{item.description}</p>
                                         <Button
                                             variant='contained'
-                                            color='primary'
-                                            style={{ marginTop: "1em" }}
+                                            style={{ marginTop: "1em",backgroundColor:"#115850"}}
                                             onClick={applyButton}
                                             disabled={isButtonDisabled}
+                                            className='buttons-home'
                                         >
                                             Apply Now
                                         </Button>
@@ -244,7 +244,8 @@ const Careers = (props) => {
                                                         <Button
                                                             variant='contained'
                                                             color='primary'
-                                                            className='button-form'
+                                                            className='button-form buttons-home'
+                                                            sx={{background: linear-gradient('90deg, #00796b, #009688, #26a69a;')}}
                                                             type="submit"
                                                             disabled={isButtonDisabled}
                                                         >
@@ -273,7 +274,7 @@ const Careers = (props) => {
                                 <h2 className='heading-container-h2'>Apply Now</h2>
                                 <ToastContainer style={{ marginTop: "5em" }} />
                                 <div style={{ display: 'flex', marginTop: "10px", marginBottom: "1em", alignItems: "center" }}>
-                                    <div style={{ backgroundColor: "#1976d2", width: "20%", height: "4px" }}></div>
+                                    <div style={{ backgroundColor: "#115850", width: "20%", height: "4px" }}></div>
                                     <div style={{ backgroundColor: "#E5E5E5", width: "100%", height: "2px" }}></div>
                                 </div>
                                 <form className='forms' onSubmit={handleSubmit}>
@@ -324,7 +325,7 @@ const Careers = (props) => {
                                     <Button
                                         variant='contained'
                                         color='primary'
-                                        className='button-form'
+                                        className='button-form buttons-home'
                                         type="submit"
                                         disabled={isButtonDisabled}
                                     >
@@ -339,7 +340,7 @@ const Careers = (props) => {
                     <div className="childs">
                         <h2 className='heading-container-h2'>Our Valuable Employment</h2>
                         <div style={{ display: 'flex', marginTop: "10px", marginBottom: "1em", alignItems: "center" }}>
-                            <div style={{ backgroundColor: "#1976d2", width: "20%", height: "4px" }}></div>
+                            <div style={{ backgroundColor: "#115850", width: "20%", height: "4px" }}></div>
                             <div style={{ backgroundColor: "#E5E5E5", width: "100%", height: "2px" }}></div>
                         </div>
                         <div>

@@ -34,6 +34,7 @@
 .button-form{
     height: 3em;
     width: 107%;
+    background: linear-gradient(90deg, #00796b, #009688, #26a69a);
 }
 
 .forms{

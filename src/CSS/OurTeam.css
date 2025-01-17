@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0B3063;
+    background-color: #115850;
 }
 
 .images-front-teammember{
@@ -129,7 +129,7 @@
         display: block;
         justify-content: center;
         align-items: center;
-        background-color: #0B3063;
+        background-color: #115850;
     }
     .meet{
         color: white;

@@ -37,7 +37,7 @@ function Navbarfront(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-     <a href="https://www.risinginfra.in"><img src={logo} alt="logo" style={{ width: "8em", height: "5em", objectFit: "cover" }}/></a>
+     <a href="https://www.risinginfra.in"><img src={logo} alt="logo" style={{ width: "6em", height: "4em", objectFit: "cover",margin:"0em 0 0 3em" }}/></a>
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -58,12 +58,12 @@ function Navbarfront(props) {
       <CssBaseline />
       <AppBar
         sx={{
-          position:"sticky",
-          backgroundColor: '#0B3063',
-          transition: 'background-color 0.3s ease-in-out',
-          boxShadow: 'none',
+          position: "sticky",
+          backgroundColor: "#115850", // Ensure transparency
+          transition: "background-color 0.3s ease-in-out",
+          boxShadow: "none", // No shadow
           zIndex: 999,
-          height: '6em', // Adjust the height of the app bar
+          height: "6em", // Adjust the height of the app bar
         }}
       >
         <Toolbar>
@@ -75,7 +75,7 @@ function Navbarfront(props) {
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
             <MenuIcon />
-            <a href="https://www.risinginfra.in"><img src={logo} alt="logo" style={{ width: "6em", height: "3em", objectFit: "cover",margin:"0 0 0 3em" }}/></a>
+            <a href="https://www.risinginfra.in"><img src={logo} alt="logo" style={{ width: "6em", height: "3em", objectFit: "cover",margin:"0em 0 0 3em" }}/></a>
           </IconButton>
           <Typography
             variant="h6"

@@ -124,7 +124,7 @@ const ContactUs = (props) => {
                                     className='container-contain-2data' />
                             </div>
                             <br />
-                            <Button variant='contained' color='primary' className='message-data-contact' type="submit" disabled={isButtonDisabled}>
+                            <Button variant='contained' color='primary' className='message-data-contact buttons-home' type="submit" disabled={isButtonDisabled}>
                             {isSubmitted? ('Send Message'):(<div className='loader'></div>)}</Button>
 
                         </form>

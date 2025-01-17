@@ -53,15 +53,15 @@ const Footer = () => {
             <p className='paragraph-datasets-footer'>Rising Infra, your trusted partner in property management in Noida, ensures seamless and efficient solutions tailored to your real estate needs. Experience excellence with our dedicated team.</p>
             <div className='contact-footer'>
                 <div className='conatnets-footer'>
-                    <EmailIcon color='primary' className='secondary-contact'/>
+                    <EmailIcon color='white' className='secondary-contact'/>
                     <Link to="mailto://info@risinginfra.in" className='linkes-flield'>info@risinginfra.in</Link>
                 </div>
                 <div className='conatnets-footer'>
-                    <CallIcon color='primary' className='secondary-contact'/>
+                    <CallIcon color='white' className='secondary-contact'/>
                     <Link to="tel://+919990633353" className='linkes-flield'>+91 9990633353</Link>
                 </div>
                 <div className='conatnets-footer'>
-                    <PlaceIcon color='primary' className='secondary-contact'/>
+                    <PlaceIcon color='white' className='secondary-contact'/>
                     <p className='linkes-flield'>1715-1715A, 17th Floor, Astralis Supernova, Sector 94, Noida, Uttar Pradesh 201301</p>
                 </div>
             </div>
@@ -104,7 +104,7 @@ const Footer = () => {
            <div className='container-data-footer'>
                 <form action="" className='system-form'>
                     <input type="email" placeholder='example@gmail.com' className='input-box-subscibe'/>
-                    <Button variant='contained' color='primary'>Subscribe</Button>
+                    <Button variant='contained' style={{backgroundColor:'#007A6B'}} className='buttons-home'>Subscribe</Button>
                 </form>
             </div>
            </div>

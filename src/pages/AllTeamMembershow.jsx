@@ -46,15 +46,7 @@ const AllTeamMembershow = (props) => {
         <meta name="twitter:description" content="Join the RisingInfra team and build your career in the real estate industry. Explore current job openings and career opportunities with us."/>
         <meta name="twitter:image" content="https://www.risinginfra.in/assets/teamphoto-BRDjlWv7.png" />
      </Helmet>
-        <div className='meet-our-team'>
-            <div>
-                <h1 className='meet'>Meet Our Team</h1>
-                <p className='para-graphs'>Meet our dedicated team of property management experts committed to excellence and personalized service.</p>
-            </div>
-            <div className='images-front-teammember'>
-                <img src={images} alt="images" className='images-team-member' />
-            </div>
-        </div>
+
         <h1 className='proven'>We are a team of seasoned professionals with extensive experience and proven track record in our area of expertise.</h1>
     <div className='teams-flex'>
       {

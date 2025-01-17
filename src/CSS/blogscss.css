@@ -51,7 +51,7 @@
 }
 
 .image-contents-allblogs{
-    object-fit: cover;
+    /* object-fit: ; */
     width: 100%;
     height: 100%;
     transform: scale(1);
@@ -76,6 +76,9 @@
 .paragraph-blogs{
     overflow: hidden;
     text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
     font-family: "Montserrat", sans-serif;
     color: #252d39;
     line-height: 1.3em;
@@ -92,6 +95,12 @@
 }
 
 .blogs-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogs-data{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,7 +213,7 @@
 }
 
 .container-blog{
-    background-color: #0F2765;
+    background-color: #115850;
     display: flex;
     padding: 0 10em 0 8em;
     align-items: center;
@@ -228,10 +237,15 @@
     display: flex;
     margin: 1em 0;
     align-items: center;
+    background: linear-gradient(90deg, #00796b, #009688, #26a69a);
+    padding: 1em;
+    color: white;
+    border-radius: 10px;
+    width: 10em;
 }
 
 .data-headi{
-    color: rgb(47, 47, 47);
+    color: white;
     font-size: 16px;
     margin-right: 10px;
 }
@@ -336,6 +350,19 @@
     .contents-icons{
         margin: 10px 0;
     }
-
+    .paragraph-blogs{
+        overflow: hidden;
+        text-align: justify;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        font-family: "Montserrat", sans-serif;
+        color: #252d39;
+        line-height: 1.3em;
+        font-weight: 600;
+        font-size: 15px;
+        padding: 10px 0;
+        text-transform: capitalize;
+    }
     
 }

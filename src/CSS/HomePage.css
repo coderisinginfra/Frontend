@@ -75,7 +75,7 @@
 }
 
 .blogs-home{
-    margin: 0 0 3em 3em;
+    margin: 0 0 3em 0em;
 }
 
 .container-images{
@@ -148,7 +148,7 @@
     height: 100%;
     color: black;
     padding: 3em;
-background-image: linear-gradient(rgba(237, 251, 251, 0.9),rgba(107, 107, 107, 0.5));
+    background-image: linear-gradient(rgba(237, 251, 251, 0.9),rgba(107, 107, 107, 0.5));
 }
 
 .container-text2 {
@@ -341,7 +341,7 @@ background-image: linear-gradient(rgba(253, 240, 240, 0.9),rgba(107, 107, 107, 0
 }
 
 .projectcity-title{
-    padding: 5em 0 0 0 ;
+    padding: 3em 0 0 0 ;
     text-align: center;
 }
 
@@ -417,13 +417,13 @@ background-image: linear-gradient(rgba(253, 240, 240, 0.9),rgba(107, 107, 107, 0
 
 .left {
     /* background-color: red; */
-   background-color: #0b3063;   ;
+   background-color: #115850;   ;
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
 }
 
 .right {
     margin-left: -25px;
-    background-color: #2B2727;
+    background-color: #3c3c3c;
      clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
 }
 

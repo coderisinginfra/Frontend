@@ -47,6 +47,7 @@
     height: 4em;
     border-radius: 20%;
     width: 40%;
+    background: linear-gradient(90deg, #00796b, #009688, #26a69a);
 }
 
 .datalink-contact{

@@ -253,7 +253,7 @@ th,td{
 
 .controller{
    display: flex;
-   border-bottom: 5px solid rgb(75, 75, 220);
+   border-bottom: 5px solid #115850;
    justify-content: space-between;
    margin: 2em 3em 0 0;
    padding:  0 0 1em 0;

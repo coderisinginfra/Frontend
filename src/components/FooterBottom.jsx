@@ -105,11 +105,11 @@ const FooterBottom = () => {
             <h1 className='support-data font-support'>Consult With Us</h1> <hr style={{marginTop:"1em",width:"30%"}}/>
             <div className='contact-footer'>
                 <div className='conatnets-footer'>
-                    <EmailIcon color='primary' className='secondary-contact'/>
+                    <EmailIcon color='#005B52' className='secondary-contact'/>
                     <Link to="mailto://info@risinginfra.in" className='linkes-flield'>info@risinginfra.in</Link>
                 </div>
                 <div className='conatnets-footer'>
-                    <CallIcon color='primary' className='secondary-contact'/>
+                    <CallIcon color='#005B52' className='secondary-contact'/>
                     <Link to="tel://+919990633353" className='linkes-flield'>+91 9990633353</Link>
                 </div>
             </div>

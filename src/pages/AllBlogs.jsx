@@ -97,22 +97,14 @@ const AllBlogs = (props) => {
           <meta name="twitter:description" content="Read the latest articles and insights on real estate, property management, market trends, and more on the Risinginfra blog. Stay informed with our expert commentary and tips."/>
           <meta name="twitter:image" content="https://www.risinginfra.in/assets/blog%20photo-D9ow9bek.jpg" />
         </Helmet>
-        <div className='container-blog'>
-            <div>
-                <h1 className='data-blog'>Rising Infra Blog</h1>
-            </div>
-            <div>
-                <img src={blogimages} alt="blogphoto" className='image-blog'/>
-            </div>
-        </div>
             <div className='heading-blogs'>
                 <h1>Must Read Blogs</h1>
                 <div className='border-bottom-blog'> </div>
             </div>
-        <div className='blogs-section'>
-            <div className='tags-data-home-filter'>
+        <div className='blogs-section blogs-home'>
+            <div className='blogs-data'>
                 {displayBlogs.map((item, index) => (
-                    <div key={index} className='data-front-home-blog'>
+                    <div key={index} className='flex-blogsimage-show'>
                         <Link
                             to={`/blogs/${item.postTitle.replace(/ /g, '-').toLowerCase()}`}
                             onClick={() => {
@@ -137,9 +129,7 @@ const AllBlogs = (props) => {
                                     />
                                 </div>
                                 <div className='data-blogs'>
-                                    <div className='blogs-button-data'>
-                                    <Button variant='contained'>{item.Category}</Button>
-                                    </div>
+                                    
                                     <h3 className='heading-blogs-content'><b>{item.postTitle}</b></h3>
                                     <div>
                                         <div className='paragraph-blogs' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(truncateHTML(item.description, 25)) }}></div>

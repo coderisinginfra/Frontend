@@ -162,7 +162,7 @@ useEffect(()=>{
    <div className='container-home'>  
       <div> 
         <h1 className='headiing-home-fron-container'>Find Your Property <br />With Rising Infra</h1>
-        <p className='heading-image paragraph-home-front-data'>Discover your dream property nestled in the heart of serene surroundings, offering unparalleled luxury and comfort.</p>
+        {/* <p className='heading-image paragraph-home-front-data'>Discover your dream property nestled in the heart of serene surroundings, offering unparalleled luxury and comfort.</p> */}
       <div>
         <form action="">
        <div className='form-home-data'>
@@ -205,15 +205,12 @@ useEffect(()=>{
               </label>
             </div>
             <div className='clasnamebutton'>
-            <Button variant='contained' color='primary' sx={{padding:'15px'}} onClick={handleSubmitSearch} className='buttons-home'>Submit</Button>
+            <Button variant='contained' style={{padding:'15px',backgroundColor:'#115850'}} onClick={handleSubmitSearch} className='buttons-home'>Submit</Button>
             </div>
        </div>
         </form>
       </div>
       </div>
-    <div className='home-images-div'>
-      <img src={HomePhoto} alt="Home Photo" className="home-images" loading='lazy' />
-    </div>
    </div>
 
 {
@@ -323,7 +320,7 @@ useEffect(()=>{
     {/* Carosel stop here  */}      
 
     <div>
-      <h1 className='location-content-name-home'>Our Projects</h1>
+      <h1 className='location-content-name-home'>Explore Our Location</h1>
       <div className='location-flex'>
           <div className='data-image-flex-home'>
            <Link to="/property-in-noida" className='link-container'>
@@ -383,9 +380,6 @@ useEffect(()=>{
                                     />
                                 </div>
                                 <div className='data-blogs'>
-                                <div className='blogs-button-data'>
-                                    <Button variant='contained'>{item.Category}</Button>
-                                    </div>
                                     <h3 className='heading-blogs-content'><b>{item.postTitle}</b></h3>
                                     <div>
                                         <div className='paragraph-blogs' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(truncateHTML(item.description, 25)) }}></div>

@@ -87,7 +87,7 @@ const Booknow = () => {
           />
         </DialogContent>
         <DialogActions>
-          <Button type="submit" variant='contained' color='primary' disabled={isButtonDisabled}>Submit</Button>
+          <Button type="submit" variant='contained' style={{color:"white",background:"#115850"}} disabled={isButtonDisabled}>Submit</Button>
           <Button onClick={handleClose}>Cancel</Button>
         </DialogActions>
       </Dialog>

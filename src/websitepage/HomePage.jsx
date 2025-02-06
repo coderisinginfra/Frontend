@@ -4,7 +4,7 @@ import buyhome from '../assets/adminimage/buyinghome.jpg'
 import leasecommercial from '../assets/adminimage/officespace.avif'
 import { Link } from 'react-router-dom'
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField, TextareaAutosize } from '@mui/material'
-// import axios from 'axios'
+import axios from 'axios'
 import '../CSS/HomePageData.css'
 import { datasets } from '../App'
 import DOMPurify from 'dompurify';
